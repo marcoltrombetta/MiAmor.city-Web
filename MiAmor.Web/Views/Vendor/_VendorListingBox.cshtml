@@ -1,0 +1,60 @@
+﻿@model MiAmor.Web.Models.VendorBoxModel
+<style >
+    .background-color-green{background-color:green}
+</style>
+
+<div class="col-sm-4 col-xs-6">
+
+    <div class="single-product">
+        <figure>
+            <img src="@Model.LogoImgPath" alt="">
+
+            <div class="rating">
+
+                <div class="divRatingxxs">
+                    <input showcaption="false" clearbutton="{}" value="3.5" readonly="false" showclear="false" type="number" class="rating" min="0" max="5" step="0.5" data-size="xxs"
+                           data-symbol="&#xe005;" data-default-caption="{rating} hearts" data-star-captions="{}">
+                    @*<input value="4" disabled="true" showcaption="false" readonly="true" showclear="false" type="number" data-default-caption="{rating} hearts" data-star-captions="{}" class="rating" min=0 max=5 step=0.2 data-size="xxs">*@
+                </div>
+
+                <p>Featured</p>
+
+            </div> <!-- end .rating -->
+
+            <figcaption>
+                <div class="bookmark">
+                    <a id="bookmark__@Model.Id" data-vendorid="@Model.Id" class="aBookmark @(Model.IsBookmarkedByCurrCustomer == true ? "background-color-green" : "")"><i class="fa fa-bookmark-o"></i>Bookmark</a>
+                </div>
+
+                <div class="read-more">
+                    <a href='@Url.Action("Index", "Vendor", new { Id = @Model.Id})'><i class="fa fa-angle-right"></i> Read More</a>
+                </div>
+
+            </figcaption>
+        </figure>
+
+        <h4 class="VendorBoxName"><a href='@Url.Action("Index", "Vendor", new { Id = @Model.Id})'>@Model.Name</a></h4>
+
+        <h5>
+           @for (int j = 0; j < Model.VendorCategories.Count() - 1; j++)
+           {
+               var Category = Model.VendorCategories[j];
+                <a href='@Url.Action("Index", "Home", new { CategoryId = Category.Id })'>@Category.Name </a>
+                @:, 
+            }
+            <a href='@Url.Action("Index", "Home", new { CategoryId = Model.VendorCategories[Model.VendorCategories.Count()-1].Id })'>@Model.VendorCategories[Model.VendorCategories.Count()-1].Name</a>
+        </h5>
+        
+        <p>
+            @if (!@Model.Addresses.FirstOrDefault().Cities.Name.IsEmpty())
+            {
+                @Model.Addresses.FirstOrDefault().Cities.Name <i class="fa fa-angle-right"></i>@Model.Addresses.FirstOrDefault().Neighbourhood.Name <i class="fa fa-angle-right"></i>@Model.Addresses.FirstOrDefault().Address1
+            }
+        </p>
+
+        <a class="read-more" href="@Model.SiteUrl"><i class="fa fa-angle-right"></i>@Model.FullDescription</a>
+
+    </div> <!-- end .single-product -->
+</div>
+
+

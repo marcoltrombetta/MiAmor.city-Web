@@ -1,0 +1,132 @@
+﻿<h3>
+    Form Validation
+    <small>Native AngularJS input validation</small>
+</h3>
+<!-- START row-->
+<div ng-controller="newProductReview" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formValidate" ng-submit="submitForm()" novalidate="" class="form-validate form-horizontal">
+                <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <fieldset class="b0">
+                            <legend>{{'customForm.newProductReview'|translate}}</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <input type="text" ng-show="false" name="Id" required="" ng-model="productReview.Id" class="form-control" value="{{productReview.Id}}" />
+                               </div>  
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.customer'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select ng-disabled="true" name="customer" ng-model="productReview.customerId" class="form-control">
+                                        <option ng-repeat="customer in customers" value="{{customer.Id}}">{{customer.FirstName}} {{customer.LastName}} </option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>x`
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.product'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select ng-disabled="true" name="product" ng-model="productReview.productId" class="form-control">
+                                        <option ng-repeat="product in products" value="{{product.Id}}">{{product.Name}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.isApproved'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="isApproved" ng-model="productReview.isApproved" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.title'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="title" ng-model="productReview.title" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.reviewText'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="reviewText" ng-model="productReview.reviewText" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.rating'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="rating" ng-pattern="/^[0-9]+$/" ng-model="productReview.rating" class="form-control" />
+                                    <span ng-show="validateInput('rating', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.helpfulYesTotal'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="helpfulYesTotal" ng-pattern="/^[0-9]+$/" ng-model="productReview.helpfulYesTotal" class="form-control" />
+                                    <span ng-show="validateInput('helpfulYesTotal', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.helpfulNoTotal'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="helpfulNoTotal" ng-pattern="/^[0-9]+$/" ng-model="productReview.helpfulNoTotal" class="form-control" />
+                                    <span ng-show="validateInput('helpfulNoTotal', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <div class="panel-footer text-center">
+                            <button type="submit" class="btn btn-info">{{'customForm.save'|translate}}</button>
+                        </div>
+                    </div>
+                    <!-- END panel-->
+            </form>
+        </div>
+    </div>
+    <!-- END row-->
+
+</div>

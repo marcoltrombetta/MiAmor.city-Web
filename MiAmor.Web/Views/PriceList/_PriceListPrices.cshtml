@@ -1,0 +1,49 @@
+@model IList<MiAmor.Core.PriceListItem>
+
+
+<style>
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
+        .form-group{
+        width:80%;
+    }
+</style>
+  <!--Table Search v1-->
+<div class="table-search-v1 margin-bottom-20">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var item in Model)
+                    {
+                        <text>
+                            <tr>
+                                <td>
+                                   @item.Name
+                                </td>
+                                <td>
+                                    @item.MinPrice - @item.MaxPrice
+                                </td>
+                            </tr>
+                        </text>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--End Table Search v1-->

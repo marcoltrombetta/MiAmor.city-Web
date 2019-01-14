@@ -1,0 +1,20 @@
+﻿<div class="comments-section company-ratings">
+    <h4>Join Conversation</h4>
+
+    <form class="comment-form">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="all-rating clearfix">
+                    @Html.Action("VendorRatingBox", new { Rating = 0 })
+                </div>
+            </div>
+
+
+        </div>
+
+        <textarea placeholder="Your love ..." required></textarea>
+
+        <button type="submit" class="btn btn-default"><i class="fa fa-comment-o"></i>Share your thoughts</button>
+    </form>
+
+</div> 

@@ -1,0 +1,21 @@
+﻿@model MiAmor.Web.Models.BlogCommentsPageListModel
+
+<ul class="pagination">
+    @if (Model.HasPreviousPage) { 
+    <li><a href="/home/index/@Model.CategoryId/@Model.PageIndex-1"><i class="fa fa-angle-left"></i></a></li>
+    }
+    @foreach (var item in Model.PagesNum)
+    {
+        if (item == Model.PageIndex)
+        {
+            <li class="active"><a href="/home/index/@Model.CategoryId/@item">@item</a></li>
+        }
+        else
+        {
+            <li><a href="/home/index/@Model.CategoryId/@item">@item</a></li>
+        }
+    }
+    @if (Model.HasNextPage) {
+        <li><a href="/home/index/@Model.CategoryId/@Model.PageIndex+1"><i class="fa fa-angle-right"></i></a></li>
+    }
+</ul>

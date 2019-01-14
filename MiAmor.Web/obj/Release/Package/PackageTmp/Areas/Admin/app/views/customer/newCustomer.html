@@ -1,0 +1,172 @@
+﻿<h3>
+    Form Validation
+    <small>Native AngularJS input validation</small>
+</h3>
+<!-- START row-->
+<div ng-controller="newCustomer" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formValidate" ng-submit="submitForm()" novalidate="" class="form-validate form-horizontal">
+                <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <fieldset class="b0">
+                            <legend>{{'customForm.newcustomer'|translate}}</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.firstName'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" ng-show="false" name="Id" required="" ng-model="customer.Id" class="form-control" value="{{customer.Id}}" />
+                                    <input type="text" name="firstName" required="" ng-model="customer.firstName" class="form-control" value="{{customer.firstName}}" />
+                                    <span ng-show="validateInput('firstName', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.lastName'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="lastName" ng-model="customer.lastName" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.email'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="email" placeholder="mail@example.com" name="email" required="" ng-model="customer.email" class="form-control" />
+                                    <span ng-show="validateInput('email', 'required')" class="text-danger">This field is required</span>
+                                    <span ng-show="validateInput('email', 'email')" class="text-danger">This field must be a valid email address</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Select Gender</label>
+                                <div class="col-sm-6">
+                                    <select name="select" ng-model="customer.gender" class="form-control">
+                                        <option value="false">{{'customForm.female'|translate}}</option>
+                                        <option value="true">{{'customForm.male'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.phone'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="phone" ng-pattern="/^[0-9]+$/" ng-model="customer.phone" class="form-control" />
+                                    <span ng-show="validateInput('phone', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.mobile'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="mobile" ng-pattern="/^[0-9]+$/" ng-model="customer.mobile" class="form-control" />
+                                    <span ng-show="validateInput('mobile', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.dateOfBirth'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" name="dateOfBirth" datepicker-popup="{{format}}" ng-model="customer.dateOfBirth" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                         <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                    </p>                                    
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{customer.dateOfBirth}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.password'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="password" name="password" ng-model="customer.password" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.city'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input name="city" ng-required="true" ng-model="city"
+                                           type="text" ng-valid-func="validator"
+                                           placeholder="{{'customForm.city'|translate}}"
+                                           typeahead="city as city.name for city in getCityByName($viewValue)"
+                                           typeahead-on-select="setCity($item.cityId) | filter:$viewValue"
+                                           typeahead-loading=" loadinglocations" class="form-control">                            
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.mainAdress'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="mainAdress" ng-model="customer.mainAdress" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.customerType'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="customerType" ng-model="customer.customerTypeId" class="form-control">
+                                        <option ng-repeat="customerType in customerTypes" value="{{customerType.Id}}">{{customerType.Name}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    <div class="panel-footer text-center">
+                        <button type="submit" class="btn btn-info">{{'customForm.save'|translate}}</button>
+                    </div>
+                </div>
+                    <!-- END panel-->
+            </form>
+        </div>
+    </div>
+    <!-- END row-->
+
+</div>

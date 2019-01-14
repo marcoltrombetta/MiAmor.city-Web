@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MiAmor.Core.Vendor>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var item in Model)
+{
+    if(@item.Addresses.Count ()>0 )
+    { 
+    <div class="vendorAddress " data-vendor-id="@item.Id" data-neighbourhood="@item.Addresses.FirstOrDefault().Neighbourhood.Name " data-city="@item.Addresses.FirstOrDefault().Cities.Name" data-address=" @item.Addresses.FirstOrDefault().Address1 ">
+        Argentina
+        @item.Addresses.FirstOrDefault().Address1
+
+    </div>
+}
+}
+
+<script>
+    $('.vendorAddress').each(function () {
+        var address = "Argentina, " + $(this).attr('data-city') + ", " + $(this).attr('data-neighbourhood') + ", " + $(this).attr('data-address')
+        var lngalt = getLatLong(address, $(this).attr('data-vendor-id'));
+      
+    });
+   
+    function getLatLong(address,Id)
+    {
+        var geo = new google.maps.Geocoder;
+        geo.geocode({ 'address': address }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                $.post("/Vendor/SetVendorAddress", { Id:Id, Address: results[0].address_components[2].long_name, lat: results[0].geometry.location.k, longt: results[0].geometry.location.D }, function (data) {
+                    //$('#vendor-results-container').html(data);
+                    //$('#divSortBy-VendorListing').uouCustomSelect();
+                });
+                return "";
+
+        } else {
+                alert("Geocode was not successful for the following reason: " + status);
+            }
+        });
+    }
+</script>

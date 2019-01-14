@@ -1,0 +1,24 @@
+﻿@model MiAmor.Core.VendorCategoryCount
+
+
+ <!-- CLSSIFIEDS-CATEGROY BEGIN -->
+                <li>
+                    @if(@Model.Name.Length>16){
+                     @:   <a href='@Url.Action("Index", "Home", new { CategoryId = @Model.VendorCategoryId})'> @Model.Name.Substring(0, 16)... <span>(@Model.CountVendors)</span></a>
+
+                    }else{
+                    @:  <a href='@Url.Action("Index", "Home", new { CategoryId = @Model.VendorCategoryId})'> @Model.Name<span>(@Model.CountVendors)</span></a>
+                    }
+                  
+                    @*<ul class="sub-category">
+                        @foreach (var subItem in Model.VendorCategoryNavigations)
+                        {
+                            <li>
+                                <a href="#@subItem.Name.ToLower().Replace(" ","-")">@subItem.Name <span>(@subItem.CountVendors)</span></a>
+                            </li>
+                        }
+                    </ul>*@
+            </li>
+     
+
+

@@ -1,0 +1,204 @@
+﻿<h3>
+    Form Validation
+    <small>Native AngularJS input validation</small>
+</h3>
+<!-- START row-->
+<div ng-controller="newBlogPost" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formValidate" ng-submit="submitForm()" novalidate="" class="form-validate form-horizontal">
+                <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <fieldset class="b0">
+                            <legend>{{'customForm.newBlogPost'|translate}}</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <input type="text" ng-show="false" name="Id" required="" ng-model="blogPost.Id" class="form-control" value="{{blogPost.Id}}" />
+                                </div>                                
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.language'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="language" ng-model="blogPost.languageId" class="form-control">
+                                        <option ng-repeat="language in languages" value="{{language.Id}}">{{language.Name}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.title'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="title" required="" ng-model="blogPost.title" class="form-control" />
+                                    <span ng-show="validateInput('title', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.body'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="body" required="" ng-model="blogPost.body" class="form-control" />
+                                    <span ng-show="validateInput('body', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>  
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.allowComments'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="allowComments" required="" ng-model="blogPost.allowComments" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('allowComments', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.commentCount'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="commentCount" required="" ng-pattern="/^[0-9]+$/" ng-model="blogPost.commentCount" class="form-control" />
+                                    <span ng-show="validateInput('commentCount', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('commentCount', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.tags'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="tags" ng-model="blogPost.tags" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.startDateUtc'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" name="startDateUtc" datepicker-popup="{{format}}" ng-model="blogPost.startDateUtc" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{blogPost.startDateUtc}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.endDateUtc'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" name="endDateUtc" datepicker-popup="{{format}}" ng-model="blogPost.endDateUtc" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{blogPost.endDateUtc}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.metaKeywords'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="metaKeywords" ng-model="blogPost.metaKeywords" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.metaDescription'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="metaDescription" ng-model="blogPost.metaDescription" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.metaTitle'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="metaTitle" ng-model="blogPost.metaTitle" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.limitedToStores'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="limitedToStores" required="" ng-model="blogPost.limitedToStores" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('limitedToStores', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="panel-footer text-center">
+                            <button type="submit" class="btn btn-info">{{'customForm.save'|translate}}</button>
+                        </div>
+                    </div>
+                    <!-- END panel-->
+            </form>
+        </div>
+    </div>
+    <!-- END row-->
+
+</div>

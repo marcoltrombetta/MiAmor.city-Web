@@ -1,0 +1,94 @@
+﻿@using MiAmor.Web.Models
+
+<div class="header-login">
+
+    <a href="#" class=""><i class="fa fa-power-off"></i>Login</a>
+
+    <style>
+        .error {
+            border: 3px solid #e73d3d !important;
+        }
+    </style>
+
+        <div>
+            <form id="loginform" name="formLogin" action=""  class="form-horizontal" role="form" novalidate>
+                    <input id="email"  type="email" name="email" placeholder="Email" required>
+                    <input id="password"  type="password" name="password" placeholder="Password" required>
+
+                    @Html.AntiForgeryToken()
+
+                    <input type="button" id="aSubmitLogin" class="btn btn-default" value="Login">
+                    <a href="#" id="aGetDetails" onclick="forgotPassword()" class="btn btn-link">Forgot Password?</a>
+               
+            </form>
+        </div>
+
+</div> <!-- END .HEADER-LOGIN -->
+
+<script type="text/javascript">
+    var aSubmitLogin = $("#aSubmitLogin");
+    var imgLoad = $('#imgLoad');
+    var loginform = $("#loginform");
+
+    aSubmitLogin.on("click", function () {
+       
+        aSubmitLogin.attr('disabled', true);
+        imgLoad.show();
+
+        var serializedForm = loginform.serialize();
+
+        $.ajax({
+            url: '/Customer/LoginCustomer',
+            data: serializedForm,
+            type: 'POST',
+            header: { "Content-Type": "application/json" },
+            success: function (result) {
+                $('#aSubmitRegister').attr('disabled', true);
+
+                saveToLocalStorage("userToken", result.data.Token);
+                saveToLocalStorage("userCustId", result.data.CustId);
+                saveToLocalStorage("userFirstName", result.data.FirstName);
+
+
+                userLogged(result.data.FirstName, result.data.CustId);
+            },
+            error: function (err) {
+                alert(data.message);
+            }
+        });
+
+        event.preventDefault();
+    });
+
+    function forgotPassword() {
+        var aSubmitRegister = $("#aSubmitRegister");
+        var imgLoad = $('#imgLoad');
+
+        imgLoad.show();
+
+        var serializedForm = [];
+
+        $.ajax({
+            url: '/Customer/GetCustomerDetailsApp',
+            data: serializedForm,
+            type: 'POST',
+            header: getUserTokenHeader(),
+            success: function (result) {
+                aSubmitRegister.attr('disabled', true);
+
+                saveToLocalStorage("userToken", result.data.Token);
+                saveToLocalStorage("userCustId", result.data.CustId);
+                saveToLocalStorage("userFirstName", result.data.FirstName);
+
+                user.token = result.data.Token;
+                user.firstname = result.data.FirstName;
+                user.isLogged = true;
+
+                userLogged(result.data.FirstName, result.data.CustId);
+            },
+            error: function (err) {
+                alert(data.message);
+            }
+        });
+    }
+</script>

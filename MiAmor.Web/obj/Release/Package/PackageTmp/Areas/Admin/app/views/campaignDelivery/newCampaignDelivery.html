@@ -1,0 +1,76 @@
+﻿<h3>
+    Form Validation
+    <small>Native AngularJS input validation</small>
+</h3>
+<!-- START row-->
+<div ng-controller="newCampaignDelivery" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formValidate" ng-submit="submitForm()" novalidate="" class="form-validate form-horizontal">
+                <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <fieldset class="b0">
+                            <legend>{{'customForm.newCampaignDelivery'|translate}}</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.description'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" ng-show="false" name="Id" required="" ng-model="campaignDelivery.Id" class="form-control" value="{{campaignDelivery.Id}}" />
+                                    <input type="text" name="name" required="" ng-model="campaignDelivery.description" class="form-control" value="{{campaignDelivery.description}}" />
+                                    <span ng-show="validateInput('name', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.deliveryPrice'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="deliveryPrice" required="" ng-pattern="/^[0-9]+$/" ng-model="campaignDelivery.deliveryPrice" class="form-control" />
+                                    <span ng-show="validateInput('deliveryPrice', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('deliveryPrice', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.maxUnitsPerDelivery'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="maxUnitsPerDelivery" ng-pattern="/^[0-9]+$/" ng-model="campaignDelivery.maxUnitsPerDelivery" class="form-control" />
+                                    <span ng-show="validateInput('maxUnitsPerDelivery', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.active'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="active" ng-model="campaignDelivery.active" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="panel-footer text-center">
+                            <button type="submit" class="btn btn-info">{{'customForm.save'|translate}}</button>
+                        </div>
+                    </div>
+                    <!-- END panel-->
+            </form>
+        </div>
+    </div>
+    <!-- END row-->
+
+</div>

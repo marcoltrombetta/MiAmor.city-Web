@@ -1,0 +1,52 @@
+﻿@model MiAmor.Web.Models.VendorBlogListingModel
+
+<div class="tab-pane active" id="category-book">
+    @*@Html.Partial("_VendorCategoryBreadcrumbs", Model);*@
+    <div>
+      
+        <div class="row clearfix">
+            <!-- end .col-sm-4 grid layout -->
+            @foreach (var Blogs in Model.Blogs)
+            {
+                @Html.Partial("_VendorBlogListingBox", Blogs);
+            }
+
+            <div class="pagination-center">
+
+                @Html.Partial("_VendorBlogPaginationAjax", Model.PageList)
+
+            </div>
+
+        </div> <!-- end .row -->
+    </div>
+</div> 
+
+<script type="text/javascript">
+    var $bookmark = $('.aBookmark');
+    $bookmark.on('click', function (event) {
+        var vendorId = $(this).attr("data-vendorId");
+        addCustomerBookmark(vendorId, $(this));
+        event.preventDefault();
+    });
+
+    function addCustomerBookmark(id, $bookmarkElement) {
+
+        //alert(getFromLocalStorage("userCustId"));
+        if (isUserLogged) {
+            $.ajax({
+                url: '/Vendor/AddCustomerBookmark',
+                data: {Id:id, CustId: getFromLocalStorage("userCustId")},
+                type: 'POST',
+                header: { "Content-Type": "application/json" },
+                success: function (result) {
+                    $bookmarkElement.toggleClass("background-color-green");
+                },
+                error: function (err) {
+                   // alert(err.message);
+                }
+            });
+        }else{
+            alert("Not Logged");
+        }
+    }
+</script>

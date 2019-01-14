@@ -1,0 +1,22 @@
+﻿@model IList<MiAmor.Core.Neighbourhood>
+
+<select class="" data-placeholder="-Select location-">
+  
+</select><input class="value-holder" id="seacrhLocationHomeSearchBar" name="seacrhLocationHomeSearchBar" type="hidden"  placeholder="-Select location-"><span class="placeholder">-Select location-</span><i class="fa fa-chevron-down"></i>
+<ul class="select-clone"  style="">
+    @{
+
+        int i = 0;
+
+        foreach (var item in Model)
+        {
+
+            <li data-value="@item.Id">@Html.Raw(item.Name)</li>
+
+            i++;
+        }
+
+    }
+
+
+</ul>

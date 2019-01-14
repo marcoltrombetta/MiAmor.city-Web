@@ -1,0 +1,36 @@
+﻿<div class="container containerMenu">
+    <div class="header-nav-bar home-slide">
+        <nav>
+
+            <button><i class="fa fa-bars"></i></button>
+
+            <ul class="primary-nav list-unstyled">
+                <li class="bg-color">
+                    <a href="@Url.Action("Index", "Home")">Home<i class="fa fa-angle-down"></i></a>                   
+                </li>
+              
+                <li class="">
+                    <a href="#">Coupons<i class="fa fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="#">All the deals</a></li>
+                        <li><a href="#">Daily Deals</a></li>
+                        <li><a href="#">Last moment</a></li>
+                        <li><a href="#">make u feel good</a></li>
+                     </ul>
+                </li>
+
+                <li><a href="@Url.Action("Index", "PriceList")">Price List</a></li>            
+                <li class="">
+                    <a href="@Url.Action("Index", "Blog", new { BlogPostType = 1 })">good to know</a>                   
+                </li>
+                <li class="">
+                    <a href="@Url.Action("Index", "Blog", new { BlogPostType = 2 })">Events</a>
+                </li>
+                <li><a href="price-listing.html">About Us</a></li>
+                <li><a href="about-us.html">Join Us</a></li>
+                <li><a href="@Url.Action("ContactUs", "Home")">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    </div> <!-- end .header-nav-bar -->
+</div>

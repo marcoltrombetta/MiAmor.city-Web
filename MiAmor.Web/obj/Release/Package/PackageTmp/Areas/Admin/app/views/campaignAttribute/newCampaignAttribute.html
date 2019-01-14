@@ -1,0 +1,49 @@
+﻿<h3>
+    Form Validation
+    <small>Native AngularJS input validation</small>
+</h3>
+<!-- START row-->
+<div ng-controller="newCampaignAttribute" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formValidate" ng-submit="submitForm()" novalidate="" class="form-validate form-horizontal">
+                <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <fieldset class="b0">
+                            <legend>{{'customForm.newCampaignAttribute'|translate}}</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.name'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" ng-show="false" name="Id" required="" ng-model="campaignAttribute.Id" class="form-control" value="{{campaignAttribute.Id}}" />
+                                    <input type="text" name="name" required="" ng-model="campaignAttribute.name" class="form-control" value="{{campaignAttribute.name}}" />
+                                    <span ng-show="validateInput('name', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.description'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="description" ng-model="campaignAttribute.description" class="form-control" />
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="panel-footer text-center">
+                            <button type="submit" class="btn btn-info">{{'customForm.save'|translate}}</button>
+                        </div>
+                    </div>
+                    <!-- END panel-->
+            </form>
+        </div>
+    </div>
+    <!-- END row-->
+
+</div>

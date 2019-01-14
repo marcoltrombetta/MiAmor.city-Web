@@ -1,0 +1,111 @@
+﻿<div class="page-sidebar company-sidebar">
+
+    <ul class="company-category nav home-tab" role="tablist" id="category">
+        <li id="1" class="active">
+            <a href='@Url.Action("GetVendorCompanyProfile", "Vendor", new { VendorId = @ViewBag.VendorId, ContentId=1 })' role="tab"><i class="fa fa-newspaper-o"></i> Profile</a>
+        </li>
+
+        <li id="2">
+            <a href='@Url.Action("VendorCompanyCupon", "Vendor", new { VendorId = @ViewBag.VendorId, ContentId = 2 })' role="tab"><i class="fa fa-file-image-o"></i>Cupons</a>
+        </li>
+
+        <li id="3">
+            <a href='@Url.Action("VendorCompanyProduct", "Vendor", new { VendorId = @ViewBag.VendorId, ContentId = 3 })' role="tab"><i class="fa fa-cubes"></i>Product</a>
+        </li>
+
+        <li id="4">
+            <a href='@Url.Action("VendorCompanyEvents", "Vendor", new { VendorId = @ViewBag.VendorId, ContentId = 4 })' role="tab"><i class="fa fa-list"></i>Events</a>
+        </li>
+
+        <li id="5">
+            <a href='@Url.Action("VendorCompanyBlog", "Vendor", new { VendorId = @ViewBag.VendorId, ContentId = 5 })' role="tab"><i class="fa fa-keyboard-o"></i>blog</a>
+        </li>
+
+        <li id="6">
+            <a href='@Url.Action("VendorCompanyContact", "Vendor", new { VendorId = @ViewBag.VendorId, ContentId = 6 })' role="tab"><i class="fa fa-envelope-o"></i>Contact</a>
+        </li>
+    </ul>
+
+    <div class="own-company">
+        <a href="#"><i class="fa fa-question-circle"></i>Own This Company</a>
+    </div>
+
+    @Html.Action("GetVendorSidebarDetails", "Vendor", new { VendorId = @ViewBag.VendorId })
+   
+
+</div> <!-- end .page-sidebar -->
+
+<script>
+        var ul = $('#category');
+        ul.find('li').each(function () {
+            var current = $(this);
+            var id_li = current[0].id;
+
+            $('#' + id_li).removeClass("active");
+
+        });
+
+        $('#' + getQueryParam("ContentId")).addClass("active");
+
+        function getQueryParam(param) {
+            var found;
+            window.location.search.substr(1).split("&").forEach(function (item) {
+                if (param == item.split("=")[0]) {
+                    found = item.split("=")[1];
+                } else {
+                    found = 1;
+                }
+            });
+            return found;
+        }
+
+        function getVendorPhoneNumber(id) {
+            $.ajax({
+                url: '/Vendor/GetVendorPhones',
+                data: {Id: id},
+                type: 'POST',
+                header: { "Content-Type": "application/json" },
+                success: function (result) {
+                    $('.phonenumber').html(result.PhoneNumbre);
+                },
+                error: function (err) {
+                    alert(data.message);
+                }
+            });
+
+            event.preventDefault();
+        }
+
+        function getVendorFaxNumber(id) {
+            $.ajax({
+                url: '/Vendor/GetVendorPhones',
+                data: { Id: id },
+                type: 'POST',
+                header: { "Content-Type": "application/json" },
+                success: function (result) {
+                    $('.faxnumber').html(result.FaxNumber);
+                },
+                error: function (err) {
+                    alert(data.message);
+                }
+            });
+
+            event.preventDefault();
+        }
+
+
+        $.ajax({
+            url: '/Vendor/IsOpenVendor',
+            data: { Id: @ViewBag.VendorId },
+            type: 'POST',
+            header: { "Content-Type": "application/json" },
+            success: function (result) {
+                $('#isOpenVendor').html(result.data);
+            },
+            error: function (err) {
+                alert(data.message);
+            }
+        });
+
+
+</script>

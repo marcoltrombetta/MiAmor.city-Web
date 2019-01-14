@@ -1,0 +1,840 @@
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\WebGrease.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Autofac.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Autofac.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Autofac.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\WebGrease.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Autofac.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\WebGrease.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\WebGrease.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\Shai MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Autofac.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Owin.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\WebGrease.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Autofac.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Autofac.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Owin.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\WebGrease.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Autofac.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+D:\kaka\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+D:\kaka\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+D:\kaka\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Autofac.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\Owin.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\WebGrease.dll
+D:\kaka\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+D:\kaka\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+D:\kaka\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+D:\kaka\MiAmor\MiAmor.Web\bin\Autofac.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+D:\kaka\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+D:\kaka\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\kaka\MiAmor\MiAmor.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\kaka\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+D:\kaka\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+D:\kaka\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\MiAmor.Web.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Antlr3.Runtime.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\WebGrease.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Antlr3.Runtime.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\MiAmor.Web.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Antlr3.Runtime.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\WebGrease.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Antlr3.Runtime.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+C:\shai\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+C:\shai\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+C:\shai\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+C:\shai\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+C:\shai\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+C:\shai\MiAmor\MiAmor.Web\bin\Autofac.dll
+C:\shai\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+C:\shai\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+C:\shai\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+C:\shai\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+C:\shai\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+C:\shai\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+C:\shai\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+C:\shai\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\shai\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\shai\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\shai\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\shai\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+C:\shai\MiAmor\MiAmor.Web\bin\Owin.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+C:\shai\MiAmor\MiAmor.Web\bin\WebGrease.dll
+C:\shai\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+C:\shai\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+C:\shai\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+C:\shai\MiAmor\MiAmor.Web\bin\Autofac.xml
+C:\shai\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+C:\shai\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+C:\shai\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+C:\shai\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+C:\shai\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+C:\shai\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+C:\shai\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+C:\shai\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+C:\shai\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\shai\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\shai\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\shai\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+C:\shai\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+C:\shai\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+C:\shai\MiAmor\MiAmor.Web\bin\es\MiAmor.Web.resources.dll
+C:\shai\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.Resources.Resources.resources
+C:\shai\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.Resources.Resources.es.resources
+C:\shai\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csproj.GenerateResource.Cache
+C:\shai\MiAmor\MiAmor.Web\obj\Debug\es\MiAmor.Web.resources.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.Resources.Resources.resources
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.Resources.Resources.es.resources
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csproj.GenerateResource.Cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\es\MiAmor.Web.resources.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\WebGrease.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\obj\Debug\es\MiAmor.Web.resources.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.Resources.Resources.resources
+C:\MiAmor\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.Resources.Resources.es.resources
+C:\MiAmor\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csproj.GenerateResource.Cache
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\es\MiAmor.Web.resources.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Autofac.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Owin.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\WebGrease.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Autofac.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\MiAmor\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+C:\MiAmor\work\MiAmor\MiAmor.Web\obj\Debug\es\MiAmor.Web.resources.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+C:\MiAmor\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Net.Http.Formatting.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Http.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Http.WebHost.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Net.Http.Formatting.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Http.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Web\bin\System.Web.Http.WebHost.xml
+C:\shai\MiAmor\MiAmor.Web\bin\System.Net.Http.Formatting.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Http.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Http.WebHost.dll
+C:\shai\MiAmor\MiAmor.Web\bin\System.Net.Http.Formatting.xml
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Http.xml
+C:\shai\MiAmor\MiAmor.Web\bin\System.Web.Http.WebHost.xml
+C:\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csprojResolveAssemblyReference.cache
+C:\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.Resources.Resources.resources
+C:\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.Resources.Resources.es.resources
+C:\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.csproj.GenerateResource.Cache
+C:\work\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.dll
+C:\work\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll.config
+C:\work\MiAmor\MiAmor.Web\bin\MiAmor.Web.dll
+C:\work\MiAmor\MiAmor.Web\bin\MiAmor.Web.pdb
+C:\work\MiAmor\MiAmor.Web\bin\es\MiAmor.Web.resources.dll
+C:\work\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.dll
+C:\work\MiAmor\MiAmor.Web\bin\Autofac.dll
+C:\work\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.dll
+C:\work\MiAmor\MiAmor.Web\bin\AutoMapper.dll
+C:\work\MiAmor\MiAmor.Web\bin\EntityFramework.dll
+C:\work\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.dll
+C:\work\MiAmor\MiAmor.Web\bin\MiAmor.Data.dll
+C:\work\MiAmor\MiAmor.Web\bin\MiAmor.Services.dll
+C:\work\MiAmor\MiAmor.Web\bin\MiAmor._.Core.dll
+C:\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\work\MiAmor\MiAmor.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\work\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.dll
+C:\work\MiAmor\MiAmor.Web\bin\Owin.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Net.Http.Formatting.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Helpers.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Http.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Http.WebHost.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Mvc.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Optimization.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Razor.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.dll
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.dll
+C:\work\MiAmor\MiAmor.Web\bin\WebGrease.dll
+C:\work\MiAmor\MiAmor.Web\bin\MiAmor._.Core.pdb
+C:\work\MiAmor\MiAmor.Web\bin\MiAmor.Data.pdb
+C:\work\MiAmor\MiAmor.Web\bin\MiAmor.Services.pdb
+C:\work\MiAmor\MiAmor.Web\bin\Autofac.xml
+C:\work\MiAmor\MiAmor.Web\bin\Autofac.Integration.Mvc.xml
+C:\work\MiAmor\MiAmor.Web\bin\AutoMapper.pdb
+C:\work\MiAmor\MiAmor.Web\bin\AutoMapper.xml
+C:\work\MiAmor\MiAmor.Web\bin\AutoMapper.Net4.pdb
+C:\work\MiAmor\MiAmor.Web\bin\System.Net.Http.Formatting.xml
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Helpers.xml
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Http.xml
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Http.WebHost.xml
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Mvc.xml
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Razor.xml
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.xml
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Deployment.xml
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.WebPages.Razor.xml
+C:\work\MiAmor\MiAmor.Web\bin\System.Web.Optimization.xml
+C:\work\MiAmor\MiAmor.Web\bin\Antlr3.Runtime.pdb
+C:\work\MiAmor\MiAmor.Web\bin\Newtonsoft.Json.xml
+C:\work\MiAmor\MiAmor.Web\bin\EntityFramework.xml
+C:\work\MiAmor\MiAmor.Web\bin\EntityFramework.SqlServer.xml
+C:\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\work\MiAmor\MiAmor.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\work\MiAmor\MiAmor.Web\obj\Debug\es\MiAmor.Web.resources.dll
+C:\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.dll
+C:\work\MiAmor\MiAmor.Web\obj\Debug\MiAmor.Web.pdb

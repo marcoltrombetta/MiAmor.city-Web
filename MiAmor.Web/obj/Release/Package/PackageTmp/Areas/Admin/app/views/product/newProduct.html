@@ -1,0 +1,729 @@
+﻿<h3>
+    Form Validation
+    <small>Native AngularJS input validation</small>
+</h3>
+<!-- START row-->
+<div ng-controller="newProduct" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formValidate" ng-submit="submitForm()" novalidate="" class="form-validate form-horizontal">
+                <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <fieldset class="b0">
+                            <legend>{{'customForm.newProduct'|translate}}</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.name'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" ng-show="false" name="Id" required="" ng-model="product.Id" class="form-control" value="{{product.Id}}" />
+                                    <input type="text" name="name" required="" ng-model="product.name" class="form-control" value="{{product.name}}" />
+                                    <span ng-show="validateInput('name', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.productType'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="productType" ng-pattern="/^[0-9]+$/" required="" ng-model="product.productTypeId" class="form-control" />
+                                    <span ng-show="validateInput('productType', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('productType', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>   
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.parentGroupedProductId'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="parentGroupedProductId" ng-pattern="/^[0-9]+$/" required="" ng-model="product.parentGroupedProductId" class="form-control" />
+                                    <span ng-show="validateInput('parentGroupedProductId', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('parentGroupedProductId', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>                        
+                       
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.visibleIndividually'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="visibleIndividually" required="" ng-model="product.visibleIndividually" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('visibleIndividually', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.shortDescription'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="shortDescription" ng-model="product.shortDescription" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.fullDescription'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="fullDescription" ng-model="product.fullDescription" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.adminComment'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="adminComment" ng-model="product.adminComment" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.productTemplateId'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="productTemplateId" ng-pattern="/^[0-9]+$/" required="" ng-model="product.productTemplateId" class="form-control" />
+                                    <span ng-show="validateInput('productTemplateId', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('productTemplateId', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset> 
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.showOnHomePage'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="showOnHomePage" required="" ng-model="product.showOnHomePage" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('showOnHomePage', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.metaKeywords'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="metaKeywords" ng-model="product.metaKeywords" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.metaDescription'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="metaDescription" ng-model="product.metaDescription" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.metaTitle'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="metaTitle" ng-model="product.metaTitle" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.allowCustomerReviews'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="allowCustomerReviews" required="" ng-model="product.allowCustomerReviews" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('allowCustomerReviews', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.approvedRatingSum'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="approvedRatingSum" ng-pattern="/^[0-9]+$/" required="" ng-model="product.approvedRatingSum" class="form-control" />
+                                    <span ng-show="validateInput('approvedRatingSum', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('approvedRatingSum', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>                        
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.notApprovedRatingSum'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="notApprovedRatingSum" ng-pattern="/^[0-9]+$/" required="" ng-model="product.notApprovedRatingSum" class="form-control" />
+                                    <span ng-show="validateInput('notApprovedRatingSum', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('notApprovedRatingSum', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>  
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.approvedTotalReviews'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="approvedTotalReviews" ng-pattern="/^[0-9]+$/" required="" ng-model="product.approvedTotalReviews" class="form-control" />
+                                    <span ng-show="validateInput('approvedTotalReviews', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('approvedTotalReviews', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>  
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.notApprovedTotalReviews'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="notApprovedTotalReviews" ng-pattern="/^[0-9]+$/" required="" ng-model="product.notApprovedTotalReviews" class="form-control" />
+                                    <span ng-show="validateInput('notApprovedTotalReviews', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('notApprovedTotalReviews', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>  
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.manufacturerPartNumber'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="manufacturerPartNumber" ng-model="product.manufacturerPartNumber" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.isGiftCard'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="isGiftCard" required="" ng-model="product.isGiftCard" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('isGiftCard', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.giftCardTypeId'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="giftCardTypeId" ng-pattern="/^[0-9]+$/" required="" ng-model="product.giftCardTypeId" class="form-control" />
+                                    <span ng-show="validateInput('giftCardTypeId', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('giftCardTypeId', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>  
+                        
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.isRecurring'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="isRecurring" required="" ng-model="product.isRecurring" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('isRecurring', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.recurringCycleLength'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="recurringCycleLength" ng-pattern="/^[0-9]+$/" required="" ng-model="product.recurringCycleLength" class="form-control" />
+                                    <span ng-show="validateInput('recurringCycleLength', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('recurringCycleLength', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.recurringCyclePeriodId'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="recurringCyclePeriodId" ng-pattern="/^[0-9]+$/" required="" ng-model="product.recurringCyclePeriodId" class="form-control" />
+                                    <span ng-show="validateInput('recurringCyclePeriodId', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('recurringCyclePeriodId', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.recurringTotalCycles'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="recurringTotalCycles" ng-pattern="/^[0-9]+$/" required="" ng-model="product.recurringTotalCycles" class="form-control" />
+                                    <span ng-show="validateInput('recurringTotalCycles', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('recurringTotalCycles', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.isShipEnabled'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="isShipEnabled" required="" ng-model="product.isShipEnabled" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('isShipEnabled', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.isFreeShipping'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="isFreeShipping" required="" ng-model="product.isFreeShipping" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('isFreeShipping', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.shipSeparately'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="shipSeparately" required="" ng-model="product.shipSeparately" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('shipSeparately', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.additionalShippingCharge'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="additionalShippingCharge" ng-pattern="/^[0-9]+$/" required="" ng-model="product.additionalShippingCharge" class="form-control" />
+                                    <span ng-show="validateInput('additionalShippingCharge', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('additionalShippingCharge', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>   
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.isTaxExempt'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="isTaxExempt" required="" ng-model="product.isTaxExempt" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('isTaxExempt', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.orderMinimumQuantity'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="orderMinimumQuantity" ng-pattern="/^[0-9]+$/" required="" ng-model="product.orderMinimumQuantity" class="form-control" />
+                                    <span ng-show="validateInput('orderMinimumQuantity', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('orderMinimumQuantity', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>   
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.orderMaximumQuantity'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="orderMaximumQuantity" ng-pattern="/^[0-9]+$/" required="" ng-model="product.orderMaximumQuantity" class="form-control" />
+                                    <span ng-show="validateInput('orderMaximumQuantity', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('orderMaximumQuantity', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>   
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.disableBuyButton'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="disableBuyButton" required="" ng-model="product.disableBuyButton" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('disableBuyButton', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.disableWishlistButton'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="disableWishlistButton" required="" ng-model="product.disableWishlistButton" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('disableWishlistButton', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.callForPrice'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="callForPrice" required="" ng-model="product.callForPrice" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('callForPrice', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.price'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="price" ng-pattern="/^[0-9]+$/" required="" ng-model="product.price" class="form-control" />
+                                    <span ng-show="validateInput('price', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('price', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>   
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.oldPrice'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="oldPrice" ng-pattern="/^[0-9]+$/" required="" ng-model="product.oldPrice" class="form-control" />
+                                    <span ng-show="validateInput('oldPrice', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('oldPrice', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>   
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.productCost'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="productCost" ng-pattern="/^[0-9]+$/" required="" ng-model="product.productCost" class="form-control" />
+                                    <span ng-show="validateInput('productCost', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('productCost', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>   
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.weight'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="weight" ng-pattern="/^[0-9]+$/" ng-model="product.weight" class="form-control" />
+                                    <span ng-show="validateInput('weight', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>                                    
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.length'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="length" ng-pattern="/^[0-9]+$/" ng-model="product.length" class="form-control" />
+                                    <span ng-show="validateInput('length', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.width'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="width" ng-pattern="/^[0-9]+$/" ng-model="product.width" class="form-control" />
+                                    <span ng-show="validateInput('width', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.height'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="height" ng-pattern="/^[0-9]+$/" ng-model="product.height" class="form-control" />
+                                    <span ng-show="validateInput('height', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.availableStartDateTimeUtc'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" name="availableStartDateTimeUtc" datepicker-popup="{{format}}" ng-model="product.availableStartDateTimeUtc" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{product.availableStartDateTimeUtc}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.availableEndDateTimeUtc'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" name="availableEndDateTimeUtc" datepicker-popup="{{format}}" ng-model="product.availableEndDateTimeUtc" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{product.availableEndDateTimeUtc}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.displayOrder'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="displayOrder" required="" ng-pattern="/^[0-9]+$/" ng-model="product.displayOrder" class="form-control" />
+                                    <span ng-show="validateInput('displayOrder', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('displayOrder', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>   
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.published'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="published" required="" ng-model="product.published" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('published', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.deleted'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="deleted" required="" ng-model="product.deleted" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                    <span ng-show="validateInput('deleted', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.createdOnUtc'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" required="" name="createdOnUtc" datepicker-popup="{{format}}" ng-model="product.createdOnUtc" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                        <span ng-show="validateInput('createdOnUtc', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{product.createdOnUtc}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.updatedOnUtc'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" required="" name="updatedOnUtc" datepicker-popup="{{format}}" ng-model="product.updatedOnUtc" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                        <span ng-show="validateInput('updatedOnUtc', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{product.updatedOnUtc}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <div class="panel-footer text-center">
+                            <button type="submit" class="btn btn-info">{{'customForm.save'|translate}}</button>
+                        </div>
+                    </div>
+                    <!-- END panel-->
+            </form>
+        </div>
+    </div>
+    <!-- END row-->
+
+</div>

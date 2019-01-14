@@ -1,0 +1,178 @@
+﻿@model MiAmor.Web.Models.BlogModel
+
+@{
+    ViewBag.Title = "BlogPost";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <div class="container">
+        <div class="page-content bl-list">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="blog-list blog-post">
+                        <div class="post-with-image">
+                            <div class="date-month">
+                                <a href="#">
+                                    <span class="date">@Model.StartDateUtc.Value.Day.ToString()</span>
+                                    <span class="month">@Model.StartDateUtc.Value.Month.ToString()</span>
+                                </a>
+                            </div>
+
+                            <div class="post-image">
+                                <img src="@Model.BlogPostPictures.FirstOrDefault().Picture.BaseUrl" alt="">
+                            </div>
+
+                            <h2 class="title"><a href="blog-post.html">@Model.Title</a></h2>
+
+                            <p class="user">
+                                 <a href="#"><i class="fa fa-folder-open-o"></i>Design</a>
+                                <a href="#"><i class="fa fa-comments-o"></i> @Model.CommentCount Comments</a>
+                            </p>
+
+                            <div class="post">
+                                <p>
+                                    <strong>
+                                        @Model.ShortDescription
+                                    </strong>
+                                </p>
+
+                                <p>
+                                   @Model.Body
+                                </p>
+                            </div>
+
+                            <div class="share-this">
+                                <h4>Share This Post</h4>
+
+                                <ul class="list-inline">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <p class="tag">
+                                @{
+                                    foreach (MiAmor.Core.BlogPostTagBlogPost item in Model.BlogPostTagBlogPost)
+                                    {
+                                        <text>
+                                            <a href="#"><i class="fa fa-tag"></i>@item.BlogPostTag.Name </a>
+                                        </text>
+                                    }
+                                }
+                            </p>
+
+                            <div class="comments-section">
+                                <div class="comment-title">
+                                    <h4>@Model.CommentCount Comments</h4>
+                                </div>
+
+                                <ul class="comments">
+                                   @Html.Action("GetBlogPostComments", "Blog")
+                                </ul> <!-- end .comments -->
+
+                                <!-- Pagination -->
+                                    @*@Html.Partial("_BlogCommentsPagination", Model.PageList)*@
+                                <!-- End Pagination -->
+
+                                <h4>Join Conversation</h4>
+
+                                <form id="send-message" class="comment-form">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input type="text" name="Name" id="Name" placeholder="Name *" required>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <input type="email" name="Email" id="Email" placeholder="Email *" required>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <input type="text" name="LastName" id="LastName" placeholder="Last Name *">
+                                        </div>
+                                        <input type="hidden" name="BlogPostId" id="BlogPostId" value="@Model.Id">
+                                    </div>
+
+                                    <textarea name="CommentText" id="CommentText" placeholder="Your Comment ..." required></textarea>
+
+                                    <button type="button" id="aSubmitMessage" class="btn btn-default"><i class="fa fa-envelope-o"></i> Send Message</button>
+                                </form>
+
+                            </div> <!-- end .comment-section -->
+
+                        </div> <!-- end .post-with-image -->
+                    </div> <!-- end .blog-post -->
+
+                    <div class="back-to-list">
+                        <a class="back-list" href="@Url.Action("Index", "Blog")"><i class="fa fa-angle-left"></i>Back to List</a>
+                    </div>
+
+                </div> <!-- end .grid-layout -->
+
+                <div class="col-md-4">
+                    <div class="post-sidebar">
+
+                        <div class="latest-post-content">
+                            <h2>Latest Posts</h2>
+                            @Html.Action("GetBlogLastestPost","Blog");
+                        </div> <!-- end .latest-post-content -->
+
+                        <div class="post-categories">
+
+                            <h2>Categories</h2>
+                        
+                            <ul>
+                               @Html.Action("GetBlogCategories", "Blog")
+                            </ul>
+                        </div> <!-- end .post-categories -->
+
+                        <div class="square-button">
+                            <button><img src="img/content/square-button.png" alt=""></button>
+
+                            <button><img src="img/content/square-button.png" alt=""></button>
+                        </div> <!-- end .sqare-button -->
+
+                        <div class="recently-added">
+                            <h2>Recently Added</h2>
+
+                            @Html.Action("GetBlogLastestPost", "Blog");
+
+                        </div> <!-- end .recently-added -->
+
+                        <div class="medium-rectangle">
+                            <img src="img/content/medium-rectangle.jpg" alt="">
+                        </div> <!-- end .medium-rectangle -->
+
+                    </div> <!-- end .post-sidebar -->
+                </div> <!-- end .grid-layout -->
+
+            </div> <!-- end .row -->
+        </div> <!-- end .page-content -->
+    </div> <!-- end .container -->
+
+
+<script type="text/javascript">
+
+    $("#aSubmitMessage").click(function (event) {
+        var serializedForm = $("#send-message").serialize();
+
+        $.ajax({
+            url: '/Blog/BlogSendMessage',
+            data: serializedForm,
+            type: 'POST',
+            header: { "Content-Type": "application/json" },
+            success: function (result) {
+              
+            },
+            error: function (err) {
+                alert(data.message);
+            }
+        });
+
+        event.preventDefault();
+    });
+
+</script>
+ 

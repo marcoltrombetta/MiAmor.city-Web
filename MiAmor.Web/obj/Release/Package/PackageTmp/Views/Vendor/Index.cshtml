@@ -1,0 +1,47 @@
+﻿@model MiAmor.Core.Vendor
+
+@{   
+    Layout = "~/Views/Shared/_LayoutVendor.cshtml";
+}
+    <div class="tab-pane active" id="company-profile">
+        <h2>@Model.Name</h2>
+        <h5>
+            <a href="#">@Model.FullDescription </a>
+            <a href="#">E-commerce, </a>
+            <a href="#">Web Development</a>
+        </h5>
+
+        <div class="social-link text-right">
+            <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="company-text">
+            <p>
+                <strong>
+                    @Model.FullDescription
+                </strong>
+            </p>
+
+            <p>
+                Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus,
+                sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet,
+                elit magna vulputate arcu, vel tempus metus leo non est.
+                Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque.
+                Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor,
+                et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit,
+                urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+            </p>
+        </div> <!-- end company-text -->
+        <!-- end company-service -->
+        @Html.Action("GetVendorReviews", new { VendorId = Model.Id, PageId = 1 })
+        @Html.Partial("_VendorWriteReview")
+        <!-- end .comment-section -->
+    </div> <!-- end .tab-pane -->
+
+
+  

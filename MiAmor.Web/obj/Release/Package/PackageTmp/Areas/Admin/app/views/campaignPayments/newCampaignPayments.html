@@ -1,0 +1,476 @@
+﻿<h3>
+    Form Validation
+    <small>Native AngularJS input validation</small>
+</h3>
+<!-- START row-->
+<div ng-controller="newCampaignPayments" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formValidate" ng-submit="submitForm()" novalidate="" class="form-validate form-horizontal">
+                <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <fieldset class="b0">
+                            <legend>{{'customForm.newCampaignPayments'|translate}}</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.customer'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" ng-show="false" name="Id" required="" ng-model="campaignPayments.Id" class="form-control" value="{{campaignPayments.Id}}" />
+                                    <input name="customer" ng-required="true" ng-model="customer"
+                                           type="text" ng-valid-func="validator"
+                                           placeholder="{{'customForm.customer'|translate}}"
+                                           typeahead="customer as customer.firstName for customer in getCustomerByName($viewValue)"
+                                           typeahead-on-select="setCustomer($item.customerId) | filter:$viewValue"
+                                           typeahead-loading=" loadinglocations" class="form-control">   
+                                    <span ng-show="validateInput('customer', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.campaign'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input name="campaign" ng-required="true" ng-model="campaign"
+                                           type="text" ng-valid-func="validator"
+                                           placeholder="{{'customForm.campaign'|translate}}"
+                                           typeahead="campaign as campaign.name for campaign in getCampaignByName($viewValue)"
+                                           typeahead-on-select="setCampaign($item.campaignId) | filter:$viewValue"
+                                           typeahead-loading=" loadinglocations" class="form-control">
+                                    <span ng-show="validateInput('campaign', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.status'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="statusId" ng-model="campaignPayments.statusId" class="form-control">
+                                        <option ng-repeat="status in statuss" value="{{status.Id}}">{{status.Name}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.active'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="active" ng-model="campaignPayments.active" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.IP'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="IP" ng-model="campaignPayments.IP" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.wasMailSend'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="wasMailSend" ng-model="campaignPayments.wasMailSend" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.isSMS'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="isSMS" ng-model="campaignPayments.isSMS" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.wasSMSSend'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="wasSMSSend" ng-model="campaignPayments.wasSMSSend" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.cardNameDesc'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="cardNameDesc" ng-model="campaignPayments.cardNameDesc" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.rightCCNumber'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="rightCCNumber" ng-model="campaignPayments.rightCCNumber" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.CCHolderName'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="CCHolderName" ng-model="campaignPayments.CCHolderName" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.CCNumber'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="CCNumber" ng-model="campaignPayments.CCNumber" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.CCExpirationDate'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="CCExpirationDate" ng-model="campaignPayments.CCExpirationDate" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.qtyCupon'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="qtyCupon" ng-pattern="/^[0-9]+$/" ng-model="campaignPayments.qtyCupon" class="form-control" />
+                                    <span ng-show="validateInput('qtyCupon', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.totalSum'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="totalSum" ng-pattern="/^[0-9]+$/" ng-model="campaignPayments.totalSum" class="form-control" />
+                                    <span ng-show="validateInput('totalSum', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.payNumber'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="payNumber" ng-pattern="/^[0-9]+$/" ng-model="campaignPayments.payNumber" class="form-control" />
+                                    <span ng-show="validateInput('payNumber', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.currencyType'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="currencyType" ng-pattern="/^[0-9]+$/" ng-model="campaignPayments.currencyType" class="form-control" />
+                                    <span ng-show="validateInput('currencyType', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.CVV'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="CVV" ng-model="campaignPayments.CVV" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.identityCard'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="identityCard" ng-model="campaignPayments.identityCard" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.isCardOk'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="isCardOk" ng-model="campaignPayments.isCardOk" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.CCErrCode'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="CCErrCode" ng-model="campaignPayments.CCErrCode" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                            
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.deliveryTrackId'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="deliveryTrackId" ng-model="campaignPayments.deliveryTrackId" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.purchaseDate'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" name="purchaseDate" datepicker-popup="{{format}}" ng-model="campaignPayments.purchaseDate" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{campaignPayments.purchaseDate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.payDate'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" name="payDate" datepicker-popup="{{format}}" ng-model="campaignPayments.payDate" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{campaignPayments.payDate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.cardNameId'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="cardNameId" ng-pattern="/^[0-9]+$/" ng-model="campaignPayments.cardNameId" class="form-control" />
+                                    <span ng-show="validateInput('cardNameId', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.okNumber'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="okNumber" ng-model="campaignPayments.okNumber" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.dealNumber'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="dealNumber" ng-model="campaignPayments.dealNumber" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.dealType'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="dealType" ng-pattern="/^[0-9]+$/" ng-model="campaignPayments.dealType" class="form-control" />
+                                    <span ng-show="validateInput('dealType', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.rememberCC'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="rememberCC" ng-model="campaignPayments.rememberCC" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.referalSite'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="referalSite" ng-model="campaignPayments.referalSite" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.referalPerson'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="referalPerson" ng-pattern="/^[0-9]+$/" ng-model="campaignPayments.referalPerson" class="form-control" />
+                                    <span ng-show="validateInput('referalPerson', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.isSubPay'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="isSubPay" ng-model="campaignPayments.isSubPay" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.personSubPay'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="personSubPay" ng-pattern="/^[0-9]+$/" ng-model="campaignPayments.personSubPay" class="form-control" />
+                                    <span ng-show="validateInput('personSubPay', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.syTimeStamp'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" name="syTimeStamp" datepicker-popup="{{format}}" ng-model="campaignPayments.syTimeStamp" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{campaignPayments.syTimeStamp}}</small>
+                                </div>
+                            </div>
+                        </fieldset>                  
+                        
+
+                        <div class="panel-footer text-center">
+                            <button type="submit" class="btn btn-info">{{'customForm.save'|translate}}</button>
+                        </div>
+                    </div>
+                    <!-- END panel-->
+            </form>
+        </div>
+    </div>
+    <!-- END row-->
+
+</div>

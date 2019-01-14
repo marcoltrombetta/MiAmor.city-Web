@@ -1,0 +1,22 @@
+﻿@model List<MiAmor.Core.VendorCategory>
+
+<select class="" data-placeholder="-Select category-">
+  
+</select>
+<input class="value-holder" id="searchCategoryHomeSearchBar" name="searchCategoryHomeSearchBar" type="hidden" placeholder="-Select category-"><span class="placeholder">-Select category-</span><i class="fa fa-chevron-down"></i>
+<ul class="select-clone" style="">
+    @{
+
+        int i = 0;
+
+        foreach (var item in Model)
+        {
+
+            <li data-value="@item.Id">@Html.Raw(item.Name)</li>
+
+            i++;
+        }
+
+    }
+
+</ul>

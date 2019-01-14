@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "~/Views/Shared/_RootHeader.cshtml";
+}
+
+    <div id="main-wrapper">
+        @Html.Action("MainHeader", "Home")
+        <div class="" id="page-content">
+            @RenderBody()
+
+        </div>
+
+        @Html.Action("MainFooter", "Home")
+       <!-- end #footer -->
+    </div> <!-- end #main-wrapper -->

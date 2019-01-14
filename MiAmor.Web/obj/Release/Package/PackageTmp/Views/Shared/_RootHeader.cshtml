@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Mi Amor City</title>
+   
+    <!-- Stylesheets -->
+    
+    <link href="~/Content/css/style.css?v=2" rel="stylesheet" />
+    <link href="~/Content/css/star-rating.min.css?v=2" rel="stylesheet" />
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600,800%7COpen+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
+ 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="~/Scripts/jquery.ba-outside-events.min.js"></script>
+    <script src="~/Scripts/jquery.cookie.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="~/Scripts/MiAmorScripts/constants.js"></script>
+    <script src="~/Scripts/modernizr.js"></script>
+    <script src="~/Scripts/MiAmorScripts/functions.js"></script>
+   
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="~/Scripts/gomap.js"></script>
+    <script type="text/javascript" src="~/Scripts/gmaps.js"></script>
+    
+
+</head>
+
+<body>
+    
+    @Html.AntiForgeryToken()
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/owl.carousel.js"></script>
+    <script src="~/Scripts/MiAmorScripts/scripts.js"></script>
+    <script src="~/Scripts/MiAmorScripts/miAmorControls.js"></script>
+    <script src="~/Scripts/MiAmorScripts/MiAmorMaps.js"></script>
+    <script src="~/Scripts/star-rating.min.js"></script>
+    <!-- Scripts -->
+ 
+    <!--[if IE 9]>
+      <script src="content/media.match.min.js"></script>
+    <![endif]-->
+
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-61202346-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+
+</html>

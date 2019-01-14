@@ -1,0 +1,61 @@
+﻿@model MiAmor.Web.Models.CustomerMessageModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/a549aa8780dbda16f6cff545aeabc3d71073911e/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+<script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/a549aa8780dbda16f6cff545aeabc3d71073911e/src/js/bootstrap-datetimepicker.js"></script>
+<script src="~/Scripts/modernizr.js"></script>
+<script src="~/Scripts/MiAmorScripts/functions.js"></script>
+<style>
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
+    .form-group{
+        width:80%;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div style="width:80%">
+               @Html.Action("GetCustomerMessages", "Customer", new { PageNumber=1});
+                <form class="form-horizontal" id="customerMessageForm" method="post">
+                    <fieldset>
+
+                        <input type="hidden" name="CustomerId" id="CustomerId"/>
+                        <input type="hidden" value="@Model.VendorId" name="Id" id="Id" />
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea id="MsgTxt" name="MsgTxt" rows="10" cols="50" placeholder="Message" class="form-control">@Model.MsgTxt</textarea>
+                            </div>
+                        </div>
+             
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="button" id="SubmitCustomerMessage" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

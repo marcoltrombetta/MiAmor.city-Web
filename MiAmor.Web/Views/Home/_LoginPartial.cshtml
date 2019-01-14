@@ -1,0 +1,20 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+@if (Request.IsAuthenticated)
+{
+    @Html.Partial("_AlreadyLogin")
+}
+else
+{
+     <!-- HEADER-LOGIN -->
+    @Html.Partial("_LoginForm", "Home")
+     <!-- END .HEADER-LOGIN -->
+     <!-- HEADER REGISTER -->
+    @Html.Partial("_RegisterForm", "Home")
+   <!-- END .HEADER-REGISTER -->
+}

@@ -1,0 +1,73 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutVendor.cshtml";
+}
+
+    <div class="tab-pane active" id="company-blog">
+
+        <div class="company-blog">
+
+            <h2 class="text-uppercase mb30">Our Blog</h2>
+
+            <div class="blog-list">
+                <ul id="blogItemList" class="timeline-v1">
+                    @Html.Action("VendorCompanyBlogItems", "Vendor", new { VendorId = @ViewBag.VendorId, PageNumber = 1, BlogPostType = 1 })
+                </ul>
+                <button style="width: 100%;padding: 2px;margin: 5px 0;cursor: pointer;" class="loadMore">load more</button>
+            </div> <!-- end .blog-list -->
+        </div> <!-- end .company-blog -->
+    </div> <!-- end .tab-pane -->
+
+
+<script type="text/javascript">
+    var pageCount = 2;
+    var more = false;
+
+    allowedToFetch = true;
+    clickLoad();
+    function clickLoad() {
+        var $loadMore = $('.loadMore');
+        $loadMore.on('click', function () {
+            $(this).html('<img src="~/Content/img/Loader.GIF" alt="loading" />');
+            $(this).attr('disabled', true);
+            $(this).css('display', 'none');
+            getMoreBlogPost();
+            more = true;
+        });
+
+        var $blog = $('.aBlog');
+        $blog.on('click', function (event) {
+            var blogId = $(this).attr("data-blogId");
+            addBlogLike(blogId, $(this));
+            event.preventDefault();
+        });
+
+    }
+
+    $(window).scroll(function () {
+        if (more && $(window).scrollTop() >= $(document).height() - $(window).height() - 300) {
+            getMoreBlogPost();
+            allowedToFetch = false;
+            setTimeout(function () {
+                allowedToFetch = true;
+            }, 1000);
+        }
+    });
+
+    function getMoreBlogPost() {
+        if (allowedToFetch) {
+            $.get('@Url.Action("BlogListingGetMore", "Vendor")', {  VendorId : @ViewBag.VendorId ,PageNumber: pageCount, BlogPostType:1}, function (data) {
+                if (data.data === undefined) {
+                    $blogItemList = $("#blogItemList");
+                    $blogItemList.append(data);
+                    pageCount++;
+                }
+                else {
+                    more = false;
+                    var $loadMore = $('.loadMore');
+                    $loadMore.html('   <button style="width: 100%;padding: 2px;margin: 5px 0;cursor: pointer;" class="loadMore">no more events to load</button>');
+                    $loadMore.css('display', 'block');
+                }
+            });
+        };
+    }
+</script>

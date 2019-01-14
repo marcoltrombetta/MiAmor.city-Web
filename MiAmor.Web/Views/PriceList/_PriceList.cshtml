@@ -1,0 +1,49 @@
+@model IList<MiAmor.Core.PriceList>
+
+
+<style>
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
+        .form-group{
+        width:80%;
+    }
+</style>
+  <!--Table Search v1-->
+<div class="table-search-v1 margin-bottom-20">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul class="list-group row" style="width:99%">
+                            @{
+                                foreach (var item in Model)
+                                {
+                                    <text>
+
+                                        <li class="list-group-item col-xs-6" id="@item.Id"><a href='@Url.Action("GetPriceListPrices", "PriceList", new { Id=@item.Id })'>@item.Name</a></li>
+
+                                    </text>
+                                }
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--End Table Search v1-->

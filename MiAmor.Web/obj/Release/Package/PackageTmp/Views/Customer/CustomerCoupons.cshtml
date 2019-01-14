@@ -1,0 +1,39 @@
+﻿@model IList<MiAmor.Core.Coupon>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+<!--Table Search v2-->
+<div class="table-search-v2 margin-bottom-20">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Expiration Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (MiAmor.Core.Coupon item in Model)
+                    {
+                        <text>
+                            <tr>
+                                <td>
+                                    @Html.Raw(item.Campaign.Name)
+                                </td>
+                                <td class="td-width">
+                                    <h3>@Html.Raw(item.Campaign.ShortDescription)</h3>
+                                    
+                                </td>
+                                <td>@Html.Raw(item.Campaign.ExpirationDateTime)</td>
+                            </tr>
+                        </text>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--End Table Search v2-->

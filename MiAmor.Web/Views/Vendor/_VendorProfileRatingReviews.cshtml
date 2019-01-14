@@ -1,0 +1,20 @@
+﻿@model MiAmor.Web.Models.VendorReviewListingModel
+
+<div class="company-ratings">
+    <h4>Rating <span>(5 Ratings)</span></h4>
+
+    <div class="all-rating clearfix">
+       
+        @Html.Action("VendorRatingBox", new { Rating = Model.AvgRating})
+    </div> <!-- end .all-rating -->
+
+
+    <div class="rating-with-details">
+    @foreach(var VendorReviewBox in Model.VendorReviewBox)
+    {
+        
+        @Html.Partial("_VendorReviewBox", VendorReviewBox)
+    }
+      
+    </div> <!-- end .rating-with-details -->
+</div> <!-- end .company-rating -->

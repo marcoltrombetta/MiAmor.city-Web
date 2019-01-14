@@ -1,0 +1,25 @@
+﻿@model IList<MiAmor.Web.Models.BlogModel>
+
+@{
+    
+    foreach (MiAmor.Web.Models.BlogModel item in Model) { 
+        <text>
+
+            <div class="latest-post clearfix">
+
+                <div class="post-image">
+                    <img src="@item.BlogPostPictures.FirstOrDefault().Picture.BaseUrl" alt="">
+                    <p><span>@item.StartDateUtc.Value.Day.ToString()</span>@item.StartDateUtc.Value.Month.ToString()</p>
+                </div>
+
+                <h4><a href="#">@item.Title</a></h4>
+
+                <p>@item.ShortDescription</p>
+
+                <a class="read-more" href="@Url.Action("BlogPost", "Blog", new { Id = @item.Id })"><i class="fa fa-angle-right"></i>Read More</a>
+            </div> <!-- end .latest-post -->
+
+        </text>
+    }
+    
+}

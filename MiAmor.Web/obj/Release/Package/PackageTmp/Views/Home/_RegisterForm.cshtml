@@ -1,0 +1,62 @@
+﻿@using MiAmor.Web.Models
+
+<div class="header-register">
+    <a href="#" class=""><i class="fa fa-plus-square"></i> Register</a>
+
+    <style>
+        .has-error {
+            border: 3px solid #e73d3d !important;
+        }
+    </style>
+
+    <div>
+        <form id="formR" name="formRegister" action="" data-toggle="validator" class="form-horizontal" role="form" novalidate>
+
+            <input id="firstname" class="form-group" placeholder="First Name*" type="text" name="FirstName" required>
+
+            <input id="lastname" class="form-group" type="text" name="LastName" placeholder="Last Name*" required>
+
+            <input id="email" class="form-group" type="email" name="Email" placeholder="Email*" required>
+
+            <input id="password" class="form-group" type="password" name="Password" placeholder="Password*" required>
+
+            <input type="button" id="aSubmitRegister" class="btn btn-default" value="Register">
+
+        </form>
+    </div>
+   
+</div> 
+
+<script type="text/javascript">
+        var aSubmitRegister = $('#aSubmitRegister');
+        var imgLoad = $('#imgLoad');
+
+        aSubmitRegister.on("click", function () {
+            aSubmitRegister.attr('disabled', true);
+            imgLoad.show();
+
+            var serializedForm = $("#formR").serialize();
+
+            $.ajax({
+                url: '/Customer/RegisterCustomer',
+                data: serializedForm,
+                type: 'POST',
+                header: { "Content-Type": "application/json" },
+                success: function (result) {
+                    aSubmitRegister.attr('disabled', true);
+
+                    saveToLocalStorage("userToken", result.data.Token);
+                    saveToLocalStorage("userCustId", result.data.CustId);
+
+                    user.token = result.data.Token;
+                    user.firstname = $('#firstname').val();
+                    user.isLogged = true;
+
+                    userLogged($('#firstname').val(), result.data.CustId);
+
+                },
+                error: function (err) {
+                }
+            });
+        });
+</script>

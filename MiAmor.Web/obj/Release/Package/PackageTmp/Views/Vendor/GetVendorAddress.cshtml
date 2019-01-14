@@ -1,0 +1,308 @@
+﻿@model IEnumerable<MiAmor.Core.Vendor>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Batch geocoder</title>
+    <script src="~/Scripts/jquery.min.js"></script>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: small;
+            background-color: #ccf;
+        }
+
+        #outline {
+            margin: 20px;
+            float: left;
+            -moz-outline-radius: 20px;
+            -moz-outline-style: solid;
+            -moz-outline-color: #9FB6CD;
+            -moz-outline-width: 10px;
+        }
+
+        #map {
+            width: 512px;
+            height: 440px;
+            float: left;
+        }
+
+        #head {
+            text-align: left;
+            margin-left: 20px;
+            font-size: 150%;
+        }
+
+        #novel {
+            width: 400px;
+            margin: 20px;
+            float: right;
+        }
+
+        #AdSense {
+            margin: 10px;
+        }
+
+        #scale {
+            width: 300px;
+            border: 1px solid blue;
+            visibility: hidden;
+        }
+
+        #bar {
+            background-color: blue;
+            height: 4px;
+            width: 0px;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline overline;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        code {
+            font-size: 13px;
+        }
+
+        .pushpin {
+            width: 20px;
+            height: 34px;
+            border: none;
+        }
+
+        .small {
+            color: #666;
+            font-size: 80%;
+        }
+
+        .geocode {
+        }
+    </style>
+
+    <script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAYxpy0HiKBWXiyhVrpVqkshTzRM_GTxWOqTaXXRScn8KwUCiJWhT96ZS2MOLTq-SEmmJL1_cNrib9tA" type="text/javascript">
+    </script>
+
+</head>
+<body onunload="GUnload()">
+
+    <table>
+        <tr>
+            <td>
+                <h3 id="head"> Esa's Google Maps API experiments.</h3>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <div id="outline">
+                    <div id="map">
+                        <noscript>You should turn on JavaScript</noscript>
+                    </div>
+                </div>
+            </td>
+            <td rowspan="2">
+                <div id="novel">
+                    <h4>Batch geocoder with CSV output</h4>
+                    <div id="scale"><div id="bar"></div></div>
+                    Paste your addresses here:<br />
+                  @foreach (var item in Model)
+                  {
+                      if (@item.Addresses.Count() > 0)
+                      {
+                        <div class="vendorAddress " data-vendor-id="@item.Addresses.FirstOrDefault().Id" data-neighbourhood="@item.Addresses.FirstOrDefault().Neighbourhood.Name " data-city="@item.Addresses.FirstOrDefault().Cities.Name" data-address=" @item.Addresses.FirstOrDefault().Address1">
+                            Argentina
+                            @item.Addresses.FirstOrDefault().Address1
+
+                        </div>
+                      }
+                  }
+
+                    Errors:
+                    <div>
+                        <textarea id="errors"
+                                  cols="40" rows="5" wrap="off" title="Error report"></textarea><br />
+                        <input type="button" id="stop" value="Stop" title="Emergency stop" onclick="len=0" />
+                        <input type="button" id="clr-in" value="Clr output" title="Clear map and output fields" onclick="clearOutput()" />
+                        <input type="button" id="clr-out" value="Clr input" title="Clear input field" onclick="clearInput()" />
+                    </div>
+                    <p>Extension is a country, state or town that is equal for all your addresses but missing from your list.</p>
+                    <p>Output format: <code> lng, lat, address</code> (GPS equipment POI CSV file format).</p>
+                    <p></p>
+
+
+                    <p><span id="api-version"></span></p>
+                    <p><a href="http://koti.mbnet.fi/ojalesa/exam/index.html">More experiments</a></p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            
+            </td>
+        </tr>
+    </table>
+    <textarea id="memo"
+              cols="60" rows="30" wrap="off" title="Copy and edit your material here."></textarea>
+
+
+    <script type="text/javascript">
+
+/**
+ * 'Map coming...' visible only with JavaScript on.
+ */
+//document.getElementById("map").innerHTML = "Map coming...";
+//document.getElementById("api-version").innerHTML = "api v=2."+G_API_VERSION;
+//if (!GBrowserIsCompatible()) {
+//  alert('Sorry. Your browser is not Google Maps compatible.');
+//}
+
+///**
+// * map
+// */
+//_mPreferMetric = true;
+//var map = new GMap2(document.getElementById("map"));
+//map.setCenter(new GLatLng(0,0), 1);
+//map.addControl(new GLargeMapControl());
+//map.addControl(new GMapTypeControl(1));
+//map.addControl(new GScaleControl());
+//map.openInfoWindowHtml(map.getCenter(), "Nice to see you.");
+//map.closeInfoWindow(); //preload iw
+
+
+/**
+ * Geocoder
+ */
+
+var points = [];
+var bounds 
+var geocoder 
+        try
+        {
+            bounds= new GLatLngBounds();
+            geocoder= new GClientGeocoder();
+        }
+        catch(e)
+        {
+        
+        }
+var lines;
+var lineNumber;
+var len = 0;
+var bar = document.getElementById("bar");
+var scale = document.getElementById("scale");
+$(document).ready(function () {
+
+    var cou = 0;
+    var seccou = 0;
+    $('.vendorAddress').each(function () {
+        try {
+            cou++;
+            var address = "Argentina, " + $(this).attr('data-city') + ", " + $(this).attr('data-neighbourhood') + ", " + $(this).attr('data-address')
+            address += '  __' + $(this).attr('data-vendor-id')
+            setTimeout(function () { }, 300)
+            geocoder.getLatLng(address, function (point) {
+                if (!point) {
+                    seccou++;
+                } else {
+                    seccou++;
+                    var pos = address.indexOf("__");
+                    id = address.substring(pos, address.length).replace('__', '');
+                    $.post("/Vendor/SetVendorAddress", { Id: id, Address: address, lat: point.k, longt: point.D }, function (data) {
+                        //$('#vendor-results-container').html(data);
+                        //$('#divSortBy-VendorListing').uouCustomSelect();
+                    });
+                }
+
+
+            });
+        }
+        catch (ex)
+        {
+
+        }
+    });
+    setInterval(function () {
+        if (parseInt(seccou, 0) >= parseInt(cou, 0)) {
+                location.reload();
+        }
+    }, 3000);
+});
+
+
+
+
+
+/**
+ * Dom functions for output fields
+ */
+//var printOut = document.getElementById("memo");
+//printOut.value = "";
+//function memo(pnt){
+//  var row = pnt.lng().toFixed(5);
+//  row += ", ";
+//  row += pnt.lat().toFixed(5);
+//  row += ", ";
+//  row += pnt.address;
+//  row += "\n";
+//  printOut.value += row;
+//}
+
+//var errorReport = document.getElementById("errors");
+//errorReport.value = "";
+//function report(query_, n_){
+//  var row ="#"+n_;
+//  row += " not found: ";
+//  row += query_;
+//  row += "\n";
+//  errorReport.value += row;
+//}
+
+//function clearInput(){
+//  document.getElementById("haku").value="";
+//  scale.style.visibility = "hidden";
+//  bar.style.width = "0px";
+//}
+
+//function clearOutput(){
+//  map.clearOverlays();
+//  bounds = new GLatLngBounds();
+//  printOut.value="";
+//  errorReport.value="";
+//  scale.style.visibility = "hidden";
+//  bar.style.width = "0px";
+//}
+
+///**
+// * zoom and pan to fit in view
+// */
+//GMap2.prototype.fit = function(bounds){
+//  this.setCenter(bounds.getCenter(), this.getBoundsZoomLevel(bounds));
+//}
+
+//document.getElementById("hae").click();
+
+    </script>
+    @*<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-61202346-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>*@
+</body>
+</html>

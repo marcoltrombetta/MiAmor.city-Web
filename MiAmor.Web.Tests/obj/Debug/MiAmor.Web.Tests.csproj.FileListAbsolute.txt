@@ -1,0 +1,175 @@
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.Tests.dll.config
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.Tests.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.Tests.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\obj\Debug\MiAmor.Web.Tests.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\obj\Debug\MiAmor.Web.Tests.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\obj\Debug\MiAmor.Web.Tests.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.Tests.dll.config
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.Tests.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.Tests.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Owin.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\obj\Debug\MiAmor.Web.Tests.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\obj\Debug\MiAmor.Web.Tests.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Web.Tests\obj\Debug\MiAmor.Web.Tests.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.Net4.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.Tests.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.Tests.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.Tests.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Optimization.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Owin.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor.Web.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\AutoMapper.Net4.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\System.Web.Optimization.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\obj\Debug\MiAmor.Web.Tests.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\obj\Debug\MiAmor.Web.Tests.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Web.Tests\obj\Debug\MiAmor.Web.Tests.pdb

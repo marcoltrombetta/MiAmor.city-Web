@@ -1,0 +1,43 @@
+﻿@model MiAmor.Web.Models.PageList
+
+<ul class="pagination">
+    @if (Model.HasPreviousPage) { 
+        <li><a href="/home/index/@Model.CategoryId/@Model.PageIndex-1"><i class="fa fa-angle-left"></i></a></li>
+    }
+    @foreach (var item in Model.PagesNum)
+    {
+        if (item == Model.PageIndex)
+        {
+            <li class="active"><a class="linkItemBlog" id="@item">@item</a></li>
+        }
+        else
+        {
+            if (Model.HasNextPage) 
+            {
+                <li><a class="linkItemBlog" id="@item">@item</a></li>
+            }
+            else
+            {
+                <li>@item</li>
+            }
+        }
+    }
+    @if (Model.HasNextPage) {
+        <li><a href="/home/index/@Model.CategoryId/@Model.PageIndex+1"><i class="fa fa-angle-right"></i></a></li>
+    }
+</ul>
+
+<script type="text/javascript">
+    $('.linkItemBlog').on("click", function () {
+
+        $.ajax({
+            url: '/Vendor/GetBlogVendorListingModel',
+            data: {CategoryId:@Model.CategoryId, PageNumber:this.id},
+            type: 'POST',
+            header: { "Content-Type": "application/json" },
+            success: function (result) {
+                $('#divVendorBlogListing').html(result);
+            }
+        });
+    });
+</script>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<MiAmor.Core.ProductVendor>
+@{
+    Layout = "~/Views/Shared/_LayoutVendor.cshtml";
+}
+
+    <div class="tab-pane active" id="company-product">
+        <div class="company-product">
+
+            <h2 class="text-uppercase mb30">Our Products</h2>
+
+            <div class="sort-by">
+                <select class="" data-placeholder="-sort by-">
+                    <option value="option1">Name</option>
+                    <option value="option2">Tzpe</option>
+                    <option value="option3">Name</option>
+                    <option value="option4">Type</option>
+                </select>
+
+            </div>
+
+            <div class="row">
+
+                @foreach (MiAmor.Core.ProductVendor p in Model)
+        {
+
+        <div class="col-sm-4 col-xs-6">
+            <div class="single-product">
+                <figure>
+                    <img src="@Html.Raw(p.ProductPictures.SingleOrDefault().Picture.BaseUrl)" alt="">
+
+                    <figcaption>
+                        <div class="bookmark">
+                            <a href="#"><i class="fa fa-bookmark-o"></i>Bookmark</a>
+                        </div>
+
+                        <div class="read-more">
+                            <a href="#"><i class="fa fa-angle-right"></i> Read More</a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <h4><a href="#">@Html.Raw(p.Name)</a></h4>
+                <h5><a href="#">@Html.Raw(p.ProductCategories.SingleOrDefault().Category)</a></h5>
+                <h6>@Html.Raw(p.Price)</h6>
+
+            </div> <!-- end .single-product -->
+        </div> <!-- end .grid-layout -->
+
+        }
+
+            </div> <!-- end .row -->
+        </div> <!-- end .company-product -->
+    </div> <!-- end .tab-pane -->

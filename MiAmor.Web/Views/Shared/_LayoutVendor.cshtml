@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_RootHeaderVendor.cshtml";
+}
+<div id="main-wrapper">
+    <div class="">
+        @Html.Action("MainHeaderVenodr", "Vendor")
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-md-push-3">
+                        <div class="page-content company-profile">
+                            <div id="page-content">
+                                @RenderBody()
+                            </div> <!-- end .tab-content -->
+
+                        </div> <!-- end .page-content -->
+
+                    </div> <!-- end .main-grid layout -->
+
+                    <div class="col-md-3 col-md-pull-9 category-toggle">
+                        <button><i class="fa fa-briefcase"></i></button>
+                        @Html.Partial("_VendorCompanySidebar")
+                    </div> <!-- end .main-grid layout -->
+                </div> <!-- end .row -->
+
+            </div> <!-- end .container -->
+    </div>
+
+    @Html.Action("MainFooter", "Home")
+    <!-- end #footer -->
+
+</div> <!-- end #main-wrapper -->

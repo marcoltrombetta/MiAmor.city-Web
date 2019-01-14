@@ -1,0 +1,10 @@
+﻿
+<header id="header">  
+    kaak
+    @Html.ActionLink("Link Text", "Index", "Admin", new { Area = "Admin" }, new { })
+    @Html.Partial("_MainHeaderTopBar", "Home")<!-- END .HEADER-TOP-BAR -->
+    @Html.Partial("_MainHeaderSearchBar", "Home")<!-- END .SEARCH and slide-section -->
+    @Html.Action("MainHeaderImageSlider", "Home")<!-- END .slider-content -->
+    @Html.Partial("_MainHeaderMenu")<!-- end .container -->
+</header> <!-- end #header -->
+

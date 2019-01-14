@@ -1,0 +1,58 @@
+﻿@model MiAmor.Web.Models.VendorSearchLisitingModel
+
+<div class="tab-pane active" id="category-book">
+    <h2>E-commerce<span class="category-name"><b>\</b>Books</span><span class="comments">99</span></h2>
+    <div>
+        <div class="change-view">
+
+
+            <div class="filter-input">
+                <input type="text" placeholder="Filter by Keywords">
+            </div>
+            <button ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'" class="grid-view"><i class="fa fa-th"></i></button>
+            <button ng-class="{active: layout == 'list'}" ng-click="layout = 'list'" class="list-view active"><i class="fa fa-bars"></i></button>
+
+            <div class="sort-by">
+
+                <select class="" data-placeholder="-sort by-">
+                    <option value="option1">Name</option>
+                    <option value="option2">Tupe</option>
+                    <option value="option3">Name</option>
+                    <option value="option4">Type</option>
+                </select>
+
+            </div>
+
+            <ul class="pagination">
+                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+
+        </div> <!-- end .change-view -->
+
+        <div class="row clearfix">
+            <!-- end .col-sm-4 grid layout -->
+            @foreach (var item in Model.VendorBox)
+            {
+                @Html.Partial("_VendorListingBox",item);
+            }
+
+            <div class="pagination-center">
+
+                <ul class="pagination">
+                    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+
+            </div>
+
+        </div> <!-- end .row -->
+    </div>
+</div> 
+

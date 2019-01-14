@@ -1,0 +1,32 @@
+﻿@model  MiAmor.Web.Models.VendorSearchLisitingModel
+
+<h2>
+    @for (int i = @Model.VendorCategoryBreadcrumbs.Count() - 1; i >= 0; i--)
+    {
+        if (i == @Model.VendorCategoryBreadcrumbs.Count() - 1)
+        {
+            if (Model.VendorCategoryBreadcrumbs.Count() == 1)
+            { 
+                <a href="#" onclick="getVendorCategoryResults(@Model.Id,1);">@Model.VendorCategoryBreadcrumbs[i].Name @Model.VendorCategoryBreadcrumbs[i].Id</a><span class="comments">@Model.VendorCategoryBreadcrumbs[i].Count</span>
+            }
+            else
+            {
+                <a href="#" onclick="getVendorCategoryResults(@Model.Id,1);">@Model.VendorCategoryBreadcrumbs[i].Name @Model.VendorCategoryBreadcrumbs[i].Id</a>
+
+            }
+        }
+        else
+        {
+            if (i==0)
+            { 
+              <span class="category-name"><b>\</b><a href="#" onclick="getVendorCategoryResults(@Model.Id,1);">@Model.VendorCategoryBreadcrumbs[i].Name @Model.VendorCategoryBreadcrumbs[i].Id</a></span><span class="comments">@Model.VendorCategoryBreadcrumbs[i].Count</span>
+            }
+            else
+            {
+                <span class="category-name"><b>\</b><a href="#" onclick="getVendorCategoryResults(@Model.Id,1);">@Model.VendorCategoryBreadcrumbs[i].Name @Model.VendorCategoryBreadcrumbs[i].Id</a></span>
+            }
+        }
+    }
+    </h2>
+
+

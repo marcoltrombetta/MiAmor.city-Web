@@ -1,0 +1,73 @@
+@model MiAmor.Web.Models.CustomerBookmarkListingModel
+
+
+  <!--Table Search v1-->
+<div class="table-search-v1 margin-bottom-20">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Vendor</th>
+                    <th class="hidden-sm">Category</th>
+                    <th>City</th>
+                    <th>Contacts</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (MiAmor.Core.CustomerBookmark item in Model.CustomerBookmark)
+                    {
+                        <text>
+
+                                <tr id="@item.Id">
+                                    <td>
+                                        <a href="#">@item.Vendor.Name</a>
+                                    </td>
+                                    <td class="td-width">@item.Vendor.VendorCategories.FirstOrDefault().Name</td>
+                                    <td>
+                                        <div class="m-marker">
+                                            <a href="#"><i class="color-green fa fa-map-marker"></i></a>
+                                            <a href="#" class="display-b">@item.Vendor.Addresses.FirstOrDefault().Country</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>@item.Vendor.Addresses.FirstOrDefault().PhoneNumber</span>
+                                        <span><a href="#"></a></span>
+                                    </td>
+                                    <td>
+                                        <span><a href="#" onclick="deleteBookmark('@item.Id','@item.VendorId')">Delete</a></span>
+                                    </td>
+                                </tr>
+
+                        </text>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--End Table Search v1-->
+
+<script>
+
+    function deleteBookmark(id,idvendor) {
+        //alert(getFromLocalStorage("userCustId"));
+        if (isUserLogged) {
+            $.ajax({
+                url: '/Vendor/AddCustomerBookmark',
+                data: { Id: idvendor, CustId: getFromLocalStorage("userCustId") },
+                type: 'POST',
+                header: { "Content-Type": "application/json" },
+                success: function (result) {
+                    $("#"+id).remove();
+                },
+                error: function (err) {
+                    // alert(err.message);
+                }
+            });
+        }else{
+            alert("Not Logged");
+        }
+    }
+</script>

@@ -1,0 +1,67 @@
+﻿@model List<MiAmor.Core.VendorCategory>
+
+<ul class="accordion-tab show-first" role="tablist">
+
+    <li>
+        <a href='@Url.Action("Index","Home")'><i class="fa fa-star-o"></i>All Categories</a>
+    </li>
+
+    @{
+
+        int i = 0;
+
+        foreach (var item in Model)
+        {
+            if (item.Name.Length > 20)
+            {
+                <text>
+                    <li id="@i">
+                        <a href="/home/index/@item.Id"><i class="@item.CssClass"></i>@item.Name.Substring(0, 20)...</a>
+                    </li>
+                </text>
+
+            }
+            else
+            {
+                <text>
+                    <li id="@i">
+                        <a href="/home/index/@item.Id"><i class="@item.CssClass"></i>@item.Name</a>
+                    </li>
+                </text>
+            }
+
+            i++;
+        }
+
+}
+       
+    <li>
+        <a id="seemore" href="#" role="tab" data-toggle="tab"><i class="fa fa-angle-right"></i>See More</a>
+    </li>
+</ul>
+
+<script>
+
+    var cant_init = 10;
+    show(cant_init);
+
+   function show(cant) {
+        var ul = $('ul');
+        ul.find('li').each(function () {
+            var current = $(this);
+            var id_li = current[0].id;
+
+            if (id_li <= cant) {
+                $('#' + id_li).show();
+            } else {
+                $('#' + id_li).hide();
+            }
+        });
+    }
+   
+    $("#seemore").click(function () {
+        cant_init += 10;
+        show(cant_init);
+    });
+
+</script>

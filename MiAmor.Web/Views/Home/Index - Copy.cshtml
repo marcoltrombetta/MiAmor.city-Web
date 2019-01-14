@@ -1,0 +1,130 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-9 col-md-push-3">
+                <div class="page-content">
+
+                    <div class="product-details-list view-switch">
+                        <div class="tab-content" id="vendor-results-container">
+                           @Html.Action("GetVendorByCategoryHomePage", "Vendor", new { CategoryId = @ViewBag.CategoryId, SearchFor = "", PageNumber = 1 });
+                        </div> <!-- end .tabe-content -->
+
+                        <div class="advertisement">
+                            <p>Advertisement</p>
+                            <img src="img/add.jpg" alt="">
+                        </div>
+
+                    </div> <!-- end .product-details -->
+                </div> <!-- end .page-content -->
+            </div>
+
+            <div class="col-md-3 col-md-pull-9 category-toggle">
+                <button><i class="fa fa-briefcase"></i></button>
+
+                <div class="page-sidebar">
+
+                    <div class="location-details">
+                        <form action="#">
+                            <div class="select-country">
+                                <label>Country</label>
+
+                                <select class="" data-placeholder="-Select-">
+                                    <option value="option1">option 1</option>
+                                    <option value="option2">option 2</option>
+                                    <option value="option3">option 3</option>
+                                    <option value="option4">option 4</option>
+                                </select>
+
+                            </div> <!-- end .select-country -->
+
+                            <div class="select-state">
+                                <label>State</label>
+
+                                <select class="" data-placeholder="-Select-">
+                                    <option value="option1">option 1</option>
+                                    <option value="option2">option 2</option>
+                                    <option value="option3">option 3</option>
+                                    <option value="option4">option 4</option>
+                                </select>
+
+                            </div> <!-- end .select-state -->
+
+                            <div class="zip-code">
+                                <label>ZIP Code</label>
+
+                                <input type="text" placeholder="Enter">
+
+                            </div> <!-- end .zip-code -->
+                        </form>
+
+                    </div> <!-- end .location-details -->
+
+                    <div class="distance-range">
+                        <p>
+                            <label for="amount">Distance</label>
+                            <input type="text" id="amount">
+                        </p>
+
+                        <div id="slider-range-min"></div>
+                    </div>  <!-- end #distance-range -->
+                    <!-- Category accordion -->
+                    <div id="categories">
+                        <div class="accordion">
+
+                            @Html.Action("Navigation", "VendorCategory")
+
+                        </div> <!-- end .accordion -->
+                    </div> <!-- end #categories -->
+
+                </div> <!-- end .page-sidebar -->
+            </div> <!-- end grid layout-->
+        </div> <!-- end .row -->
+    </div> <!-- end .container -->
+
+
+
+ @*@{Html.RenderPartial("_FeaturedListing");}*@
+<!-- end .featured-listing -->
+
+
+<div class="classifieds-content">
+    <div class="container">
+        <div class="heading-section clearfix">
+            <h1>Classifieds</h1>
+
+            <a href="#" class="btn btn-default"><i class="fa fa-plus"></i> Post Your Ad</a>
+
+            <form action="#">
+                <input type="text" placeholder="Search by keywords">
+
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div> <!-- END .heading-section -->
+        @Html.Action("FooterNavigation", "VendorCategory", new { ParentId = 0})
+    </div> <!-- END .container-->
+</div> <!-- classifieds-content -->
+
+
+@{Html.RenderPartial("_RegisterContent");}
+<!-- END REGISTER-CONTENT -->
+<!-- OUR PARTNER SLIDER BEGIN -->
+   @{Html.RenderPartial("_OurPartners");}
+<!-- END OUR PARTNER SLIDER -->
+<script>
+
+    function getVendorCategoryResults(catId)
+    {
+        var pageDataRequest = new Object();
+        pageDataRequest.PageNumber = 1;
+        pageDataRequest.RowsPerPage = 20;
+        $.post("/Vendor/GetVendorByCategoryHomePage", { PagedDataRequest: pageDataRequest, CategoryId: catId }, function (data) {
+            $('#vendor-results-container').html(data) ;
+        });
+    
+    }
+
+</script>

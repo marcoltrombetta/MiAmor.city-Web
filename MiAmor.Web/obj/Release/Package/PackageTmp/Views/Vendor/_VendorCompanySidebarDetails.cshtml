@@ -1,0 +1,132 @@
+﻿@model MiAmor.Core.Vendor
+<div class="contact-details" ng-controller="vendorController">
+    <h2>Contact Details</h2>
+
+    <ul class="list-unstyled">
+        <li>
+            <strong>Name</strong>
+            <span>@Model.Name</span>
+        </li>
+
+        <li>
+            <strong>Founded</strong>
+            <span>2011</span>
+        </li>
+
+        <li>
+            <strong>Legal Entity</strong>
+            <span>Private</span>
+        </li>
+
+        <li>
+            <strong>Turnover</strong>
+            <span>$ 30 000 000</span>
+        </li>
+
+        <li>
+            <strong>Employs</strong>
+            <span>5 000</span>
+        </li>
+
+        <li>
+            <strong>Full Address</strong>
+            <span>@Model.Addresses.FirstOrDefault().Address1</span>
+        </li>
+
+        <li>
+            <strong>ZIP Code</strong>
+            <span>@Model.Addresses.FirstOrDefault().ZipPostalCode</span>
+        </li>
+
+        <li>
+            <strong>Phone</strong>
+            <span class="phonenumber">@Model.Addresses.FirstOrDefault().PhoneNumber.Substring(0, Model.Addresses.FirstOrDefault().PhoneNumber.Length - 2)**<a href="#" onclick="getVendorPhoneNumber('@Model.Id');" class="fa fa-question-circle"></a></span>
+        </li>
+
+        <li>
+            <strong>Fax</strong>
+            @*<span class="faxnumber">@Model.Addresses.FirstOrDefault().FaxNumber.Substring(0, Model.Addresses.FirstOrDefault().FaxNumber.Length - 2)**<a href="#" onclick="getVendorFaxNumber('@Model.Id');" class="fa fa-question-circle"></a></span>*@
+        </li>
+
+        <li>
+            <strong>Website</strong>
+            <span>@Model.SiteUrl</span>
+        </li>
+
+        <li>
+            <strong>E-mail</strong>
+            <span>email@example.com</span>
+        </li>
+
+    </ul>
+</div>
+
+<div class="opening-hours">
+    <h2>Openig Hours</h2>
+    <ul class="list-unstyled">
+        <li>
+            <strong>Mo:</strong>
+            <span>@Model.VendorOpeningHours.Monday</span>
+        </li>
+
+        <li>
+            <strong>Tu:</strong>
+            <span>@Model.VendorOpeningHours.Tuesday</span>
+        </li>
+
+        <li>
+            <strong>We:</strong>
+            <span>@Model.VendorOpeningHours.Wednesday</span>
+        </li>
+
+        <li>
+            <strong>Th:</strong>
+            <span>@Model.VendorOpeningHours.Thursday</span>
+        </li>
+
+        <li>
+            <strong>Fr:</strong>
+            <span>@Model.VendorOpeningHours.Friday</span>
+        </li>
+
+        <li>
+            <strong>Sa:</strong>
+            <span>@Model.VendorOpeningHours.Saturday</span>
+        </li>
+
+        <li>
+            <strong>Su:</strong>
+            <span>@Model.VendorOpeningHours.Sunday</span>
+        </li>
+    </ul>
+</div>
+
+<p id="isOpenVendor"></p>
+
+<div class="square-button">
+    <a href="#"><img src="img/content/square-button.png" alt=""></a>
+    <a href="#"><img src="img/content/square-button.png" alt=""></a>
+    <a href="#"><img src="img/content/square-button.png" alt=""></a>
+    <a href="#"><img src="img/content/square-button.png" alt=""></a>
+</div> <!-- end .sqare-button -->
+
+
+<script>
+    // gmap for street view
+    $("#company_map_canvas").goMap({
+        maptype: 'ROADMAP',
+        zoom: 15,
+        scrollwheel: false,
+        markers: [{
+            latitude: @Html.Raw(Model.Addresses.FirstOrDefault().Latitude).ToString().Replace(",", "."),
+            longitude:  @Html.Raw(Model.Addresses.FirstOrDefault().Longitude).ToString().Replace(",", "."),
+            html: '@Model.Name @Model.Addresses.FirstOrDefault().Address1'
+        }]
+    });
+    panorama = GMaps.createPanorama({
+        el: '#company_map_canvas_street',
+        lat: @Model.Addresses.FirstOrDefault().Latitude.ToString().Replace(",", "."),
+        lng: @Model.Addresses.FirstOrDefault().Longitude.ToString().Replace(",", "."),
+    });
+
+</script>

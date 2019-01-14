@@ -1,0 +1,345 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="page-content bl-list">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="blog-list">
+                    <ul id="blogItemList" class="timeline-v1">
+                        @Html.Partial("_Timelinepanel")
+                    </ul>
+                    <button style="width: 100%;padding: 2px;margin: 5px 0;cursor: pointer;" class="loadMore">load more</button>
+                </div> <!-- end .blog-list -->
+
+            </div> <!-- end .grid-layout -->
+
+            <div class="col-md-4">
+                <div class="post-sidebar">
+
+                    <div class="latest-post-content">
+                        <h2>Latest Posts</h2>
+                        @Html.Action("GetBlogLastestPost", "Blog");
+                    </div> <!-- end .latest-post-content -->
+
+                    <div class="post-categories">
+
+                        <h2>Categories</h2>
+
+                        <ul>
+                            @Html.Action("GetBlogCategories", "Blog")
+                        </ul>
+                    </div> <!-- end .post-categories -->
+
+                    <div class="square-button">
+                        <button><img src="img/content/square-button.png" alt=""></button>
+
+                        <button><img src="img/content/square-button.png" alt=""></button>
+                    </div> <!-- end .sqare-button -->
+
+                    <div class="recently-added">
+                        <h2>Recently Added</h2>
+
+                       @Html.Action("GetBlogLastestPost", "Blog");
+
+                    </div> <!-- end .recently-added -->
+
+                    <div class="medium-rectangle">
+                        <img src="img/content/medium-rectangle.jpg" alt="">
+                    </div> <!-- end .medium-rectangle -->
+
+                </div> <!-- end .post-sidebar -->
+            </div> <!-- end .grid-layout -->
+
+        </div> <!-- end .row -->
+    </div> <!-- end .page-content -->
+</div> <!-- end .container -->
+
+
+<script type="text/javascript">
+    var pageCount = 4;
+    var more = false;
+
+    allowedToFetch = true;
+
+    function clickLoad() {
+        var $loadMore = $('.loadMore');
+        $loadMore.on('click',function () {
+            $(this).html('<img src="~/Content/img/Loader.GIF" alt="loading" />');
+            $(this).attr('disabled', true);
+            $(this).css('display', 'none');
+            getMoreBlogPost();
+            more = true;
+        });
+
+        var $blog = $('.aBlog');
+        $blog.on('click', function (event) {
+            var blogId = $(this).attr("data-blogId");
+            addBlogLike(blogId, $(this));
+            event.preventDefault();
+        });
+
+        function addBlogLike(id, $blogElement) {
+            if (isUserLogged) {
+                var plus = true;
+
+                if ($blogElement.hasClass("activeLike")) {
+                    plus = false;
+                }
+
+                $.ajax({
+                    url: '/Blog/AddBlogLike',
+                    data: { Id: id, Plus: plus },
+                    type: 'POST',
+                    header: { "Content-Type": "application/json" },
+                    success: function (result) {
+                        $('#like_' + id).html(result.total);
+                        $blogElement.toggleClass("activeLike");
+                    },
+                    error: function (err) {
+                    }
+                });
+            } else {
+                alert("Not Logged");
+            }
+        }
+    }
+
+    $(window).scroll(function () {
+        if (more && $(window).scrollTop() >= $(document).height() - $(window).height() - 300) {
+            getMoreBlogPost();
+            allowedToFetch = false;
+            setTimeout(function () {
+                allowedToFetch = true;
+            }, 1000);
+        }
+    });
+
+    function getMoreBlogPost() {
+        if (allowedToFetch) {
+            $.get('@Url.Action("BlogListingGetMore", "Blog")', { PageNumber: pageCount }, function (data) {
+                if (data.data === undefined) {
+                    $blogItemList = $("#blogItemList");
+                    $blogItemList.append(data);
+                    pageCount++;
+                }
+                else {
+                    more = false;
+                    var $loadMore = $('.loadMore');                   
+                    $loadMore.html('   <button style="width: 100%;padding: 2px;margin: 5px 0;cursor: pointer;" class="loadMore">no more blog post to load</button>');
+                    $loadMore.css('display', 'block');
+                }
+            });
+        };
+    }
+</script>
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function () {
+
+        App.init();
+
+    });
+
+    var App = function () {
+
+        //Bootstrap Tooltips and Popovers
+
+        function handleBootstrap() {
+
+            /*Bootstrap Carousel*/
+
+            jQuery('.carousel').carousel({
+
+                interval: 15000,
+
+                pause: 'hover'
+
+            });
+
+
+
+            /*Tooltips*/
+
+            jQuery('.tooltips').tooltip();
+
+            jQuery('.tooltips-show').tooltip('show');
+
+            jQuery('.tooltips-hide').tooltip('hide');
+
+            jQuery('.tooltips-toggle').tooltip('toggle');
+
+            jQuery('.tooltips-destroy').tooltip('destroy');
+
+
+
+            /*Popovers*/
+
+            jQuery('.popovers').popover();
+
+            jQuery('.popovers-show').popover('show');
+
+            jQuery('.popovers-hide').popover('hide');
+
+            jQuery('.popovers-toggle').popover('toggle');
+
+            jQuery('.popovers-destroy').popover('destroy');
+
+        }
+
+
+
+        //Search Box (Header)
+
+        function handleSearch() {
+
+            jQuery('.search').click(function () {
+
+                if (jQuery('.search-btn').hasClass('fa-search')) {
+
+                    jQuery('.search-open').fadeIn(500);
+
+                    jQuery('.search-btn').removeClass('fa-search');
+
+                    jQuery('.search-btn').addClass('fa-times');
+
+                } else {
+
+                    jQuery('.search-open').fadeOut(500);
+
+                    jQuery('.search-btn').addClass('fa-search');
+
+                    jQuery('.search-btn').removeClass('fa-times');
+
+                }
+
+            });
+
+        }
+
+
+
+        //Sidebar Navigation Toggle
+
+        function handleToggle() {
+
+            jQuery('.list-toggle').on('click', function () {
+
+                jQuery(this).toggleClass('active');
+
+            });
+
+
+
+            /*
+
+            jQuery('#serviceList').on('shown.bs.collapse'), function() {
+
+                jQuery(".servicedrop").addClass('glyphicon-chevron-up').removeClass('glyphicon-chevron-down');
+
+            }
+
+
+
+            jQuery('#serviceList').on('hidden.bs.collapse'), function() {
+
+                jQuery(".servicedrop").addClass('glyphicon-chevron-down').removeClass('glyphicon-chevron-up');
+
+            }
+
+            */
+
+        }
+
+
+
+        //Fixed Header
+
+        function handleHeader() {
+
+            jQuery(window).scroll(function () {
+
+                if (jQuery(window).scrollTop() > 100) {
+
+                    jQuery(".header-fixed .header-sticky").addClass("header-fixed-shrink");
+
+                }
+
+                else {
+
+                    jQuery(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
+
+                }
+
+            });
+
+        }
+
+
+
+        //Header Mega Menu
+
+        function handleMegaMenu() {
+
+            jQuery(document).on('click', '.mega-menu .dropdown-menu', function (e) {
+
+                e.stopPropagation()
+
+            })
+
+        }
+
+
+
+        return {
+
+            //Parallax Backgrounds
+
+            initParallaxBg: function () {
+
+                jQuery(window).load(function () {
+
+                    jQuery('.parallaxBg').parallax("50%", 0.2);
+
+                    jQuery('.parallaxBg1').parallax("50%", 0.4);
+
+                });
+
+            },
+
+            initCounter: function () {
+
+                jQuery('.counter').counterUp({
+
+                    delay: 10,
+
+                    time: 1000
+
+                });
+
+            },
+
+            init: function () {
+
+                handleBootstrap();
+
+                handleSearch();
+
+                handleToggle();
+
+                handleHeader();
+
+                handleMegaMenu();
+
+                clickLoad();
+            }
+
+        };
+
+    }();
+
+
+
+</script>

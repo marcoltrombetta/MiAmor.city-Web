@@ -1,0 +1,28 @@
+﻿@model MiAmor.Web.Models.SliderModel
+
+<div class="slider-content">
+
+    <div id="home-slider" class="owl-carousel owl-theme">
+
+        @foreach (var item in Model.Slides) { 
+           <text>
+
+                <div class="item">
+                    <img class="lazyOwl" src="@item.Picture.BaseUrl" alt="" />
+                    <div class="slide-content">
+                        <h1>@item.Description</h1>
+                    </div>
+                </div>
+
+            </text>
+        }
+
+    </div>
+
+    <div class="customNavigation">
+        <a class="btn prev"><i class="fa fa-angle-left"></i></a>
+        <a class="btn next"><i class="fa fa-angle-right"></i></a>
+    </div>
+
+</div> <!-- END .slider-content -->
+

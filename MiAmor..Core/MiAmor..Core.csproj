@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28B16239-91EE-4147-8823-5FC03BC120CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiAmor.Core</RootNamespace>
+    <AssemblyName>MiAmor._.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.4.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.3.4.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.Mvc5.3.3.3\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\Extensions.cs" />
+    <Compile Include="Caching\ICacheManager.cs" />
+    <Compile Include="Caching\MemoryCacheManager.cs" />
+    <Compile Include="Caching\MiAmorNullCache.cs" />
+    <Compile Include="Common\AuditableEntity.cs" />
+    <Compile Include="Common\Entity.cs" />
+    <Compile Include="Common\IAuditableEntity.cs" />
+    <Compile Include="Common\IEntity.cs" />
+    <Compile Include="Common\SelectableItemBase.cs" />
+    <Compile Include="Common\SimpleViewItem.cs" />
+    <Compile Include="Configuration\ISettings.cs" />
+    <Compile Include="Domain\Addresses\Address.cs" />
+    <Compile Include="Domain\Authentication\Token.cs" />
+    <Compile Include="Domain\Authentication\TokenSettings.cs" />
+    <Compile Include="Domain\Authentication\TokenType.cs" />
+    <Compile Include="Domain\Blogs\BlogPostCategoryBlogPost.cs" />
+    <Compile Include="Domain\Blogs\BlogPicture.cs" />
+    <Compile Include="Domain\Blogs\BlogPostTagBlogPost.cs" />
+    <Compile Include="Domain\Campaigns\CampaignDelivery.cs" />
+    <Compile Include="Domain\Campaigns\CampaignStatus.cs" />
+    <Compile Include="Domain\Campaigns\CampaignTag.cs" />
+    <Compile Include="Domain\Campaigns\Coupon.cs" />
+    <Compile Include="Domain\Campaigns\CampaignPayments.cs" />
+    <Compile Include="Domain\Campaigns\CampaignAttribute.cs" />
+    <Compile Include="Domain\Campaigns\CampaignAttributeMapping.cs" />
+    <Compile Include="Domain\Campaigns\CampaignAttributeValue.cs" />
+    <Compile Include="Domain\Customers\CustomerSettings.cs" />
+    <Compile Include="Domain\Blogs\BlogComment.cs" />
+    <Compile Include="Domain\Blogs\BlogExtensions.cs" />
+    <Compile Include="Domain\Blogs\BlogPost.cs" />
+    <Compile Include="Domain\Blogs\BlogPostTag.cs" />
+    <Compile Include="Domain\Blogs\BlogSettings.cs" />
+    <Compile Include="Domain\Campaigns\Campaign.cs" />
+    <Compile Include="Domain\Campaigns\CampaignPicture.cs" />
+    <Compile Include="Domain\Customers\CustomerMessageType.cs" />
+    <Compile Include="Domain\Customers\CustomerMessage.cs" />
+    <Compile Include="Domain\Customers\CustomerBookmark.cs" />
+    <Compile Include="Domain\Customers\CustomerType.cs" />
+    <Compile Include="Domain\Events\EventComment.cs" />
+    <Compile Include="Domain\Events\EventExtensions.cs" />
+    <Compile Include="Domain\Events\EventPost.cs" />
+    <Compile Include="Domain\Events\EventPostCategoryEventPost.cs" />
+    <Compile Include="Domain\Events\EventPostPicture.cs" />
+    <Compile Include="Domain\Events\EventPostTag.cs" />
+    <Compile Include="Domain\Events\EventPostTagEventPost.cs" />
+    <Compile Include="Domain\Events\EventSettings.cs" />
+    <Compile Include="Domain\Languages\LanguageSetting.cs" />
+    <Compile Include="Domain\Addresses\Neighbourhood.cs" />
+    <Compile Include="Domain\Addresses\City.cs" />
+    <Compile Include="Domain\Addresses\Country.cs" />
+    <Compile Include="Domain\Addresses\StateProvince.cs" />
+    <Compile Include="Domain\Languages\Language.cs" />
+    <Compile Include="Domain\Customers\Customer.cs" />
+    <Compile Include="Domain\Media\Picture.cs" />
+    <Compile Include="Domain\Media\PictureSizeType.cs" />
+    <Compile Include="Domain\Media\PictureTableToSave.cs" />
+    <Compile Include="Domain\Message\Message.cs" />
+    <Compile Include="Domain\Persons\PersonAddress.cs" />
+    <Compile Include="Domain\PriceList\PriceList.cs" />
+    <Compile Include="Domain\PriceList\PriceListItem.cs" />
+    <Compile Include="Domain\PriceList\PriceListVendorCategory.cs" />
+    <Compile Include="Domain\Product\ProductCategory.cs" />
+    <Compile Include="Domain\Product\Manufacturer.cs" />
+    <Compile Include="Domain\Product\ProductCategoryProduct.cs" />
+    <Compile Include="Domain\Product\ProductTagProduct.cs" />
+    <Compile Include="Domain\Product\ProductVendor.cs" />
+    <Compile Include="Domain\Product\Product.cs" />
+    <Compile Include="Domain\Product\ProductAttribute.cs" />
+    <Compile Include="Domain\Product\ProductAttributeCombination.cs" />
+    <Compile Include="Domain\Product\ProductAttributeMapping.cs" />
+    <Compile Include="Domain\Product\ProductAttributeValue.cs" />
+    <Compile Include="Domain\Product\ProductManufacturer.cs" />
+    <Compile Include="Domain\Product\ProductPicture.cs" />
+    <Compile Include="Domain\Product\ProductReview.cs" />
+    <Compile Include="Domain\Product\ProductReviewHelpfulness.cs" />
+    <Compile Include="Domain\Product\ProductSpecificationAttribute.cs" />
+    <Compile Include="Domain\Product\ProductTag.cs" />
+    <Compile Include="Domain\Product\ProductTemplate.cs" />
+    <Compile Include="Domain\Product\ProductType.cs" />
+    <Compile Include="Domain\Product\RelatedProduct.cs" />
+    <Compile Include="Domain\Seo\ISlugSupported.cs" />
+    <Compile Include="Domain\Seo\PageTitleSeoAdjustment.cs" />
+    <Compile Include="Domain\Seo\SeoSettings.cs" />
+    <Compile Include="Domain\Seo\UrlRecord.cs" />
+    <Compile Include="Domain\Seo\WwwRequirement.cs" />
+    <Compile Include="Domain\Payments\PaymentType.cs" />
+    <Compile Include="Domain\Setting\ParentWebSiteBlogPost.cs" />
+    <Compile Include="Domain\Setting\ParentWebSiteMessage.cs" />
+    <Compile Include="Domain\Setting\ParentWebSiteSetting.cs" />
+    <Compile Include="Domain\Sliders\Slide.cs" />
+    <Compile Include="Domain\Sliders\Slider.cs" />
+    <Compile Include="Domain\Venodrs\VendorAddress.cs" />
+    <Compile Include="Domain\Venodrs\Vendor.cs" />
+    <Compile Include="Domain\Venodrs\VendorAddressType.cs" />
+    <Compile Include="Domain\Venodrs\VendorBlogPost.cs" />
+    <Compile Include="Domain\Venodrs\VendorBrand.cs" />
+    <Compile Include="Domain\Venodrs\VendorCategory.cs" />
+    <Compile Include="Domain\Venodrs\VendorCategoryCount.cs" />
+    <Compile Include="Domain\Venodrs\VendorCategoryVendor.cs" />
+    <Compile Include="Domain\Venodrs\VendorContactPerson.cs" />
+    <Compile Include="Domain\Venodrs\VendorEventPost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Venodrs\VendorMessage.cs" />
+    <Compile Include="Domain\Venodrs\VendorOpeningHours.cs" />
+    <Compile Include="Domain\Venodrs\VendorPaymentType.cs" />
+    <Compile Include="Domain\Venodrs\VendorPicture.cs" />
+    <Compile Include="Domain\Venodrs\VendorReview.cs" />
+    <Compile Include="Helpers\VendorCategoryCountHelper.cs" />
+    <Compile Include="MiAmorException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\Businesses\" />
+    <Folder Include="Infrastructure\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

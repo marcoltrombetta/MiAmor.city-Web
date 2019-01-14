@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUs" xml:space="preserve">
+    <value>About Us</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="AddPhoto" xml:space="preserve">
+    <value>Add Photo</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="AdvertiseOnMiAmor" xml:space="preserve">
+    <value>Advertise On MiAmor</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Advertisment" xml:space="preserve">
+    <value>Advertisment</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Alcohol" xml:space="preserve">
+    <value>Alcohol </value>
+    <comment>NULL</comment>
+  </data>
+  <data name="AllCategories" xml:space="preserve">
+    <value>All Categories</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Ambience" xml:space="preserve">
+    <value>Ambience</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Attire" xml:space="preserve">
+    <value>Attire</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="BestOf" xml:space="preserve">
+    <value>Best Of</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="BikeParking" xml:space="preserve">
+    <value>Bike Parking</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Blog" xml:space="preserve">
+    <value>Blog</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Bookmark" xml:space="preserve">
+    <value>Bookmark</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="BusinessOwner" xml:space="preserve">
+    <value>Business Owner</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="BusinessSupport" xml:space="preserve">
+    <value>Business Support</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Careers" xml:space="preserve">
+    <value>Careers</value>
+    <comment>hiring people</comment>
+  </data>
+  <data name="Caters" xml:space="preserve">
+    <value>Caters</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Classifieds" xml:space="preserve">
+    <value>Classifieds</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="ContactDetails" xml:space="preserve">
+    <value>Contact Details</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Campaign" xml:space="preserve">
+    <value>Campaign</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="DaysPublished" xml:space="preserve">
+    <value>Days Published</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>Delivery</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distance</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Employs" xml:space="preserve">
+    <value>Employs</value>
+    <comment>How many employees </comment>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>Events</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Featured" xml:space="preserve">
+    <value>Featured</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="FilterByKeywords" xml:space="preserve">
+    <value>Filter By Keywords</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="FirstToReview" xml:space="preserve">
+    <value>First To Review</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Founded" xml:space="preserve">
+    <value>Founded</value>
+    <comment>the year the compant started</comment>
+  </data>
+  <data name="FromTheBusiness" xml:space="preserve">
+    <value>From The Business</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="FullAddress" xml:space="preserve">
+    <value>Full Address</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="GoodForGroups" xml:space="preserve">
+    <value>Good for Groups</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="GoodForKids" xml:space="preserve">
+    <value>Good for Kids</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="HasTV" xml:space="preserve">
+    <value>Has TV</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="JoinConversation" xml:space="preserve">
+    <value>Join Conversation</value>
+    <comment>Write something in the blog</comment>
+  </data>
+  <data name="JoinOurFamily" xml:space="preserve">
+    <value>Join Our Family</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>Palabras clave</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Languages</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="LatestFromBlog" xml:space="preserve">
+    <value>Latest From Blog</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Map</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Messages</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Neighborhood" xml:space="preserve">
+    <value>Neighborhood</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Neighborhoods" xml:space="preserve">
+    <value>Neighborhoods</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Newsletter" xml:space="preserve">
+    <value>Newsletter</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="NoiseLevel" xml:space="preserve">
+    <value>Noise Level</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="OpeningHours" xml:space="preserve">
+    <value>Opening Hours</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Or" xml:space="preserve">
+    <value>Or</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="OtherGreatStuffFromNearby" xml:space="preserve">
+    <value>Other Great Stuff From Nearby</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="OurPartners" xml:space="preserve">
+    <value>Our Partners</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="OutdoorSeating" xml:space="preserve">
+    <value>Outdoor Seating</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Overall" xml:space="preserve">
+    <value>Overall</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="OwnThisCompany" xml:space="preserve">
+    <value>Own This Company</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Parking" xml:space="preserve">
+    <value>Parking</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="PeopleAlsoViewed" xml:space="preserve">
+    <value>People Also Viewed</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="PetsAllowed" xml:space="preserve">
+    <value>Pets Allowed</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="PopularCategories" xml:space="preserve">
+    <value>POPULAR CATEGORIES</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="PostYouAd" xml:space="preserve">
+    <value>Post You Ad</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="PostYourAdd" xml:space="preserve">
+    <value> Post Your Add</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Press" xml:space="preserve">
+    <value>Press</value>
+    <comment>Newspaper articles</comment>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="PriceList" xml:space="preserve">
+    <value>Price List</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Products</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Protfolio" xml:space="preserve">
+    <value>Protfolio</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Province" xml:space="preserve">
+    <value>Province</value>
+    <comment>Part of the country</comment>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>Quality</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="RangeOfService" xml:space="preserve">
+    <value>Range Of Service</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Rating</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="RecentActivity" xml:space="preserve">
+    <value>Recent Activity</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Region</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>Register Now</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="RegularMember" xml:space="preserve">
+    <value>REGULAR MEMBER</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="ReviewOfTheDay" xml:space="preserve">
+    <value>Review Of The Day</value>
+    <comment>best review made today</comment>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>Select Category</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>Send Message</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Share</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Sort By</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+    <comment>We dont have states in Argentina</comment>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Street</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Support</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="TakeOut" xml:space="preserve">
+    <value>Take-out</value>
+    <comment>take away from restaurant</comment>
+  </data>
+  <data name="TakesReservations" xml:space="preserve">
+    <value>Takes Reservations</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="TermsOfService" xml:space="preserve">
+    <value>Terms of Service</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Turnover" xml:space="preserve">
+    <value>Turnover</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="WaiterService" xml:space="preserve">
+    <value>Waiter Service</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="WhatWeDo" xml:space="preserve">
+    <value>What We Do</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="WheelchairAccessible" xml:space="preserve">
+    <value>Wheelchair Accessible</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="WhoWeAre" xml:space="preserve">
+    <value>Who We Are</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="WiFi" xml:space="preserve">
+    <value>Wi-Fi </value>
+    <comment>NULL</comment>
+  </data>
+  <data name="WriteAReview" xml:space="preserve">
+    <value>Write a review</value>
+    <comment>NULL</comment>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+    <comment>NULL</comment>
+  </data>
+</root>

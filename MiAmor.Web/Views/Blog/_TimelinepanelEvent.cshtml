@@ -1,0 +1,55 @@
+﻿@model IList<MiAmor.Web.Models.BlogModel>
+
+@{
+    int i = 0;
+    foreach (MiAmor.Web.Models.BlogModel item in Model)
+    {
+        if (i % 2 == 0)
+        {
+            <text>
+                <li>
+                    <div class="timeline-badge"><i class="glyphicon glyphicon-record"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <img class="img-responsive" src="@item.BlogPostPictures.FirstOrDefault().Picture.BaseUrl.ToString()" alt="" />
+                        </div>
+                        <div class="timeline-body text-justify">
+                            <h2><a href="#">@item.Title</a></h2>
+                            <a class="btn-u btn-u-sm" href="@Url.Action("BlogPost", "Blog", new { Id = @item.Id })">Read More</a>
+                        </div>
+                        <div class="timeline-footer">
+                            <ul class="list-unstyled list-inline blog-info">
+                                <li><i class="fa fa-clock-o"></i>@String.Format("{0:dd MMM yyyy}", @item.StartDateUtc)</li>
+                                <li><i class="fa fa-comments-o"></i> <a href="#">@item.CommentCount Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </text>
+        }
+        else
+        {
+            <text>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <img class="img-responsive" src="@item.BlogPostPictures.FirstOrDefault().Picture.BaseUrl.ToString()" alt="" />
+                        </div>
+                        <div class="timeline-body text-justify">
+                            <h2><a href="#">@item.Title</a></h2>
+                            <a class="btn-u btn-u-sm" href="@Url.Action("BlogPost", "Blog", new { Id = @item.Id })">Read More</a>
+                        </div>
+                        <div class="timeline-footer">
+                            <ul class="list-unstyled list-inline blog-info">
+                                <li><i class="fa fa-clock-o"></i> @String.Format("{0:dd MMM yyyy}", @item.StartDateUtc)</li>
+                                <li><i class="fa fa-comments-o"></i> <a href="#">@item.CommentCount Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </text>
+        }
+        i++;
+    }
+}

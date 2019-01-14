@@ -1,0 +1,18 @@
+﻿@model MiAmor.Web.Models.VendorReviewModel
+
+<div class="single-content">
+    @Html.Action("VendorRatingBox", new { Rating= Model.Rating})
+
+    <div class="rating-details">
+        <div class="meta">
+            <a href="#"><strong>@Model.Customer.FirstName @(Model.Customer.LastName == null ? "" : Model.Customer.LastName) </strong></a>
+            - @Model.CreatedOnUtc.Day  @Model.CreatedOnUtc.Month.ToString("MMM"), @Model.CreatedOnUtc.Year - @Model.CreatedOnUtc.TimeOfDay
+        </div>
+
+        <div class="content">
+            <p>
+            @Model.ReviewText
+            </p>
+        </div>
+    </div>
+</div> <!-- end .single-content -->

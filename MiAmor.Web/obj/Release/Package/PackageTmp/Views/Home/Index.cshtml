@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-9 col-md-push-3">
+                <div class="page-content">
+
+                    <div class="product-details-list view-switch">
+                        <div class="tab-content" id="vendor-results-container">
+                            @Html.Action("GetVendorByCategoryHomePage", "Vendor", new { CategoryId = @ViewBag.CategoryId, SearchFor = "", PageNumber = @ViewBag.PageNumber });
+                        </div> <!-- end .tabe-content -->
+
+                        <div class="advertisement">
+                            <p>Advertisement</p>
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- misamores tall -->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:160px;height:600px"
+                                 data-ad-client="ca-pub-1520058280913866"
+                                 data-ad-slot="3854811167"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+
+                    </div> <!-- end .product-details -->
+                </div> <!-- end .page-content -->
+            </div>
+
+            <div class="col-md-3 col-md-pull-9 category-toggle">
+                <button><i class="fa fa-briefcase"></i></button>
+
+                <div class="page-sidebar">
+                   <!--Location Details-->
+                    @Html.Action("GetLocationDetailsSideBar", "Address");
+                    <!--End Location Details-->
+
+                    <div class="distance-range">
+                        <p>
+                            <label for="amount">Distance</label>
+                            <input type="text" id="amount">
+                        </p>
+
+                        <div id="slider-range-min"></div>
+                    </div>  <!-- end #distance-range -->
+                    <!-- Category accordion -->
+                    <div id="categories">
+                        <div class="accordion">
+
+                            @Html.Action("Navigation", "VendorCategory", new { CategoryId = @ViewBag.CategoryId })
+
+                        </div> <!-- end .accordion -->
+                    </div> <!-- end #categories -->
+
+                </div> <!-- end .page-sidebar -->
+            </div> <!-- end grid layout-->
+        </div> <!-- end .row -->
+    </div> <!-- end .container -->
+
+@*@{Html.RenderPartial("_FeaturedListing");}*@
+<!-- end .featured-listing -->
+
+
+<div class="classifieds-content">
+    <div class="container">
+        <div class="heading-section clearfix">
+            <h1>Classifieds</h1>
+
+            <a href="#" class="btn btn-default"><i class="fa fa-plus"></i> Post Your Ad</a>
+
+            <form action="#">
+                <input type="text" placeholder="Search by keywords">
+
+
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div> <!-- END .heading-section -->
+        @Html.Action("FooterNavigation", "VendorCategory", new { ParentId = 0 })
+    </div> <!-- END .container-->
+</div> <!-- classifieds-content -->
+@{Html.RenderPartial("_RegisterContent");}
+<!-- END REGISTER-CONTENT -->
+<!-- OUR PARTNER SLIDER BEGIN -->
+@{Html.RenderPartial("_OurPartners");}
+<!-- END OUR PARTNER SLIDER -->
+<script>
+
+    function getVendorCategoryResults(catId,pageId) {      
+        $.post("/Vendor/GetVendorByCategoryHomePage", { CategoryId: catId,SearchFor:'',PageNumber:pageId }, function (data) {
+            $('#vendor-results-container').html(data);
+            $('#divSortBy-VendorListing').uouCustomSelect();
+        });
+
+    }
+
+    if (isUserLogged) {
+        userLogged(getFromLocalStorage("userFirstName"), getFromLocalStorage("userCustId"));        
+    }
+</script>

@@ -1,0 +1,48 @@
+﻿@model List<MiAmor.Core.VendorCategoryCount>
+
+ <!-- CLSSIFIEDS-CATEGROY BEGIN -->
+<div class="row">
+
+    @{int ItemsCount = 0;}
+    @foreach (var item in Model)
+            {
+                ItemsCount++;
+        if(ItemsCount ==1)
+        { 
+        @:<div class="col-md-3 col-sm-6">
+            @:<ul class="classifieds-category">
+                @Html.Partial("_FooterNavigationBox",item)                
+            @:</ul>
+         @:</div>
+         }
+        if (ItemsCount == 2)
+        {
+            @:<div class="col-md-3 col-sm-6">
+                @:<ul class="classifieds-category">
+                    @Html.Partial("_FooterNavigationBox", item)
+                    @:</ul>
+                @:</div>
+        }
+        if (ItemsCount == 3)
+        {
+            @:<div class="col-md-3 col-sm-6">
+                @:<ul class="classifieds-category">
+                    @Html.Partial("_FooterNavigationBox", item)
+                    @:</ul>
+                @:</div>
+        }
+        if (ItemsCount == 4)
+        {
+            @:<div class="col-md-3 col-sm-6">
+                @:<ul class="classifieds-category">
+                    @Html.Partial("_FooterNavigationBox", item)
+                    @:</ul>
+                @:</div>
+            ItemsCount = 0;
+         }
+            }
+
+<!-- End grid layout -->
+</div> <!-- End .row -->
+
+

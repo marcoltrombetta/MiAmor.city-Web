@@ -1,0 +1,32 @@
+﻿@model IList<MiAmor.Core.CustomerMessage>
+
+ <!--Profile Event-->
+<div class="col-sm-6 md-margin-bottom-20">
+    <div class="panel panel-profile no-bg">
+        <div class="panel-heading overflow-h">
+            <h2 class="panel-title heading-sm pull-left"><i class="fa fa-briefcase"></i>Upcoming Messages</h2>
+            <a href="#"><i class="fa fa-cog pull-right"></i></a>
+        </div>
+        <div id="scrollbar2" class="panel-body contentHolder">
+            @{
+                foreach (MiAmor.Core.CustomerMessage item in Model)
+                {
+                    <text>
+                        <div class="profile-event">
+                            <div class="date-formats" style="padding-top:0px">
+                                <span>@Html.Raw(item.DateSend.ToString("dd"))</span>
+                                <small>@Html.Raw(item.DateSend.ToString("dd-MM"))</small>
+                            </div>
+                            <div class="overflow-h">
+                                <h3 class="heading-xs"><a href="#">@Html.Raw((item.WasOpened == null ? "" : "<strong>") + item.Title.ToString() + (item.WasOpened == null ? "" : "</strong>"))</a></h3>
+                                <p>@Html.Raw((item.WasOpened == null ? "" : "<strong>") + item.MsgTxt + (item.WasOpened == null ? "" : "</strong>"))</p>
+                            </div>
+                        </div>
+                    </text>
+                }
+            }
+        </div>
+    </div>
+</div>
+<!--End Profile Event-->
+

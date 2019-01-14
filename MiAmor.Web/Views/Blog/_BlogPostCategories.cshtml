@@ -1,0 +1,13 @@
+﻿@model IList<MiAmor.Core.VendorCategory>
+
+@{
+
+    foreach (MiAmor.Core.VendorCategory item in Model)
+    {
+        <text>
+            <li><a href="@Url.Action("Index", "Blog", new { Id = @item.ParentCategoryId })"><i class="fa fa-angle-right"></i>@item.Name</a></li>
+        </text>
+    }
+
+}
+

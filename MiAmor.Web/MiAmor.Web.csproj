@@ -1,0 +1,1522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C88B94B-5CFA-4E71-A4F0-6142B3696400}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiAmor.Web</RootNamespace>
+    <AssemblyName>MiAmor.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.4.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.3.4.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.Mvc5.3.3.3\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminCityController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminNeighbourhoodController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BlogCommentAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BlogPostAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BlogPostTagAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CampaignAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CampaignAttributeAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CampaignDeliveryAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CampaignPaymentsAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CampaignStatusAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CampaignTagAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CustomerAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminFileUploadController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManufacturerAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductAttributeAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductCategoryAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductReviewAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductTagAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\VendorAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\VendorCategoryAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\VendorCategoryCountAdminController.cs" />
+    <Compile Include="Areas\Admin\Helper\EfFilterHelper.cs" />
+    <Compile Include="Areas\Admin\Models\BlogComment\BlogCommentCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\BlogPostTag\BlogPostTagCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\BlogPost\BlogPostAutocompleteModel.cs" />
+    <Compile Include="Areas\Admin\Models\BlogPost\BlogPostCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\CampaignAttribute\CampaignAttributeCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\CampaignDelivery\CampaignDeliveryCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\CampaignPayments\CampaignPaymentsCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\CampaignStatus\CampaignStatusCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\CampaignTag\CampaignTagCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\Campaign\CampaignAutocompleteModel.cs" />
+    <Compile Include="Areas\Admin\Models\Campaign\CampaignCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\City\CityAutocompleteModel.cs" />
+    <Compile Include="Areas\Admin\Models\Customer\CustomerAutocompleteModel.cs" />
+    <Compile Include="Areas\Admin\Models\Customer\CustomerCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\Manufacturer\ManufacturerCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\Neighbourhood\NeighbourhoodAutocompleteModel.cs" />
+    <Compile Include="Areas\Admin\Models\PriceList\PriceListCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\ProductAttribute\ProductAttributeCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\ProductCategory\ParentCategoryAutocompleteModel.cs" />
+    <Compile Include="Areas\Admin\Models\ProductCategory\ProductCategoryCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\ProductReview\ProductReviewCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\ProductTag\ProductTagCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\Product\ProductCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\VendorCategoryCount\VendorCategoryCountCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\VendorCategory\VendorCategoryCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\Vendor\VendorAddressCrudModel.cs" />
+    <Compile Include="Areas\Admin\Models\Vendor\VendorAutocompleteModel.cs" />
+    <Compile Include="Areas\Admin\Models\Vendor\VendorCrudModel.cs" />
+    <Compile Include="Builder\EFModule.cs" />
+    <Compile Include="Builder\ServiceModule.cs" />
+    <Compile Include="Controllers\AddressController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LanguageController.cs" />
+    <Compile Include="Controllers\PriceListController.cs" />
+    <Compile Include="Controllers\SearchHeaderController.cs" />
+    <Compile Include="Controllers\VendorCategoryController.cs" />
+    <Compile Include="Controllers\VendorController.cs" />
+    <Compile Include="Filters\ValidateJsonAntiForgeryTokenAttribute.cs" />
+    <Compile Include="Filters\ValidateJsonUserForgeryTokenAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Authentication.cs" />
+    <Compile Include="Models\Address\NeighbourhoodModel.cs" />
+    <Compile Include="Models\Blog\BlogCategoryModel.cs" />
+    <Compile Include="Models\Blog\BlogCommentsListingModel.cs" />
+    <Compile Include="Models\Blog\VendorEventListingModel.cs" />
+    <Compile Include="Models\Blog\VendorBlogListingModel.cs" />
+    <Compile Include="Models\Blog\BlogListingModel.cs" />
+    <Compile Include="Models\Blog\BlogMessageModel.cs" />
+    <Compile Include="Models\Blog\BlogPostAppModel.cs" />
+    <Compile Include="Models\Blog\BlogModel.cs" />
+    <Compile Include="Models\ContactUs\ContactUsModel.cs" />
+    <Compile Include="Models\Coupon\CouponModel.cs" />
+    <Compile Include="Models\Customer\CustomerBookmarkListingModel.cs" />
+    <Compile Include="Models\Customer\CustomerDetails.cs" />
+    <Compile Include="Models\Customer\CustomerMessageListingModel.cs" />
+    <Compile Include="Models\Customer\CustomerMessageTypes.cs" />
+    <Compile Include="Models\Customer\CustomerMessageModel.cs" />
+    <Compile Include="Models\Customer\CustomerProfile.cs" />
+    <Compile Include="Models\Customer\CustomerProfileCities.cs" />
+    <Compile Include="Models\Customer\CustomerRegistration.cs" />
+    <Compile Include="Models\Customer\CustomerReviewVendorModel.cs" />
+    <Compile Include="Models\HeaderSearchbar\HeaderSearchbarModel.cs" />
+    <Compile Include="Models\Paging\BlogCommentsPageListModel.cs" />
+    <Compile Include="Models\Paging\SearchPagingModel.cs" />
+    <Compile Include="Models\Paging\VendorEventPagingModel.cs" />
+    <Compile Include="Models\Paging\VendorBlogPagingModel.cs" />
+    <Compile Include="Models\Paging\EventPagingModel.cs" />
+    <Compile Include="Models\Paging\BlogPagingModel.cs" />
+    <Compile Include="Models\Paging\CustomerBookmarkPagingModel.cs" />
+    <Compile Include="Models\Paging\PageList.cs" />
+    <Compile Include="Models\Paging\PagingModel.cs" />
+    <Compile Include="Models\Paging\VendorCouponPagingModel.cs" />
+    <Compile Include="Models\Paging\VendorReviewPagingModel.cs" />
+    <Compile Include="Models\Sliders\SlideModel.cs" />
+    <Compile Include="Models\Sliders\SliderModel.cs" />
+    <Compile Include="Models\Tokens\ReturnedToken.cs" />
+    <Compile Include="Models\Vendor\SearchListingModel.cs" />
+    <Compile Include="Models\Vendor\SearchModel.cs" />
+    <Compile Include="Models\Vendor\VendorBlogPostModel.cs" />
+    <Compile Include="Models\Vendor\VendorBox.cs" />
+    <Compile Include="Models\Vendor\VendorBoxMobileDataModel.cs" />
+    <Compile Include="Models\Vendor\VendorBoxModel.cs" />
+    <Compile Include="Models\Vendor\VendorBoxModelMobile.cs" />
+    <Compile Include="Models\Vendor\VendorCategoryBreadcrumbsModel.cs" />
+    <Compile Include="Models\Vendor\VendorCampaignListingModel.cs" />
+    <Compile Include="Models\Vendor\VendorRatingModel.cs" />
+    <Compile Include="Models\Vendor\VendorReviewListingModel.cs" />
+    <Compile Include="Models\Vendor\VendorReviewModel.cs" />
+    <Compile Include="Models\Vendor\VendorSearchLisitingModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resources.es.Designer.cs">
+      <DependentUpon>Resources.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AsIsBundleOrderer.cs" />
+    <Compile Include="UI\DataListExtensions.cs" />
+    <Compile Include="UI\IPageHeadBuilder.cs" />
+    <Compile Include="UI\LayoutExtensions.cs" />
+    <Compile Include="UI\NotifyType.cs" />
+    <Compile Include="UI\PageHeadBuilder.cs" />
+    <Compile Include="UI\ResourceLocation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\app\app.js" />
+    <Content Include="Areas\Admin\app\controller\registerController.js" />
+    <Content Include="Areas\Admin\app\css\app-rtl.css" />
+    <Content Include="Areas\Admin\app\css\app.css" />
+    <Content Include="Areas\Admin\app\css\bootstrap-rtl.css" />
+    <Content Include="Areas\Admin\app\css\bootstrap.css" />
+    <Content Include="Areas\Admin\app\css\theme-a.css" />
+    <Content Include="Areas\Admin\app\css\theme-b.css" />
+    <Content Include="Areas\Admin\app\css\theme-c.css" />
+    <Content Include="Areas\Admin\app\css\theme-d.css" />
+    <Content Include="Areas\Admin\app\css\theme-e.css" />
+    <Content Include="Areas\Admin\app\css\theme-f.css" />
+    <Content Include="Areas\Admin\app\css\theme-g.css" />
+    <Content Include="Areas\Admin\app\css\theme-h.css" />
+    <Content Include="Areas\Admin\app\img\logo-single.png" />
+    <Content Include="Areas\Admin\app\img\logo.png" />
+    <Content Include="Areas\Admin\app\js\app.js" />
+    <Content Include="Areas\Admin\app\js\base.js" />
+    <Content Include="Areas\Admin\app\views\animations.html" />
+    <Content Include="Areas\Admin\app\views\app.html" />
+    <Content Include="Areas\Admin\app\views\blogComment\gridBlogComment.html" />
+    <Content Include="Areas\Admin\app\views\blogComment\mainBlogComment.html" />
+    <Content Include="Areas\Admin\app\views\blogComment\newBlogComment.html" />
+    <Content Include="Areas\Admin\app\views\blogPostTag\gridBlogPostTag.html" />
+    <Content Include="Areas\Admin\app\views\blogPostTag\mainBlogPostTag.html" />
+    <Content Include="Areas\Admin\app\views\blogPostTag\newBlogPostTag.html" />
+    <Content Include="Areas\Admin\app\views\blogPost\gridBlogPost.html" />
+    <Content Include="Areas\Admin\app\views\blogPost\mainBlogPost.html" />
+    <Content Include="Areas\Admin\app\views\blogPost\newBlogPost.html" />
+    <Content Include="Areas\Admin\app\views\buttons.html" />
+    <Content Include="Areas\Admin\app\views\campaignAttribute\gridCampaignAttribute.html" />
+    <Content Include="Areas\Admin\app\views\campaignAttribute\mainCampaignAttribute.html" />
+    <Content Include="Areas\Admin\app\views\campaignAttribute\newCampaignAttribute.html" />
+    <Content Include="Areas\Admin\app\views\campaignDelivery\gridCampaignDelivery.html" />
+    <Content Include="Areas\Admin\app\views\campaignDelivery\mainCampaignDelivery.html" />
+    <Content Include="Areas\Admin\app\views\campaignDelivery\newCampaignDelivery.html" />
+    <Content Include="Areas\Admin\app\views\campaignPayments\gridCampaignPayments.html" />
+    <Content Include="Areas\Admin\app\views\campaignPayments\mainCampaignPayments.html" />
+    <Content Include="Areas\Admin\app\views\campaignPayments\newCampaignPayments.html" />
+    <Content Include="Areas\Admin\app\views\campaignStatus\gridCampaignStatus.html" />
+    <Content Include="Areas\Admin\app\views\campaignStatus\mainCampaignStatus.html" />
+    <Content Include="Areas\Admin\app\views\campaignStatus\newCampaignStatus.html" />
+    <Content Include="Areas\Admin\app\views\campaignTag\gridCampaignTag.html" />
+    <Content Include="Areas\Admin\app\views\campaignTag\mainCampaignTag.html" />
+    <Content Include="Areas\Admin\app\views\campaignTag\newCampaignTag.html" />
+    <Content Include="Areas\Admin\app\views\campaign\gridCampaign.html" />
+    <Content Include="Areas\Admin\app\views\campaign\mainCampaign.html" />
+    <Content Include="Areas\Admin\app\views\campaign\newCampaign.html" />
+    <Content Include="Areas\Admin\app\views\customer\customerDetails.html" />
+    <Content Include="Areas\Admin\app\views\customer\customerDocs.html" />
+    <Content Include="Areas\Admin\app\views\customer\customerCoupons.html" />
+    <Content Include="Areas\Admin\app\views\customer\customerContact.html" />
+    <Content Include="Areas\Admin\app\views\customer\customerMeetings.html" />
+    <Content Include="Areas\Admin\app\views\customer\gridCustomer.html" />
+    <Content Include="Areas\Admin\app\views\customer\mainCustomer.html" />
+    <Content Include="Areas\Admin\app\views\customer\newCustomer.html" />
+    <Content Include="Areas\Admin\app\views\customer\CustomerMeeting-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\dashboard.html" />
+    <Content Include="Areas\Admin\app\views\form-upload.html" />
+    <Content Include="Areas\Admin\app\views\manufacturer\gridManufacturer.html" />
+    <Content Include="Areas\Admin\app\views\manufacturer\mainManufacturer.html" />
+    <Content Include="Areas\Admin\app\views\manufacturer\newManufacturer.html" />
+    <Content Include="Areas\Admin\app\views\partials\blogComment-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\blogPost-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\blogPostTag-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\campaign-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\campaignAttribute-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\campaignDelivery-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\campaignPayments-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\campaignStatus-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\campaignTag-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\eventComment-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\eventPost-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\eventPostTag-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\footer.html" />
+    <Content Include="Areas\Admin\app\views\partials\manufacturer-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\offsidebar-tab1.html" />
+    <Content Include="Areas\Admin\app\views\partials\offsidebar-tab2.html" />
+    <Content Include="Areas\Admin\app\views\partials\offsidebar.html" />
+    <Content Include="Areas\Admin\app\views\partials\product-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\productAttribute-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\productCategory-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\productReview-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\productTag-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\sidebar.html" />
+    <Content Include="Areas\Admin\app\views\customer\customer-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\vendor-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\vendorCategory-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\partials\vendorCategoryCount-top-navbar.html" />
+    <Content Include="Areas\Admin\app\views\productAttribute\gridProductAttribute.html" />
+    <Content Include="Areas\Admin\app\views\productAttribute\mainProductAttribute.html" />
+    <Content Include="Areas\Admin\app\views\productAttribute\newProductAttribute.html" />
+    <Content Include="Areas\Admin\app\views\productCategory\gridProductCategory.html" />
+    <Content Include="Areas\Admin\app\views\productCategory\mainProductCategory.html" />
+    <Content Include="Areas\Admin\app\views\productCategory\newProductCategory.html" />
+    <Content Include="Areas\Admin\app\views\productReview\gridProductReview.html" />
+    <Content Include="Areas\Admin\app\views\productReview\mainProductReview.html" />
+    <Content Include="Areas\Admin\app\views\productReview\newProductReview.html" />
+    <Content Include="Areas\Admin\app\views\productTag\gridProductTag.html" />
+    <Content Include="Areas\Admin\app\views\productTag\mainProductTag.html" />
+    <Content Include="Areas\Admin\app\views\productTag\newProductTag.html" />
+    <Content Include="Areas\Admin\app\views\product\gridProduct.html" />
+    <Content Include="Areas\Admin\app\views\product\mainProduct.html" />
+    <Content Include="Areas\Admin\app\views\product\newProduct.html" />
+    <Content Include="Areas\Admin\app\views\singleview.html" />
+    <Content Include="Areas\Admin\app\views\submenu.html" />
+    <Content Include="Areas\Admin\app\views\vendorCategoryCount\gridVendorCategoryCount.html" />
+    <Content Include="Areas\Admin\app\views\vendorCategoryCount\mainVendorCategoryCount.html" />
+    <Content Include="Areas\Admin\app\views\vendorCategoryCount\newVendorCategoryCount.html" />
+    <Content Include="Areas\Admin\app\views\vendorCategory\gridVendorCategory.html" />
+    <Content Include="Areas\Admin\app\views\vendorCategory\mainVendorCategory.html" />
+    <Content Include="Areas\Admin\app\views\vendorCategory\newVendorCategory.html" />
+    <Content Include="Areas\Admin\app\views\vendor\gridVendor.html" />
+    <Content Include="Areas\Admin\app\views\vendor\mainVendor.html" />
+    <Content Include="Areas\Admin\app\views\vendor\newVendor.html" />
+    <Content Include="Areas\Admin\master\gulpfile.js" />
+    <Content Include="Areas\Admin\master\js\app.init.js" />
+    <Content Include="Areas\Admin\master\js\custom\custom.js" />
+    <Content Include="Areas\Admin\master\js\custom\README.txt" />
+    <Content Include="Areas\Admin\master\js\modules\config.js" />
+    <Content Include="Areas\Admin\master\js\modules\constants.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\blogComment\blogCommentGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\blogComment\newBlogComment.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\blogPostTag\blogPostTagGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\blogPostTag\newBlogPostTag.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\blogPost\blogPostGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\blogPost\newBlogPost.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignAttribute\campaignAttributeGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignAttribute\newCampaignAttribute.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignDelivery\campaignDeliveryGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignDelivery\newCampaignDelivery.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignPayments\campaignPaymentsGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignPayments\newCampaignPayments.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignStatus\campaignStatusGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignStatus\newCampaignStatus.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignTag\campaignTagGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaignTag\newCampaignTag.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaign\campaignGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\campaign\newCampaign.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\customer\custWizard.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\datepicker.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\customer\newCustomer.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\flot-chart.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\manufacturer\manufacturerGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\manufacturer\newManufacturer.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\priceList\newPriceList.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\priceList\priceListGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\productAttribute\newProductAttribute.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\productAttribute\productAttributeGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\productCategory\newProductCategory.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\productCategory\productCategoryGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\productReview\newProductReview.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\productReview\productReviewGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\productTag\newProductTag.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\productTag\productTagGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\product\newProduct.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\product\productGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\timepicker.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\alerts.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\buttons.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\progress.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\form-validation.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\main.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\sidebar-menu.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\customer\custGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\uiselect.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\upload.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\vendorCategoryCount\newVendorCategoryCount.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\vendorCategoryCount\vendorCategoryCountGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\vendorCategory\newVendorCategory.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\vendorCategory\vendorCategoryGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\vendorsUigrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\vendor\newVendor.js" />
+    <Content Include="Areas\Admin\master\js\modules\controllers\vendor\vendorGrid.js" />
+    <Content Include="Areas\Admin\master\js\modules\directives\animate-enabled.js" />
+    <Content Include="Areas\Admin\master\js\modules\directives\chart.js" />
+    <Content Include="Areas\Admin\master\js\modules\directives\classy-loader.js" />
+    <Content Include="Areas\Admin\master\js\modules\directives\flot.js" />
+    <Content Include="Areas\Admin\master\js\modules\directives\form-wizard.js" />
+    <Content Include="Areas\Admin\master\js\modules\directives\navbar-search.js" />
+    <Content Include="Areas\Admin\master\js\modules\directives\play-animations.js" />
+    <Content Include="Areas\Admin\master\js\modules\directives\sidebar.js" />
+    <Content Include="Areas\Admin\master\js\modules\directives\toggle-state.js" />
+    <Content Include="Areas\Admin\master\js\modules\services\browser.js" />
+    <Content Include="Areas\Admin\master\js\modules\services\colors.js" />
+    <Content Include="Areas\Admin\master\js\modules\services\nav-search.js" />
+    <Content Include="Areas\Admin\master\js\modules\services\route-helpers.js" />
+    <Content Include="Areas\Admin\master\js\modules\services\toggle-state.js" />
+    <Content Include="Areas\Admin\master\js\modules\services\uigridUtils.js" />
+    <Content Include="Areas\Admin\master\js\modules\services\utils.js" />
+    <Content Include="Areas\Admin\vendor\angular-bootstrap-nav-tree\dist\abn_tree.css" />
+    <Content Include="Areas\Admin\vendor\angular-bootstrap-nav-tree\dist\abn_tree_directive.js" />
+    <Content Include="Areas\Admin\vendor\angular-bootstrap-slider\slider.js" />
+    <Content Include="Areas\Admin\vendor\angular-carousel\dist\angular-carousel.css" />
+    <Content Include="Areas\Admin\vendor\angular-carousel\dist\angular-carousel.js" />
+    <Content Include="Areas\Admin\vendor\angular-chartist.js\dist\angular-chartist.js" />
+    <Content Include="Areas\Admin\vendor\angular-chosen-localytics\chosen.js" />
+    <Content Include="Areas\Admin\vendor\angular-file-upload\angular-file-upload.js" />
+    <Content Include="Areas\Admin\vendor\angular-i18n\angular-locale_ar.js" />
+    <Content Include="Areas\Admin\vendor\angular-i18n\angular-locale_de.js" />
+    <Content Include="Areas\Admin\vendor\angular-i18n\angular-locale_en.js" />
+    <Content Include="Areas\Admin\vendor\angular-i18n\angular-locale_es.js" />
+    <Content Include="Areas\Admin\vendor\angular-i18n\angular-locale_fr.js" />
+    <Content Include="Areas\Admin\vendor\angular-i18n\angular-locale_ja.js" />
+    <Content Include="Areas\Admin\vendor\angular-i18n\angular-locale_ko.js" />
+    <Content Include="Areas\Admin\vendor\angular-i18n\angular-locale_zh.js" />
+    <Content Include="Areas\Admin\vendor\angular-rickshaw\rickshaw.js" />
+    <Content Include="Areas\Admin\vendor\angular-ui-codemirror\ui-codemirror.js" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\csv.js" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\pdfmake.js" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\ui-grid.css" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\ui-grid.js" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\ui-grid.min.css" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\ui-grid.min.js" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\ui-grid.svg" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\vfs_fonts.js" />
+    <Content Include="Areas\Admin\vendor\angular-ui-map\ui-map.js" />
+    <Content Include="Areas\Admin\vendor\angular-ui-select\dist\select.css" />
+    <Content Include="Areas\Admin\vendor\angular-ui-select\dist\select.js" />
+    <Content Include="Areas\Admin\vendor\angular-xeditable\dist\css\xeditable.css" />
+    <Content Include="Areas\Admin\vendor\angular-xeditable\dist\js\xeditable.js" />
+    <Content Include="Areas\Admin\vendor\angularjs-toaster\toaster.css" />
+    <Content Include="Areas\Admin\vendor\angularjs-toaster\toaster.js" />
+    <Content Include="Areas\Admin\vendor\animate.css\animate.min.css" />
+    <Content Include="Areas\Admin\vendor\animo.js\animo.js" />
+    <Content Include="Areas\Admin\vendor\bootstrap-filestyle\src\bootstrap-filestyle.js" />
+    <Content Include="Areas\Admin\vendor\bootstrap-tagsinput\dist\bootstrap-tagsinput.css" />
+    <Content Include="Areas\Admin\vendor\bootstrap-tagsinput\dist\bootstrap-tagsinput.min.js" />
+    <Content Include="Areas\Admin\vendor\bootstrap-wysiwyg\bootstrap-wysiwyg.js" />
+    <Content Include="Areas\Admin\vendor\bootstrap-wysiwyg\external\jquery.hotkeys.js" />
+    <Content Include="Areas\Admin\vendor\Chart.js\Chart.js" />
+    <Content Include="Areas\Admin\vendor\chartist\dist\chartist.js" />
+    <Content Include="Areas\Admin\vendor\chartist\dist\chartist.min.css" />
+    <Content Include="Areas\Admin\vendor\chosen_v1.2.0\chosen-sprite%402x.png" />
+    <Content Include="Areas\Admin\vendor\chosen_v1.2.0\chosen-sprite.png" />
+    <Content Include="Areas\Admin\vendor\chosen_v1.2.0\chosen.jquery.min.js" />
+    <Content Include="Areas\Admin\vendor\chosen_v1.2.0\chosen.min.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\addon\mode\overlay.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\lib\codemirror.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\lib\codemirror.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\apl\apl.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\asterisk\asterisk.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\clike\clike.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\clike\scala.html" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\clojure\clojure.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\cobol\cobol.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\coffeescript\coffeescript.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\commonlisp\commonlisp.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\css\css.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\css\less.html" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\css\less_test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\css\scss.html" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\css\scss_test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\css\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\cypher\cypher.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\dart\dart.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\diff\diff.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\django\django.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\dockerfile\dockerfile.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\dtd\dtd.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\dylan\dylan.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\d\d.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\ebnf\ebnf.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\ecl\ecl.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\eiffel\eiffel.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\erlang\erlang.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\forth\forth.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\fortran\fortran.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\gas\gas.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\gfm\gfm.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\gfm\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\gherkin\gherkin.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\go\go.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\groovy\groovy.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\haml\haml.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\haml\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\haskell\haskell.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\haxe\haxe.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\htmlembedded\htmlembedded.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\http\http.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\idl\idl.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\jade\jade.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\javascript\javascript.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\javascript\json-ld.html" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\javascript\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\javascript\typescript.html" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\jinja2\jinja2.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\julia\julia.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\kotlin\kotlin.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\livescript\livescript.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\lua\lua.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\markdown\markdown.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\markdown\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\meta.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\mirc\mirc.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\mllike\mllike.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\modelica\modelica.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\nginx\nginx.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\ntriples\ntriples.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\octave\octave.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\pascal\pascal.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\pegjs\pegjs.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\perl\perl.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\php\php.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\php\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\pig\pig.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\properties\properties.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\puppet\puppet.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\python\python.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\q\q.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\rpm\rpm.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\rst\rst.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\ruby\ruby.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\ruby\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\rust\rust.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\r\r.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\sass\sass.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\scheme\scheme.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\shell\shell.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\shell\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\sieve\sieve.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\slim\slim.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\slim\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\smalltalk\smalltalk.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\smartymixed\smartymixed.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\smarty\smarty.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\solr\solr.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\soy\soy.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\sparql\sparql.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\spreadsheet\spreadsheet.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\sql\sql.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\stex\stex.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\stex\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\stylus\stylus.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\tcl\tcl.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\textile\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\textile\textile.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\tiddlywiki\tiddlywiki.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\tiddlywiki\tiddlywiki.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\tiki\tiki.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\tiki\tiki.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\toml\toml.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\tornado\tornado.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\turtle\turtle.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\vbscript\vbscript.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\vb\vb.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\velocity\velocity.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\verilog\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\verilog\verilog.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\xml\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\xml\xml.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\xquery\test.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\xquery\xquery.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\yaml\yaml.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\mode\z80\z80.js" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\3024-day.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\3024-night.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\ambiance-mobile.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\ambiance.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\base16-dark.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\base16-light.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\blackboard.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\cobalt.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\colorforth.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\eclipse.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\elegant.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\erlang-dark.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\lesser-dark.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\mbo.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\mdn-like.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\midnight.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\monokai.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\neat.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\neo.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\night.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\paraiso-dark.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\paraiso-light.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\pastel-on-dark.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\rubyblue.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\solarized.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\the-matrix.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\tomorrow-night-bright.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\tomorrow-night-eighties.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\twilight.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\vibrant-ink.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\xq-dark.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\xq-light.css" />
+    <Content Include="Areas\Admin\vendor\codemirror\theme\zenburn.css" />
+    <Content Include="Areas\Admin\vendor\d3\d3.min.js" />
+    <Content Include="Areas\Admin\vendor\datatables-colvis\css\dataTables.colVis.css" />
+    <Content Include="Areas\Admin\vendor\datatables-colvis\js\dataTables.colVis.js" />
+    <Content Include="Areas\Admin\vendor\datatables\media\js\jquery.dataTables.min.js" />
+    <Content Include="Areas\Admin\vendor\fastclick\lib\fastclick.js" />
+    <Content Include="Areas\Admin\vendor\flatdoc\flatdoc.js" />
+    <Content Include="Areas\Admin\vendor\flot-spline\js\jquery.flot.spline.min.js" />
+    <Content Include="Areas\Admin\vendor\flot.tooltip\js\jquery.flot.tooltip.min.js" />
+    <Content Include="Areas\Admin\vendor\Flot\jquery.flot.categories.js" />
+    <Content Include="Areas\Admin\vendor\Flot\jquery.flot.js" />
+    <Content Include="Areas\Admin\vendor\Flot\jquery.flot.pie.js" />
+    <Content Include="Areas\Admin\vendor\Flot\jquery.flot.resize.js" />
+    <Content Include="Areas\Admin\vendor\Flot\jquery.flot.time.js" />
+    <Content Include="Areas\Admin\vendor\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Areas\Admin\vendor\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Areas\Admin\vendor\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Areas\Admin\vendor\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Areas\Admin\vendor\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Areas\Admin\vendor\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Areas\Admin\vendor\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Areas\Admin\vendor\fullcalendar\dist\fullcalendar.css" />
+    <Content Include="Areas\Admin\vendor\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="Areas\Admin\vendor\fullcalendar\dist\gcal.js" />
+    <Content Include="Areas\Admin\vendor\html.sortable\dist\html.sortable.angular.js" />
+    <Content Include="Areas\Admin\vendor\html.sortable\dist\html.sortable.js" />
+    <Content Include="Areas\Admin\vendor\ika.jvectormap\jquery-jvectormap-1.2.2.css" />
+    <Content Include="Areas\Admin\vendor\ika.jvectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="Areas\Admin\vendor\ika.jvectormap\jquery-jvectormap-us-mill-en.js" />
+    <Content Include="Areas\Admin\vendor\ika.jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="Areas\Admin\vendor\jquery-classyloader\js\jquery.classyloader.min.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\accordion.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\autocomplete.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\button.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\core.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\datepicker.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\dialog.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\draggable.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\droppable.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-blind.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-bounce.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-clip.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-drop.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-explode.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-fade.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-fold.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-highlight.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-puff.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-pulsate.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-scale.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-shake.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-size.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-slide.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect-transfer.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\effect.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\menu.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\mouse.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\position.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\progressbar.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\resizable.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\selectable.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\selectmenu.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\slider.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\sortable.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\spinner.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\tabs.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\tooltip.js" />
+    <Content Include="Areas\Admin\vendor\jquery-ui\ui\widget.js" />
+    <Content Include="Areas\Admin\vendor\jquery.inputmask\dist\jquery.inputmask.bundle.min.js" />
+    <Content Include="Areas\Admin\vendor\jqueryui-touch-punch\jquery.ui.touch-punch.min.js" />
+    <Content Include="Areas\Admin\vendor\loaders.css\loaders.css" />
+    <Content Include="Areas\Admin\vendor\marked\lib\marked.js" />
+    <Content Include="Areas\Admin\vendor\modernizr\modernizr.js" />
+    <Content Include="Areas\Admin\vendor\moment\min\moment-with-locales.min.js" />
+    <Content Include="Areas\Admin\vendor\morris.js\morris.css" />
+    <Content Include="Areas\Admin\vendor\morris.js\morris.js" />
+    <Content Include="Areas\Admin\vendor\nestable\jquery.nestable.js" />
+    <Content Include="Areas\Admin\vendor\ng-grid\build\ng-grid.min.js" />
+    <Content Include="Areas\Admin\vendor\ng-grid\ng-grid.css" />
+    <Content Include="Areas\Admin\vendor\ng-grid\plugins\ng-grid-csv-export.js" />
+    <Content Include="Areas\Admin\vendor\ng-grid\plugins\ng-grid-flexible-height.js" />
+    <Content Include="Areas\Admin\vendor\ng-grid\plugins\ng-grid-layout.js" />
+    <Content Include="Areas\Admin\vendor\ng-grid\plugins\ng-grid-pdf-export.js" />
+    <Content Include="Areas\Admin\vendor\ng-grid\plugins\ng-grid-reorderable.js" />
+    <Content Include="Areas\Admin\vendor\ng-grid\plugins\ng-grid-wysiwyg-export.js" />
+    <Content Include="Areas\Admin\vendor\ng-img-crop\compile\unminified\ng-img-crop.css" />
+    <Content Include="Areas\Admin\vendor\ng-img-crop\compile\unminified\ng-img-crop.js" />
+    <Content Include="Areas\Admin\vendor\ng-table-export\ng-table-export.js" />
+    <Content Include="Areas\Admin\vendor\ng-table\dist\ng-table.min.css" />
+    <Content Include="Areas\Admin\vendor\ng-table\dist\ng-table.min.js" />
+    <Content Include="Areas\Admin\vendor\ngDialog\css\ngDialog-theme-default.min.css" />
+    <Content Include="Areas\Admin\vendor\ngDialog\css\ngDialog.min.css" />
+    <Content Include="Areas\Admin\vendor\ngDialog\js\ngDialog.min.js" />
+    <Content Include="Areas\Admin\vendor\ngInfiniteScroll\build\ng-infinite-scroll.js" />
+    <Content Include="Areas\Admin\vendor\ngWig\dist\ng-wig.min.js" />
+    <Content Include="Areas\Admin\vendor\parsleyjs\dist\parsley.min.js" />
+    <Content Include="Areas\Admin\vendor\raphael\raphael.js" />
+    <Content Include="Areas\Admin\vendor\rickshaw\rickshaw.js" />
+    <Content Include="Areas\Admin\vendor\rickshaw\rickshaw.min.css" />
+    <Content Include="Areas\Admin\vendor\screenfull\dist\screenfull.js" />
+    <Content Include="Areas\Admin\vendor\seiyria-bootstrap-slider\dist\bootstrap-slider.min.js" />
+    <Content Include="Areas\Admin\vendor\seiyria-bootstrap-slider\dist\css\bootstrap-slider.min.css" />
+    <Content Include="Areas\Admin\vendor\simple-line-icons\css\simple-line-icons.css" />
+    <Content Include="Areas\Admin\vendor\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Areas\Admin\vendor\skycons\skycons.js" />
+    <Content Include="Areas\Admin\vendor\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="Areas\Admin\vendor\spinkit\css\spinkit.css" />
+    <Content Include="Areas\Admin\vendor\textAngular\dist\textAngular-rangy.min.js" />
+    <Content Include="Areas\Admin\vendor\textAngular\dist\textAngular-sanitize.min.js" />
+    <Content Include="Areas\Admin\vendor\textAngular\dist\textAngular.min.js" />
+    <Content Include="Areas\Admin\vendor\textAngular\src\textAngular-sanitize.js" />
+    <Content Include="Areas\Admin\vendor\textAngular\src\textAngular.css" />
+    <Content Include="Areas\Admin\vendor\textAngular\src\textAngular.js" />
+    <Content Include="Areas\Admin\vendor\textAngular\src\textAngularSetup.js" />
+    <Content Include="Areas\Admin\vendor\weather-icons\css\weather-icons.min.css" />
+    <Content Include="Areas\Admin\vendor\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="Areas\Admin\vendor\whirl\dist\whirl.css" />
+    <Content Include="Content\app.css" />
+    <Content Include="Content\css\star-rating.min.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\TimeLine.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\img\1.jpg" />
+    <Content Include="Content\img\2.jpg" />
+    <Content Include="Content\img\3.jpg" />
+    <Content Include="Content\img\add.jpg" />
+    <Content Include="Content\img\calssifieds_bg.jpg" />
+    <Content Include="Content\img\cityLights.jpg" />
+    <Content Include="Content\img\content\about-us-heading-bg.jpg" />
+    <Content Include="Content\img\content\blog-list-heading-bg.jpg" />
+    <Content Include="Content\img\content\blog-list-image1.jpg" />
+    <Content Include="Content\img\content\blog-list-image2.jpg" />
+    <Content Include="Content\img\content\blog-list-image3.jpg" />
+    <Content Include="Content\img\content\calssifieds_bg.jpg" />
+    <Content Include="Content\img\content\category_image.jpg" />
+    <Content Include="Content\img\content\comment-image-1.jpg" />
+    <Content Include="Content\img\content\comment-image-2.jpg" />
+    <Content Include="Content\img\content\company-heading-bg.jpg" />
+    <Content Include="Content\img\content\company-logo.jpg" />
+    <Content Include="Content\img\content\company-product.jpg" />
+    <Content Include="Content\img\content\contact-us-heading-bg.jpg" />
+    <Content Include="Content\img\content\feature-bg.jpg" />
+    <Content Include="Content\img\content\footer_logo_bg.jpg" />
+    <Content Include="Content\img\content\home-slide-img.jpg" />
+    <Content Include="Content\img\content\home-slider-img-two.jpg" />
+    <Content Include="Content\img\content\latest_post_1.jpg" />
+    <Content Include="Content\img\content\latest_post_2.jpg" />
+    <Content Include="Content\img\content\map-derection-100.png" />
+    <Content Include="Content\img\content\map-direction-1000.png" />
+    <Content Include="Content\img\content\map-direction-20.png" />
+    <Content Include="Content\img\content\map-direction-50.png" />
+    <Content Include="Content\img\content\map-direction-8.png" />
+    <Content Include="Content\img\content\map-marker-company.png" />
+    <Content Include="Content\img\content\map-marker.png" />
+    <Content Include="Content\img\content\medium-rectangle.jpg" />
+    <Content Include="Content\img\content\partner1.png" />
+    <Content Include="Content\img\content\partner2.png" />
+    <Content Include="Content\img\content\partner3.png" />
+    <Content Include="Content\img\content\partner4.png" />
+    <Content Include="Content\img\content\partner5.png" />
+    <Content Include="Content\img\content\partner6.png" />
+    <Content Include="Content\img\content\post-image.jpg" />
+    <Content Include="Content\img\content\post-img-1.jpg" />
+    <Content Include="Content\img\content\post-img-10.jpg" />
+    <Content Include="Content\img\content\post-img-11.jpg" />
+    <Content Include="Content\img\content\post-img-12.jpg" />
+    <Content Include="Content\img\content\post-img-2.jpg" />
+    <Content Include="Content\img\content\post-img-3.jpg" />
+    <Content Include="Content\img\content\post-img-4.jpg" />
+    <Content Include="Content\img\content\post-img-5.jpg" />
+    <Content Include="Content\img\content\post-img-6.jpg" />
+    <Content Include="Content\img\content\post-img-7.jpg" />
+    <Content Include="Content\img\content\post-img-8.jpg" />
+    <Content Include="Content\img\content\post-img-9.jpg" />
+    <Content Include="Content\img\content\price-listing-heading-bg.jpg" />
+    <Content Include="Content\img\content\register_bg.jpg" />
+    <Content Include="Content\img\content\square-button.png" />
+    <Content Include="Content\img\content\team-member-1.jpg" />
+    <Content Include="Content\img\content\team-member-2.jpg" />
+    <Content Include="Content\img\content\team-member-3.jpg" />
+    <Content Include="Content\img\content\team-member-4.jpg" />
+    <Content Include="Content\img\footer_logo.png" />
+    <Content Include="Content\img\img1.1.jpg" />
+    <Content Include="Content\img\img1.2.jpg" />
+    <Content Include="Content\img\img1.3.jpg" />
+    <Content Include="Content\img\img1.4.jpg" />
+    <Content Include="Content\img\img1.5.jpg" />
+    <Content Include="Content\img\img1.6.jpg" />
+    <Content Include="Content\img\Loader.GIF" />
+    <Content Include="Content\img\logo_default.png" />
+    <Content Include="Content\img\slider-logo.png" />
+    <Content Include="Content\img\transparent.png" />
+    <Content Include="Content\style.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\less\bootstrap\alerts.less" />
+    <Content Include="Content\less\bootstrap\badges.less" />
+    <Content Include="Content\less\bootstrap\bootstrap.less" />
+    <Content Include="Content\less\bootstrap\breadcrumbs.less" />
+    <Content Include="Content\less\bootstrap\button-groups.less" />
+    <Content Include="Content\less\bootstrap\buttons.less" />
+    <Content Include="Content\less\bootstrap\carousel.less" />
+    <Content Include="Content\less\bootstrap\close.less" />
+    <Content Include="Content\less\bootstrap\code.less" />
+    <Content Include="Content\less\bootstrap\component-animations.less" />
+    <Content Include="Content\less\bootstrap\dropdowns.less" />
+    <Content Include="Content\less\bootstrap\forms.less" />
+    <Content Include="Content\less\bootstrap\glyphicons.less" />
+    <Content Include="Content\less\bootstrap\grid.less" />
+    <Content Include="Content\less\bootstrap\input-groups.less" />
+    <Content Include="Content\less\bootstrap\jumbotron.less" />
+    <Content Include="Content\less\bootstrap\labels.less" />
+    <Content Include="Content\less\bootstrap\list-group.less" />
+    <Content Include="Content\less\bootstrap\media.less" />
+    <Content Include="Content\less\bootstrap\mixins.less" />
+    <Content Include="Content\less\bootstrap\mixins\alerts.less" />
+    <Content Include="Content\less\bootstrap\mixins\background-variant.less" />
+    <Content Include="Content\less\bootstrap\mixins\border-radius.less" />
+    <Content Include="Content\less\bootstrap\mixins\buttons.less" />
+    <Content Include="Content\less\bootstrap\mixins\center-block.less" />
+    <Content Include="Content\less\bootstrap\mixins\clearfix.less" />
+    <Content Include="Content\less\bootstrap\mixins\forms.less" />
+    <Content Include="Content\less\bootstrap\mixins\gradients.less" />
+    <Content Include="Content\less\bootstrap\mixins\grid-framework.less" />
+    <Content Include="Content\less\bootstrap\mixins\grid.less" />
+    <Content Include="Content\less\bootstrap\mixins\hide-text.less" />
+    <Content Include="Content\less\bootstrap\mixins\image.less" />
+    <Content Include="Content\less\bootstrap\mixins\labels.less" />
+    <Content Include="Content\less\bootstrap\mixins\list-group.less" />
+    <Content Include="Content\less\bootstrap\mixins\nav-divider.less" />
+    <Content Include="Content\less\bootstrap\mixins\nav-vertical-align.less" />
+    <Content Include="Content\less\bootstrap\mixins\opacity.less" />
+    <Content Include="Content\less\bootstrap\mixins\pagination.less" />
+    <Content Include="Content\less\bootstrap\mixins\panels.less" />
+    <Content Include="Content\less\bootstrap\mixins\progress-bar.less" />
+    <Content Include="Content\less\bootstrap\mixins\reset-filter.less" />
+    <Content Include="Content\less\bootstrap\mixins\resize.less" />
+    <Content Include="Content\less\bootstrap\mixins\responsive-visibility.less" />
+    <Content Include="Content\less\bootstrap\mixins\size.less" />
+    <Content Include="Content\less\bootstrap\mixins\tab-focus.less" />
+    <Content Include="Content\less\bootstrap\mixins\table-row.less" />
+    <Content Include="Content\less\bootstrap\mixins\text-emphasis.less" />
+    <Content Include="Content\less\bootstrap\mixins\text-overflow.less" />
+    <Content Include="Content\less\bootstrap\mixins\vendor-prefixes.less" />
+    <Content Include="Content\less\bootstrap\modals.less" />
+    <Content Include="Content\less\bootstrap\navbar.less" />
+    <Content Include="Content\less\bootstrap\navs.less" />
+    <Content Include="Content\less\bootstrap\normalize.less" />
+    <Content Include="Content\less\bootstrap\pager.less" />
+    <Content Include="Content\less\bootstrap\pagination.less" />
+    <Content Include="Content\less\bootstrap\panels.less" />
+    <Content Include="Content\less\bootstrap\popovers.less" />
+    <Content Include="Content\less\bootstrap\print.less" />
+    <Content Include="Content\less\bootstrap\progress-bars.less" />
+    <Content Include="Content\less\bootstrap\responsive-embed.less" />
+    <Content Include="Content\less\bootstrap\responsive-utilities.less" />
+    <Content Include="Content\less\bootstrap\scaffolding.less" />
+    <Content Include="Content\less\bootstrap\tables.less" />
+    <Content Include="Content\less\bootstrap\theme.less" />
+    <Content Include="Content\less\bootstrap\thumbnails.less" />
+    <Content Include="Content\less\bootstrap\tooltip.less" />
+    <Content Include="Content\less\bootstrap\type.less" />
+    <Content Include="Content\less\bootstrap\utilities.less" />
+    <Content Include="Content\less\bootstrap\variables.less" />
+    <Content Include="Content\less\bootstrap\wells.less" />
+    <Content Include="Content\less\bs-variables.less" />
+    <Content Include="Content\less\fa-variables.less" />
+    <Content Include="Content\less\font-awesome\bordered-pulled.less" />
+    <Content Include="Content\less\font-awesome\core.less" />
+    <Content Include="Content\less\font-awesome\extras.less" />
+    <Content Include="Content\less\font-awesome\fixed-width.less" />
+    <Content Include="Content\less\font-awesome\font-awesome.less" />
+    <Content Include="Content\less\font-awesome\icons.less" />
+    <Content Include="Content\less\font-awesome\larger.less" />
+    <Content Include="Content\less\font-awesome\list.less" />
+    <Content Include="Content\less\font-awesome\mixins.less" />
+    <Content Include="Content\less\font-awesome\path.less" />
+    <Content Include="Content\less\font-awesome\rotated-flipped.less" />
+    <Content Include="Content\less\font-awesome\spinning.less" />
+    <Content Include="Content\less\font-awesome\stacked.less" />
+    <Content Include="Content\less\font-awesome\variables.less" />
+    <Content Include="Content\less\plugins\owl-carousel.less" />
+    <Content Include="Content\less\style.less" />
+    <Content Include="Content\less\style\about-us.less" />
+    <Content Include="Content\less\style\blog-list.less" />
+    <Content Include="Content\less\style\blog-post.less" />
+    <Content Include="Content\less\style\buttons.less" />
+    <Content Include="Content\less\style\classified.less" />
+    <Content Include="Content\less\style\comments-section.less" />
+    <Content Include="Content\less\style\company-contact.less" />
+    <Content Include="Content\less\style\company-events.less" />
+    <Content Include="Content\less\style\company-product.less" />
+    <Content Include="Content\less\style\company-profile.less" />
+    <Content Include="Content\less\style\contact-us.less" />
+    <Content Include="Content\less\style\featured-listing.less" />
+    <Content Include="Content\less\style\footer.less" />
+    <Content Include="Content\less\style\forms.less" />
+    <Content Include="Content\less\style\header.less" />
+    <Content Include="Content\less\style\header\header-map.less" />
+    <Content Include="Content\less\style\header\header-nav-bar.less" />
+    <Content Include="Content\less\style\header\header-search-bar.less" />
+    <Content Include="Content\less\style\header\header-slider.less" />
+    <Content Include="Content\less\style\header\header-top-bar.less" />
+    <Content Include="Content\less\style\home-with-slider.less" />
+    <Content Include="Content\less\style\our-partners.less" />
+    <Content Include="Content\less\style\page-content.less" />
+    <Content Include="Content\less\style\page-content\category-item.less" />
+    <Content Include="Content\less\style\page-content\product-details-list.less" />
+    <Content Include="Content\less\style\page-content\product-details.less" />
+    <Content Include="Content\less\style\page-content\view-pagination.less" />
+    <Content Include="Content\less\style\page-heading.less" />
+    <Content Include="Content\less\style\price-listing.less" />
+    <Content Include="Content\less\style\register-now.less" />
+    <Content Include="Content\less\style\sample-page.less" />
+    <Content Include="Content\less\style\scaffolding.less" />
+    <Content Include="Content\less\style\shortcodes.less" />
+    <Content Include="Content\less\style\sidebar.less" />
+    <Content Include="Content\less\style\sidebar\categories.less" />
+    <Content Include="Content\less\style\sidebar\company-sidebar.less" />
+    <Content Include="Content\less\style\sidebar\distance-range.less" />
+    <Content Include="Content\less\style\sidebar\post-sidebar.less" />
+    <Content Include="Content\less\style\sidebar\select-location.less" />
+    <Content Include="Content\less\style\sidebar\sidebar-toggle.less" />
+    <Content Include="Content\less\style\type.less" />
+    <Content Include="Content\less\style\widgets.less" />
+    <Content Include="Content\less\variables.less" />
+    <Content Include="Scripts\gmaps.js" />
+    <Content Include="Scripts\gomap.js" />
+    <Content Include="Scripts\jquery.ba-outside-events.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\MiAmorScripts\constants.js" />
+    <Content Include="Scripts\MiAmorScripts\functions.js" />
+    <Content Include="Scripts\MiAmorScripts\miAmorControls.js" />
+    <Content Include="Scripts\MiAmorScripts\MiAmorMaps.js" />
+    <Content Include="Scripts\modernizr.js" />
+    <Content Include="Scripts\owl.carousel.js" />
+    <Content Include="Scripts\MiAmorScripts\scripts.js" />
+    <Content Include="Scripts\star-rating.min.js" />
+    <Content Include="Views\Vendor\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Views\AdminCity\" />
+    <Folder Include="Areas\Admin\Views\AdminNeighbourhood\" />
+    <Folder Include="Areas\Admin\Views\BlogCommentAdmin\" />
+    <Folder Include="Areas\Admin\Views\BlogPostAdmin\" />
+    <Folder Include="Areas\Admin\Views\BlogPostTagAdmin\" />
+    <Folder Include="Areas\Admin\Views\CampaignAttributeAdmin\" />
+    <Folder Include="Areas\Admin\Views\CampaignPaymentsAdmin\" />
+    <Folder Include="Areas\Admin\Views\CampaignStatusAdmin\" />
+    <Folder Include="Areas\Admin\Views\CampaignTagAdmin\" />
+    <Folder Include="Areas\Admin\Views\CustomerAdmin\" />
+    <Folder Include="Areas\Admin\Views\EventCommentAdmin\" />
+    <Folder Include="Areas\Admin\Views\EventPostAdmin\" />
+    <Folder Include="Areas\Admin\Views\EventPostTagAdmin\" />
+    <Folder Include="Areas\Admin\Views\FileUpload\" />
+    <Folder Include="Areas\Admin\Views\ManufactererAdmin\" />
+    <Folder Include="Areas\Admin\Views\ProductAdmin\" />
+    <Folder Include="Areas\Admin\Views\ProductAttributeAdmin\" />
+    <Folder Include="Areas\Admin\Views\ProductCategoryAdmin\" />
+    <Folder Include="Areas\Admin\Views\ProductReviewAdmin\" />
+    <Folder Include="Areas\Admin\Views\ProductTagAdmin\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\VendorAdmin\" />
+    <Folder Include="Areas\Admin\Views\VendorCategoryAdmin\" />
+    <Folder Include="Areas\Admin\Views\VendorCategoryCountAdmin\" />
+    <Folder Include="Content\CutomerCss\" />
+    <Folder Include="Views\Ccategorie\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <Content Include="Views\Shared\_LayoutRoot.cshtml" />
+    <Content Include="Views\Shared\_RootHeader.cshtml" />
+    <Content Include="Views\Home\_MainHeaderImageSlider.cshtml" />
+    <Content Include="Views\Home\_MainHeader.cshtml" />
+    <Content Include="Views\Home\_MainHeaderMenu.cshtml" />
+    <Content Include="Views\Home\_MainHeaderTopBar.cshtml" />
+    <Content Include="Views\Home\_MainHeaderSearchBar.cshtml" />
+    <Content Include="Views\VendorCategory\_Navigation.cshtml" />
+    <Content Include="Views\VendorCategory\_VendorListing.cshtml" />
+    <Content Include="Views\VendorCategory\_VedorListingBox.cshtml" />
+    <Content Include="Views\Shared\_Slider.cshtml" />
+    <Content Include="Views\VendorCategory\_FooterNavigation.cshtml" />
+    <Content Include="Views\VendorCategory\_FooterNavigationBox.cshtml" />
+    <Content Include="Views\Vendor\_VendorListing.cshtml" />
+    <Content Include="Views\Vendor\_VendorListingBox.cshtml" />
+    <Content Include="Views\Home\_OurPartners.cshtml" />
+    <Content Include="Views\Home\_HomeRegistration.cshtml" />
+    <Content Include="Views\Home\_FeaturedListing.cshtml" />
+    <Content Include="Views\Home\_RegisterContent.cshtml" />
+    <Content Include="Views\Home\Index - Copy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiAmor..Core\MiAmor..Core.csproj">
+      <Project>{28b16239-91ee-4147-8823-5fc03bc120ca}</Project>
+      <Name>MiAmor..Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MiAmor.Data\MiAmor.Data.csproj">
+      <Project>{7667ddfe-157e-4735-bbb7-473e86f84ded}</Project>
+      <Name>MiAmor.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MiAmor.Services\MiAmor.Services.csproj">
+      <Project>{fd6a50b6-cfb3-45ea-9785-1a4407cbb49e}</Project>
+      <Name>MiAmor.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Vendor\_VendorPagination.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controllers\web.config" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\app\i18n\en.json" />
+    <Content Include="Areas\Admin\app\i18n\es_AR.json" />
+    <Content Include="Areas\Admin\master\.bowerrc" />
+    <Content Include="Areas\Admin\master\bower.json" />
+    <Content Include="Areas\Admin\master\jade\index.jade" />
+    <Content Include="Areas\Admin\master\jade\views\app.jade" />
+    <Content Include="Areas\Admin\master\jade\views\partials\footer.jade" />
+    <Content Include="Areas\Admin\master\jade\views\partials\offsidebar-tab1.jade" />
+    <Content Include="Areas\Admin\master\jade\views\partials\offsidebar-tab2.jade" />
+    <Content Include="Areas\Admin\master\jade\views\partials\offsidebar.jade" />
+    <Content Include="Areas\Admin\master\jade\views\partials\sidebar.jade" />
+    <Content Include="Areas\Admin\master\jade\views\partials\top-navbar.jade" />
+    <Content Include="Areas\Admin\master\jade\views\singleview.jade" />
+    <Content Include="Areas\Admin\master\jade\views\submenu.jade" />
+    <Content Include="Areas\Admin\master\less\app.less" />
+    <Content Include="Areas\Admin\master\less\app\animate.less" />
+    <Content Include="Areas\Admin\master\less\app\bootstrap-reset.less" />
+    <Content Include="Areas\Admin\master\less\app\layout-extra.less" />
+    <Content Include="Areas\Admin\master\less\app\layout.less" />
+    <Content Include="Areas\Admin\master\less\app\loading-bar.less" />
+    <Content Include="Areas\Admin\master\less\app\media-queries.less" />
+    <Content Include="Areas\Admin\master\less\app\offsidebar.less" />
+    <Content Include="Areas\Admin\master\less\app\print.less" />
+    <Content Include="Areas\Admin\master\less\app\sidebar.less" />
+    <Content Include="Areas\Admin\master\less\app\top-navbar.less" />
+    <Content Include="Areas\Admin\master\less\app\typo.less" />
+    <Content Include="Areas\Admin\master\less\app\utils.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\alerts.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\badges.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\bootstrap.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\breadcrumbs.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\button-groups.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\buttons.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\carousel.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\close.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\code.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\component-animations.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\dropdowns.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\forms.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\glyphicons.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\grid.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\input-groups.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\jumbotron.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\labels.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\list-group.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\media.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\alerts.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\background-variant.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\border-radius.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\buttons.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\center-block.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\clearfix.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\forms.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\gradients.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\grid-framework.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\grid.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\hide-text.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\image.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\labels.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\list-group.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\nav-divider.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\nav-vertical-align.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\opacity.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\pagination.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\panels.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\progress-bar.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\reset-filter.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\resize.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\responsive-visibility.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\size.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\tab-focus.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\table-row.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\text-emphasis.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\text-overflow.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\mixins\vendor-prefixes.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\modals.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\navbar.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\navs.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\normalize.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\pager.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\pagination.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\panels.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\popovers.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\print.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\progress-bars.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\responsive-embed.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\responsive-utilities.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\scaffolding.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\tables.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\theme.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\thumbnails.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\tooltip.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\type.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\utilities.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\variables.less" />
+    <Content Include="Areas\Admin\master\less\bootstrap\wells.less" />
+    <Content Include="Areas\Admin\master\less\themes\theme-a.less" />
+    <Content Include="Areas\Admin\master\less\themes\theme-b.less" />
+    <Content Include="Areas\Admin\master\less\themes\theme-c.less" />
+    <Content Include="Areas\Admin\master\less\themes\theme-d.less" />
+    <Content Include="Areas\Admin\master\less\themes\theme-e.less" />
+    <Content Include="Areas\Admin\master\less\themes\theme-f.less" />
+    <Content Include="Areas\Admin\master\less\themes\theme-g.less" />
+    <Content Include="Areas\Admin\master\less\themes\theme-h.less" />
+    <Content Include="Areas\Admin\master\package.json" />
+    <Content Include="Areas\Admin\master\sass\app.scss" />
+    <Content Include="Areas\Admin\master\sass\app\animate.scss" />
+    <Content Include="Areas\Admin\master\sass\app\bootstrap-reset.scss" />
+    <Content Include="Areas\Admin\master\sass\app\layout-extra.scss" />
+    <Content Include="Areas\Admin\master\sass\app\layout.scss" />
+    <Content Include="Areas\Admin\master\sass\app\loading-bar.scss" />
+    <Content Include="Areas\Admin\master\sass\app\media-queries.scss" />
+    <Content Include="Areas\Admin\master\sass\app\offsidebar.scss" />
+    <Content Include="Areas\Admin\master\sass\app\print.scss" />
+    <Content Include="Areas\Admin\master\sass\app\sidebar.scss" />
+    <Content Include="Areas\Admin\master\sass\app\top-navbar.scss" />
+    <Content Include="Areas\Admin\master\sass\app\typo.scss" />
+    <Content Include="Areas\Admin\master\sass\app\utils-definitions.scss" />
+    <Content Include="Areas\Admin\master\sass\app\utils.scss" />
+    <Content Include="Areas\Admin\master\sass\app\variables.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_alerts.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_center-block.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_forms.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_grid.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_image.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_labels.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_opacity.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_panels.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_resize.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_size.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_alerts.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_badges.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_breadcrumbs.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_button-groups.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_buttons.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_carousel.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_close.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_code.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_component-animations.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_dropdowns.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_forms.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_glyphicons.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_grid.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_input-groups.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_jumbotron.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_labels.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_list-group.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_media.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_mixins.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_modals.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_navbar.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_navs.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_normalize.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_pager.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_pagination.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_panels.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_popovers.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_print.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_progress-bars.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_responsive-embed.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_responsive-utilities.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_scaffolding.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_tables.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_theme.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_thumbnails.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_tooltip.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_type.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_utilities.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_variables.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\bootstrap\_wells.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\_bootstrap-compass.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\_bootstrap-mincer.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\_bootstrap-sprockets.scss" />
+    <Content Include="Areas\Admin\master\sass\bootstrap\_bootstrap.scss" />
+    <Content Include="Areas\Admin\master\sass\themes\theme-a.scss" />
+    <Content Include="Areas\Admin\master\sass\themes\theme-b.scss" />
+    <Content Include="Areas\Admin\master\sass\themes\theme-c.scss" />
+    <Content Include="Areas\Admin\master\sass\themes\theme-d.scss" />
+    <Content Include="Areas\Admin\master\sass\themes\theme-e.scss" />
+    <Content Include="Areas\Admin\master\sass\themes\theme-f.scss" />
+    <Content Include="Areas\Admin\master\sass\themes\theme-g.scss" />
+    <Content Include="Areas\Admin\master\sass\themes\theme-h.scss" />
+    <Content Include="Areas\Admin\master\vendor.base.json" />
+    <Content Include="Areas\Admin\master\vendor.json" />
+    <Content Include="Areas\Admin\server\sidebar-menu.json" />
+    <Content Include="Areas\Admin\server\uigrid-100.json" />
+    <Content Include="Areas\Admin\server\uigrid-complex.json" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\bower.json" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\README.md" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\ui-grid.eot" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\ui-grid.ttf" />
+    <Content Include="Areas\Admin\vendor\angular-ui-grid\ui-grid.woff" />
+    <Content Include="Areas\Admin\vendor\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Areas\Admin\vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Areas\Admin\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
+    <Content Include="Areas\Admin\vendor\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="Areas\Admin\vendor\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="Areas\Admin\vendor\weather-icons\font\weathericons-regular-webfont.woff" />
+    <Content Include="Areas\Admin\vendor\weather-icons\font\WeatherIcons-Regular.otf" />
+    <Content Include="Areas\Admin\Controllers\AdminCityController.cs" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Compile Include="Models\Paging\CustomerMessagePagingModel.cs" />
+    <Content Include="Areas\Admin\server\chart\area.json" />
+    <Content Include="Areas\Admin\server\chart\bar.json" />
+    <Content Include="Areas\Admin\server\chart\barstacked.json" />
+    <Content Include="Areas\Admin\server\chart\barstackedv2.json" />
+    <Content Include="Areas\Admin\server\chart\donut.json" />
+    <Content Include="Areas\Admin\server\chart\line.json" />
+    <Content Include="Areas\Admin\server\chart\pie.json" />
+    <Content Include="Areas\Admin\server\chart\realtime.json" />
+    <Content Include="Areas\Admin\server\chart\spline.json" />
+    <Content Include="Areas\Admin\server\chart\splinev2.json" />
+    <Content Include="Areas\Admin\server\chart\splinev3.json" />
+    <Content Include="Areas\Admin\server\chosen-states.json" />
+    <Content Include="Areas\Admin\server\cities.json" />
+    <None Include="Properties\PublishProfiles\AWS.pubxml" />
+    <Content Include="Views\Home\_MainFooter.cshtml" />
+    <Content Include="Views\Home\_MainHeaderVendorSlider.cshtml" />
+    <Content Include="Views\Shared\_LayoutVendor.cshtml" />
+    <Content Include="Views\Shared\_RootHeaderVendor.cshtml" />
+    <Content Include="Views\Vendor\_GetVendorAddress.cshtml" />
+    <Content Include="Views\Vendor\GetVendorAddress.cshtml" />
+    <Content Include="Views\Language\Index.cshtml" />
+    <Content Include="Views\Home\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\_LoginForm.cshtml" />
+    <Content Include="Views\Home\_AlreadyLogin.cshtml" />
+    <Content Include="Views\Home\_RegisterForm.cshtml" />
+    <Content Include="Views\Vendor\_MainHeaderVendor.cshtml" />
+    <Content Include="Views\Vendor\VendorCompanyContact.cshtml" />
+    <Content Include="Views\Vendor\VendorCompanyEvents.cshtml" />
+    <Content Include="Views\Vendor\VendorCompanyCupon.cshtml" />
+    <Content Include="Views\Vendor\VendorCompanyProduct.cshtml" />
+    <Content Include="Views\Vendor\VendorCompanyProfile.cshtml" />
+    <Content Include="Views\Vendor\_VendorCompanySidebar.cshtml" />
+    <Content Include="Views\Vendor\_VendorProfileRatingReviews.cshtml" />
+    <Content Include="Views\Vendor\_VendorRatingBox.cshtml" />
+    <Content Include="Views\Vendor\_VendorReviewBox.cshtml" />
+    <Content Include="Views\Vendor\_VendorWriteReview.cshtml" />
+    <Content Include="Views\Vendor\_VendorProfileService.cshtml" />
+    <Content Include="Views\Home\_CategorySearch.cshtml" />
+    <Content Include="Views\Shared\_LayoutCustomer.cshtml" />
+    <Content Include="Views\Customer\CustomerDetails.cshtml" />
+    <Content Include="Views\Customer\CustomerProfile.cshtml" />
+    <Content Include="Views\Customer\_CustomerEvents.cshtml" />
+    <Content Include="Views\Customer\_CustomerContact.cshtml" />
+    <Content Include="Views\Customer\_CustomerPortfolio.cshtml" />
+    <Content Include="Views\Customer\_CustomerBlog.cshtml" />
+    <Content Include="Views\Customer\_CustomerMessage.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\_CustomerQuickiesBookmarkList.cshtml" />
+    <Content Include="Views\Customer\_CustomerMessageList.cshtml" />
+    <Content Include="Views\Customer\CustomerQuickies.cshtml" />
+    <Content Include="Views\Customer\_CustomerCoupons.cshtml" />
+    <Content Include="Views\Customer\_CustomerHistory.cshtml" />
+    <Content Include="Views\Customer\_CustomerSettings.cshtml" />
+    <Content Include="Views\Customer\_CustomerQuickiesMessageList.cshtml" />
+    <Content Include="Views\Customer\_CustomerQuickiesCampaignsList.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Customer\CustomerDetailsLeftbar.cshtml" />
+    <Content Include="Views\Blog\_Timelinepanel.cshtml" />
+    <Content Include="Views\Customer\_CustomerDetailsLeftbar.cshtml" />
+    <Content Include="Views\Customer\_CustomerQuickies.cshtml" />
+    <Content Include="Views\Address\_LocationDetailsSideBar.cshtml" />
+    <Content Include="Views\Customer\CustomerBookmarkList.cshtml" />
+    <Content Include="Views\Customer\CustomerCoupons.cshtml" />
+    <Content Include="Views\Customer\CustomerMessage.cshtml" />
+    <Content Include="Views\Customer\CustomerSettings.cshtml" />
+    <Content Include="Views\Blog\BlogPost.cshtml" />
+    <Content Include="Views\Blog\_BlogLastestPost.cshtml" />
+    <Content Include="Views\Blog\_BlogPostComments.cshtml" />
+    <Content Include="Views\Blog\_BlogPostCategories.cshtml" />
+    <Content Include="Views\Blog\_BlogCommentsPagination.cshtml" />
+    <Content Include="Views\PriceList\Index.cshtml" />
+    <Content Include="Views\PriceList\PriceListPrices.cshtml" />
+    <Content Include="Views\PriceList\_PriceList.cshtml" />
+    <Content Include="Views\PriceList\_PriceListPrices.cshtml" />
+    <Content Include="Views\Home\_LocationSearchBar.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
+    <Content Include="Views\Vendor\_VendorCompanySidebarDetails.cshtml" />
+    <Content Include="Views\Blog\VendorBlog.cshtml" />
+    <Content Include="Views\Blog\_VendorBlogTimelinepanel.cshtml" />
+    <Content Include="Views\Blog\IndexEvent.cshtml" />
+    <Content Include="Views\Blog\_TimelinepanelEvent.cshtml" />
+    <Content Include="Views\Vendor\VendorCompanyBlog.cshtml" />
+    <Content Include="Views\Vendor\_VendorCompanyBlogItem.cshtml" />
+    <Content Include="Views\Vendor\_VendorCompanyEventItem.cshtml" />
+    <Content Include="Views\Vendor\_VendorCuponListingBox.cshtml" />
+    <Content Include="Views\Vendor\_VendorCuponListing.cshtml" />
+    <Content Include="Views\Vendor\HomePageListing.cshtml" />
+    <Content Include="Views\Vendor\_VendorBlogListing.cshtml" />
+    <Content Include="Views\Vendor\_VendorBlogListingBox.cshtml" />
+    <Content Include="Views\Vendor\_VendorPaginationAjax.cshtml" />
+    <Content Include="Views\Vendor\_VendorBlogPaginationAjax.cshtml" />
+    <Content Include="Views\Vendor\_VendorCampaignPaginationAjax.cshtml" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\Vendor\_VendorCategoryBreadcrumbs.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resources.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51296</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51296/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

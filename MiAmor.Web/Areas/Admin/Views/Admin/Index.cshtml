@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ng-app="angle">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="{{app.description}}">
+    <meta name="keywords" content="app, responsive, angular, bootstrap, dashboard, admin">
+    <title data-ng-bind="::pageTitle()">Angle - Angular Bootstrap Admin Template</title>
+    <!-- Bootstrap styles-->
+    <link rel="stylesheet" href="~/Areas/Admin/app/css/bootstrap.css" data-ng-if="!app.layout.isRTL">
+    <link rel="stylesheet" href="~/Areas/Admin/app/css/bootstrap-rtl.css" data-ng-if="app.layout.isRTL">
+    <!-- Application styles-->
+    <link rel="stylesheet" href="~/Areas/Admin/app/css/app.css" data-ng-if="!app.layout.isRTL">
+    <link rel="stylesheet" href="~/Areas/Admin/app/css/app-rtl.css" data-ng-if="app.layout.isRTL">
+    <!-- Themes-->
+    <link href="~/Areas/Admin/app/css/theme-d.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" ng-href="{{app.layout.theme}}" data-ng-if="app.layout.theme">-->
+
+
+</head>
+
+<body data-ng-class="{ 'layout-fixed' : app.layout.isFixed, 'aside-collapsed' : app.layout.isCollapsed, 'layout-boxed' : app.layout.isBoxed, 'layout-fs': app.useFullLayout, 'hidden-footer': app.hiddenFooter, 'layout-h': app.layout.horizontal, 'aside-float': app.layout.isFloat}">
+    <div data-ui-view="" data-autoscroll="false" class="wrapper"></div>
+    <script src="~/Areas/Admin/app/js/base.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/app.init.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/config.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/constants.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/main.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/sidebar-menu.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/alerts.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/buttons.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/customer/custGrid.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/vendor/vendorGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/product/productGrid.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/manufacturer/manufacturerGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/productAttribute/productAttributeGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/productCategory/productCategoryGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/vendorCategory/vendorCategoryGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/vendorCategoryCount/vendorCategoryCountGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/productTag/productTagGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/productReview/productReviewGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/blogPost/blogPostGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaign/campaignGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignDelivery/campaignDeliveryGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/priceList/priceListGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignAttribute/campaignAttributeGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignStatus/campaignStatusGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignTag/campaignTagGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignPayments/campaignPaymentsGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/blogComment/blogCommentGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/blogPostTag/blogPostTagGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/eventPost/eventPostGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/eventPostTag/eventPostTagGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/eventComment/eventCommentGrid.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/progress.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/form-validation.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/timepicker.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/uiselect.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/datepicker.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/customer/newCustomer.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/customer/custWizard.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/vendor/newVendor.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/product/newProduct.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/manufacturer/newManufacturer.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/productAttribute/newProductAttribute.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/productCategory/newProductCategory.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/vendorCategory/newVendorCategory.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/vendorCategoryCount/newVendorCategoryCount.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/productTag/newProductTag.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/productReview/newProductReview.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/blogPost/newBlogPost.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaign/newCampaign.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignDelivery/newCampaignDelivery.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/priceList/newPriceList.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignAttribute/newCampaignAttribute.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignStatus/newCampaignStatus.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignTag/newCampaignTag.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/campaignPayments/newCampaignPayments.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/blogComment/newBlogComment.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/blogPostTag/newBlogPostTag.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/eventPost/newEventPost.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/eventPostTag/newEventPostTag.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/eventComment/newEventComment.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/upload.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/controllers/flot-chart.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/directives/sidebar.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/directives/navbar-search.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/directives/toggle-state.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/directives/play-animations.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/directives/form-wizard.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/directives/flot.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/directives/chart.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/directives/classy-loader.js"></script>
+    <script src="~/Areas/Admin/master/js/modules/services/browser.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/services/colors.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/services/nav-search.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/services/route-helpers.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/services/toggle-state.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/services/utils.js?v=10"></script>
+    <script src="~/Areas/Admin/master/js/modules/services/uigridUtils.js?v=10"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+[
+  {
+    "text": "Menu Heading",
+    "heading": "true",
+    "translate": "sidebar.heading.HEADER"
+  },
+     {
+    "text": "Dashboard",
+    "sref": "#",
+    "icon": "icon-speedometer",
+    "alert": "3" ,
+    "label": "label label-info", 
+    "submenu": [
+      {"text": "Dashboard ",       "sref": "app.dashboard"}
+    ],
+    "translate": "sidebar.nav.DASHBOARD"
+  }, 
+     {
+    "text": "Customer",
+    "sref": "#",
+    "icon": "icon-credit-card",
+    "submenu": [
+        { "text": "Customer", "sref": "app.mainCustomer" },
+        {"text": "Upload",      "sref": "app.form-upload", "translate": "sidebar.nav.form.UPLOAD" }
+    ],
+    "translate": "customForm.customer"
+  },
+
+
+     {
+    "text": "Vendor",
+    "sref": "#",
+    "icon": "icon-credit-card",
+    "submenu": [
+      { "text": "Vendor",     "sref": "app.mainVendor" },
+      {"text":  "Vendor Category", "sref": "app.mainVendorCategory"},
+      {"text":  "Vendor Category Count", "sref": "app.mainVendorCategoryCount"}
+    ],
+    "translate": "customForm.vendor"
+  },
+
+      {
+    "text": "Product",
+    "sref": "#",
+    "icon": "icon-credit-card",
+    "submenu": [
+      {"text":  "Product", "sref": "app.mainProduct"},
+      {"text":  "Manufacturer", "sref": "app.mainManufacturer"},
+      {"text":  "Product Attribute", "sref": "app.mainProductAttribute"},
+      {"text":  "Product Category", "sref": "app.mainProductCategory"},
+      {"text":  "Product Tag", "sref": "app.mainProductTag"},
+      {"text":  "Product Review", "sref": "app.mainProductReview"}
+    ],
+    "translate": "customForm.product"
+  },
+       {
+    "text": "Blog",
+    "sref": "#",
+    "icon": "icon-credit-card",
+    "submenu": [
+      {"text":  "Blog Post", "sref": "app.mainBlogPost"},
+      {"text":  "Blog Comment", "sref": "app.mainBlogComment"},
+      {"text":  "Blog Post Tag", "sref": "app.mainBlogPostTag"}
+    ],
+    "translate": "customForm.blog"
+  },
+
+         {
+    "text": "Campaign",
+    "sref": "#",
+    "icon": "icon-credit-card",
+    "submenu": [
+      {"text":  "Campaign", "sref": "app.mainCampaign"},
+      {"text":  "Campaign Delivery", "sref": "app.mainCampaignDelivery"},
+      {"text":  "Campaign Attribute", "sref": "app.mainCampaignAttribute"},
+      {"text":  "Campaign Status", "sref": "app.mainCampaignStatus"},
+      {"text":  "Campaign Tag", "sref": "app.mainCampaignTag"},
+      {"text":  "Campaign Payments", "sref": "app.mainCampaignPayments"}
+    ],
+    "translate": "customForm.campaign"
+  },
+
+    {
+    "text": "Price List",
+    "sref": "#",
+    "icon": "icon-credit-card",
+    "submenu": [
+      {"text":  "Price List", "sref": "app.mainPriceList"}
+    ],
+    "translate": "customForm.priceList"
+  },
+
+     {
+    "text": "Event",
+    "sref": "#",
+    "icon": "icon-credit-card",
+    "submenu": [
+      {"text":  "Event Post", "sref": "app.mainEventPost"},
+      {"text":  "Event Post Tag", "sref": "app.mainEventPostTag"},
+      {"text":  "Event Comment", "sref": "app.mainEventComment"}
+    ],
+    "translate": "customForm.event"
+  },
+
+    {
+    "text": "Elements",
+    "sref": "#",
+    "icon": "icon-chemistry",
+    "submenu": [
+      {"text": "Buttons",       "sref": "app.buttons", "translate": "sidebar.nav.element.BUTTON" },
+      {"text": "Notifications", "sref": "app.notifications", "translate": "sidebar.nav.element.NOTIFICATION" },
+      {"text": "ngDialog",      "sref": "app.ngdialog"},
+      {"text": "Interaction",   "sref": "app.interaction", "translate": "sidebar.nav.element.INTERACTION" },
+      {"text": "Carousel",      "sref": "app.carousel"},
+      {"text": "Spinners",      "sref": "app.spinners", "translate": "sidebar.nav.element.SPINNER", "alert":"new", "label": "label label-purple" },
+      {"text": "Animations",    "sref": "app.animations", "translate": "sidebar.nav.element.ANIMATION" },
+      {"text": "Dropdown",      "sref": "app.dropdown-animations", "translate": "sidebar.nav.element.DROPDOWN" },
+      {"text": "Nav Tree",      "sref": "app.navtree" },
+      {"text": "Nestable",      "sref": "app.nestable" },
+      {"text": "Sortable",      "sref": "app.sortable" },
+      {"text": "Panels",        "sref": "app.panels", "translate": "sidebar.nav.element.PANEL" },
+      {"text": "Portlets",      "sref": "app.portlets", "translate": "sidebar.nav.element.PORTLET" },
+      {"text": "Grid",          "sref": "app.grid", "translate": "sidebar.nav.element.GRID" },
+      {"text": "Grid Masonry",  "sref": "app.grid-masonry", "translate": "sidebar.nav.element.GRID_MASONRY" },
+      {"text": "Typography",    "sref": "app.typo", "translate": "sidebar.nav.element.TYPO" },
+      {"text": "Font Icons",    "sref": "app.icons-font", "alert": "+400", "translate": "sidebar.nav.element.FONT_ICON"  },
+      {"text": "Weather Icons", "sref": "app.icons-weather", "alert": "+100", "translate": "sidebar.nav.element.WEATHER_ICON" },
+      {"text": "Colors",        "sref": "app.colors", "translate": "sidebar.nav.element.COLOR" },
+      {"text": "Localization",  "sref": "app.localization", "alert":"i18n" },
+      {"text": "Infinite scroll", "sref" :"app.infinite-scroll", "alert": "new"}
+    ],
+    "translate": "sidebar.nav.element.ELEMENTS",
+    "alert":"new"
+  },
+  {
+    "text": "Menu",
+    "sref": "#",
+    "icon": "icon-folder",
+    "submenu": [
+      { "text": "Sub Menu", 
+        "sref": "app.submenu", 
+        "translate": "sidebar.nav.menu.SUBMENU" 
+      }    
+    ],
+    "translate": "sidebar.nav.menu.MENU"
+  }
+]

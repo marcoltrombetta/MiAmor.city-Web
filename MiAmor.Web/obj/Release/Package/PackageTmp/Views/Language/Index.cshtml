@@ -1,0 +1,114 @@
+﻿@model IEnumerable<MiAmor.Core.Language>
+
+
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <!-- Stylesheets -->
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600,800%7COpen+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <style>
+
+        .field{margin-bottom:5px; width:250px; height:30px;padding:2px;margin:0 10px 0px 0;direction:rtl; color:black;border:solid 1px #292929;text-indent:10px;font-size:14px;line-height:20px;border-radius:3px 3px;}
+        td {padding-bottom:2px;}
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.field').keydown(function (e) {
+                if (e.which == 13) {
+                    setLanguage($(this).attr('data-id'));
+                    $(this).closest('tr').next().find('.spanish').focus();
+                }
+            });
+        })
+        function setLanguage(id)
+        {
+            var objLanguage = { 'Id': 0, 'StringName': '', 'English': '', 'Spanish': '', 'Hebrew': '','Description':'' };
+            objLanguage.Id = id;
+            $('input[data-id='+id+']').each(function () {
+                if ($(this).attr('id') == 'StringName_' + id)
+                {
+                    objLanguage.StringName = $(this).val();
+                }
+                if ($(this).attr('id') == 'English_' + id) {
+                    objLanguage.English = $(this).val();
+                }
+                if ($(this).attr('id') == 'Spanish_' + id) {
+                    objLanguage.Spanish = $(this).val();
+                }
+                if ($(this).attr('id') == 'Description_' + id) {
+                    objLanguage.Description = $(this).val();
+                }
+            });
+            $.post("/Language/SetLanguage", { objLanguage: objLanguage }, function (data) {
+                $('#Spanish_' + objLanguage.Id).css("border", "solid 3px #8AC007");
+            });
+        }
+
+        $.post("/Home/InitializeCulture", { selectedLanguage: "es" }, function (data) {
+            alert('@MiAmor.Web.Resources.Resources.Login');
+        });
+</script>
+</head>
+<body>
+    <p>
+
+    </p>
+    <table class="table" style=" margin-left:15px">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StringName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.English)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spanish)
+            </th>
+            <th >
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                <input type="text" id="Description_@item.Id" data-id="@item.Id" class="text-left field" value="@item.Description" />
+            </td>
+            <td>
+                <input type="text" id="StringName_@item.Id" data-id="@item.Id" class="text-left field" value="@item.StringName" /> 
+            </td>
+            <td>
+                <input type="text" data-id="@item.Id" id="English_@item.Id" class="text-left field" value="@item.English" /> 
+            </td>
+            <td>
+                <input type="text" data-id="@item.Id" id="Spanish_@item.Id" class="text-left field spanish" value="@item.Spanish" /> 
+            </td>
+            <td >
+              
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

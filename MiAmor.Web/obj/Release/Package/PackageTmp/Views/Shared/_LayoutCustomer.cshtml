@@ -1,0 +1,143 @@
+﻿@{
+    Layout = "~/Views/Shared/_RootHeader.cshtml";
+}
+
+
+
+
+<link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/a549aa8780dbda16f6cff545aeabc3d71073911e/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+<script src="~/Scripts/waypoints.min.js"></script>
+<script src="~/Scripts/jquery.counterup.min.js"></script>
+
+<script src="~/Scripts/perfect-scrollbar.js"></script>
+<script src="~/Scripts/datepicker.js"></script>
+
+
+<div id="main-wrapper">
+    @Html.Action("MainHeader", "Home")
+    <!--=== Profile ===-->
+    <div class="profile container content">
+        <div class="row">
+            <!--Left Sidebar-->
+
+            @Html.Action("CustomerDetailsLeftbar", "Customer")
+            <!--End Left Sidebar-->
+            <div id="page-content" class="col-md-9">
+                @RenderBody()
+            </div>
+        </div><!--/end row-->
+    </div><!--/container-->
+    <!--=== End Profile ===-->
+    @Html.Action("MainFooter", "Home")
+    <!-- end #footer -->
+</div> <!-- end #main-wrapper -->
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+        App.initCounter();
+    });
+
+    var App = function () {
+        //Bootstrap Tooltips and Popovers
+        function handleBootstrap() {
+            /*Bootstrap Carousel*/
+            jQuery('.carousel').carousel({
+                interval: 15000,
+                pause: 'hover'
+            });
+
+            /*Tooltips*/
+            jQuery('.tooltips').tooltip();
+            jQuery('.tooltips-show').tooltip('show');
+            jQuery('.tooltips-hide').tooltip('hide');
+            jQuery('.tooltips-toggle').tooltip('toggle');
+            jQuery('.tooltips-destroy').tooltip('destroy');
+
+            /*Popovers*/
+            jQuery('.popovers').popover();
+            jQuery('.popovers-show').popover('show');
+            jQuery('.popovers-hide').popover('hide');
+            jQuery('.popovers-toggle').popover('toggle');
+            jQuery('.popovers-destroy').popover('destroy');
+        }
+
+        //Search Box (Header)
+        function handleSearch() {
+            jQuery('.search').click(function () {
+                if (jQuery('.search-btn').hasClass('fa-search')) {
+                    jQuery('.search-open').fadeIn(500);
+                    jQuery('.search-btn').removeClass('fa-search');
+                    jQuery('.search-btn').addClass('fa-times');
+                } else {
+                    jQuery('.search-open').fadeOut(500);
+                    jQuery('.search-btn').addClass('fa-search');
+                    jQuery('.search-btn').removeClass('fa-times');
+                }
+            });
+        }
+
+        //Sidebar Navigation Toggle
+        function handleToggle() {
+            jQuery('.list-toggle').on('click', function () {
+                jQuery(this).toggleClass('active');
+            });
+
+            /*
+            jQuery('#serviceList').on('shown.bs.collapse'), function() {
+                jQuery(".servicedrop").addClass('glyphicon-chevron-up').removeClass('glyphicon-chevron-down');
+            }
+
+            jQuery('#serviceList').on('hidden.bs.collapse'), function() {
+                jQuery(".servicedrop").addClass('glyphicon-chevron-down').removeClass('glyphicon-chevron-up');
+            }
+            */
+        }
+
+        //Fixed Header
+        function handleHeader() {
+            jQuery(window).scroll(function () {
+                if (jQuery(window).scrollTop() > 100) {
+                    jQuery(".header-fixed .header-sticky").addClass("header-fixed-shrink");
+                }
+                else {
+                    jQuery(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
+                }
+            });
+        }
+
+        //Header Mega Menu
+        function handleMegaMenu() {
+            jQuery(document).on('click', '.mega-menu .dropdown-menu', function (e) {
+                e.stopPropagation()
+            })
+        }
+
+        return {
+            //Parallax Backgrounds
+            initParallaxBg: function () {
+                jQuery(window).load(function () {
+                    jQuery('.parallaxBg').parallax("50%", 0.2);
+                    jQuery('.parallaxBg1').parallax("50%", 0.4);
+                });
+            },
+            initCounter: function () {
+                jQuery('.counter').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+            },
+            init: function () {
+                handleBootstrap();
+                handleSearch();
+                handleToggle();
+                handleHeader();
+                handleMegaMenu();
+            }
+        };
+    }();
+
+</script>
+
+

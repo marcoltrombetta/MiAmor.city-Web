@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7667DDFE-157E-4735-BBB7-473E86F84DED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiAmor.Data</RootNamespace>
+    <AssemblyName>MiAmor.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.4.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.3.4.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.Mvc5.3.3.3\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mapping\Addresses\PersonAddressMap.cs" />
+    <Compile Include="Mapping\Blogs\BlogPostTagBlogPostMap.cs" />
+    <Compile Include="Mapping\Blogs\BlogPostCategoryBlogPostMap.cs" />
+    <Compile Include="Mapping\Blogs\BlogSettingMap.cs" />
+    <Compile Include="Mapping\Blogs\BlogPostTagMap.cs" />
+    <Compile Include="Mapping\Blogs\BlogPostMap.cs" />
+    <Compile Include="Mapping\Blogs\BlogPictureMap.cs" />
+    <Compile Include="Mapping\Blogs\BlogCommentMap.cs" />
+    <Compile Include="Mapping\Campaigns\CampaignAttributeMappingMap.cs" />
+    <Compile Include="Mapping\Campaigns\CampaignAttributeMap.cs" />
+    <Compile Include="Mapping\Campaigns\CampaignAttributeValueMap.cs" />
+    <Compile Include="Mapping\Campaigns\CampaignDeliveryMap.cs" />
+    <Compile Include="Mapping\Campaigns\CouponMap.cs" />
+    <Compile Include="Mapping\Campaigns\CampaignTagMap.cs" />
+    <Compile Include="Mapping\Campaigns\CampaignStatusMap.cs" />
+    <Compile Include="Mapping\Campaigns\CampaignPictureMap.cs" />
+    <Compile Include="Mapping\Campaigns\CampaignPaymentsMap.cs" />
+    <Compile Include="Mapping\Campaigns\CampaignMap.cs" />
+    <Compile Include="Mapping\Customers\CustomerMessageTypeMap.cs" />
+    <Compile Include="Mapping\Customers\CustomerMessageMap.cs" />
+    <Compile Include="Mapping\Customers\CustomerMap.cs" />
+    <Compile Include="Mapping\Customers\CustomerBookmarkMap.cs" />
+    <Compile Include="Mapping\Customers\CustomerTypeMap.cs" />
+    <Compile Include="Mapping\Lamguages\LanguageMap.cs" />
+    <Compile Include="Mapping\Media\PictureMap.cs" />
+    <Compile Include="Mapping\Messages\MessageMap.cs" />
+    <Compile Include="Mapping\PriceList\PriceListItemMap.cs" />
+    <Compile Include="Mapping\PriceList\PriceListMap.cs" />
+    <Compile Include="Mapping\PriceList\PriceListVendorCategoryMap.cs" />
+    <Compile Include="Mapping\Product\ProductCategoryMap.cs" />
+    <Compile Include="Mapping\Product\ManufacturerMap.cs" />
+    <Compile Include="Mapping\Product\ProductAttributeCombinationMap.cs" />
+    <Compile Include="Mapping\Product\ProductAttributeMap.cs" />
+    <Compile Include="Mapping\Product\ProductAttributeMappingMap.cs" />
+    <Compile Include="Mapping\Product\ProductAttributeValueMap.cs" />
+    <Compile Include="Mapping\Product\ProductCategoryProductMap.cs" />
+    <Compile Include="Mapping\Product\ProductManufacturerMap.cs" />
+    <Compile Include="Mapping\Product\ProductMap.cs" />
+    <Compile Include="Mapping\Product\ProductPictureMap.cs" />
+    <Compile Include="Mapping\Product\ProductReviewHelpfulnessMap.cs" />
+    <Compile Include="Mapping\Product\ProductReviewMap.cs" />
+    <Compile Include="Mapping\Product\ProductSpecificationAttributeMap.cs" />
+    <Compile Include="Mapping\Product\ProductTagMap.cs" />
+    <Compile Include="Mapping\Product\ProductTemplateMap.cs" />
+    <Compile Include="Mapping\Product\ProductVendorMap.cs" />
+    <Compile Include="Mapping\Product\RelatedProductMap.cs" />
+    <Compile Include="Mapping\Setting\ParentWebSiteEventPostMap.cs" />
+    <Compile Include="Mapping\Setting\ParentWebSiteSettingMap.cs" />
+    <Compile Include="Mapping\Tokens\TokenMap.cs" />
+    <Compile Include="Mapping\Tokens\TokenTypeMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorBlogPostMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorAddressMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\Addresses\Neighbourhood.cs" />
+    <Compile Include="Mapping\Addresses\CityMap.cs" />
+    <Compile Include="Mapping\Addresses\CountryMap.cs" />
+    <Compile Include="Mapping\Addresses\StateProvinceMap.cs" />
+    <Compile Include="Mapping\MiAmorEntityTypeConfiguration.cs" />
+    <Compile Include="Mapping\Payments\PaymentTypeMap.cs" />
+    <Compile Include="Mapping\Sliders\SlideMap.cs" />
+    <Compile Include="Mapping\Sliders\SliderMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorAddressTypeMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorCategoryCountMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorCategoryMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorCategoryVendorMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorContactPersonMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorOpeningHoursMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorPaymentTypeMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorPictureMap.cs" />
+    <Compile Include="Mapping\Vendors\VendorReviewMap.cs" />
+    <Compile Include="MiAmorContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiAmor..Core\MiAmor..Core.csproj">
+      <Project>{28b16239-91ee-4147-8823-5fc03bc120ca}</Project>
+      <Name>MiAmor..Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

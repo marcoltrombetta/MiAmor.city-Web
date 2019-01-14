@@ -1,0 +1,33 @@
+﻿@model MiAmor.Web.Models.BlogCommentsListingModel
+
+@{
+    foreach (MiAmor.Core.BlogComment item in Model.BlogComments)
+    {
+        <text>
+
+            <li>
+
+                <div class="comment">
+                    <img src="@item.Customer.ImgPath" alt=" " class=" avatar">
+             
+                    <div class="meta">
+                        <a href="#"><strong>@item.Customer.FirstName</strong></a>
+                        @item.CreatedOnUtc
+                        <a href="#" class="reply">Reply</a>
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            @item.CommentText
+                        </p>
+                    </div>
+
+                </div> <!-- end .comment -->
+
+            </li> <!-- end .main list -->
+
+        </text>
+    }   
+}
+
+

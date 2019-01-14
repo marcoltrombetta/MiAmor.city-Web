@@ -1,0 +1,52 @@
+﻿@model MiAmor.Web.Models.SearchListingModel
+<div class="change-view">
+    <div class="filter-input">
+        <input type="text" placeholder="Filter by Keywords">
+    </div>
+    <button ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'" class="grid-view"><i class="fa fa-th"></i></button>
+    <button ng-class="{active: layout == 'list'}" ng-click="layout = 'list'" class="list-view active"><i class="fa fa-bars"></i></button>
+
+    <div id="divSortBy-VendorListing" class="sort-by">
+
+        <div class="uou-custom-select">
+            <select class="" data-placeholder="-sort by-">
+                <option value="option1">Name</option>
+                <option value="option2">kaka</option>
+                <option value="option3">Name</option>
+                <option value="option4">Type</option>
+            </select>
+            <input class="value-holder" type="hidden" disabled="disabled" placeholder="-sort by-">
+            <span class="placeholder">-sort by-</span><i class="fa fa-chevron-down"></i>
+            <ul class="select-clone">
+                <li data-value="option1">Name</li>
+                <li data-value="option2">kaka</li>
+                <li data-value="option3">Name</li>
+                <li data-value="option4">Type</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div> <!-- end .change-view -->
+
+<div id="divVendorListing">
+
+    @if (Model.VendorSearchLisitingModel.VendorBox.Count>0)
+    {
+        @Html.Partial("_VendorListing", @Model.VendorSearchLisitingModel);
+    }
+   
+</div>
+<div id="divVendorBlogListing">
+    @if (Model.VendorBlogListingModel.Blogs.Count > 0) { 
+        @Html.Partial("_VendorBlogListing", @Model.VendorBlogListingModel);
+    }
+</div>
+<div id="divVendorCampaignListing">
+    @if (Model.VendorCampaignListingModel.Campaigns.Count > 0) { 
+        @Html.Partial("_VendorCuponListing", @Model.VendorCampaignListingModel);
+    }
+</div>
+<div id="divVendorEventListing">
+    @*@Html.Partial("_VendorCuponListing", @Model.VendorCampaignListingModel);*@
+</div>

@@ -1,0 +1,26 @@
+﻿@model IList<MiAmor.Core.Campaign>
+
+<div class="col-sm-6">
+    <div class="panel panel-profile no-bg">
+        <div class="panel-heading overflow-h">
+            <h2 class="panel-title heading-sm pull-left"><i class="fa fa-pencil"></i>Campaigns</h2>
+            <a href="#"><i class="fa fa-cog pull-right"></i></a>
+        </div>
+        <div id="scrollbar" class="panel-body contentHolder">
+            @{
+                foreach (MiAmor.Core.Campaign item in Model)
+                {
+                    <text>
+                        <div class="profile-post color-one">
+                            <span class="profile-post-numb">@Html.Raw(item.ExpirationDateTime.ToString("dd/MM"))</span>
+                            <div class="profile-post-in">
+                                <h3 class="heading-xs"><a href="#">@item.Name</a></h3>
+                                <p>@item.ShortDescription</p>
+                            </div>
+                        </div>
+                    </text>
+                }
+            }
+        </div>
+    </div>
+</div>

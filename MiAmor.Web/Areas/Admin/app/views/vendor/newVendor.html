@@ -1,0 +1,264 @@
+﻿<h3>
+    Form Validation
+    <small>Native AngularJS input validation</small>
+</h3>
+<!-- START row-->
+<div ng-controller="newVendor" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formValidate" ng-submit="submitForm()" novalidate="" class="form-validate form-horizontal">
+                <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <fieldset class="b0">
+                            <legend>{{'customForm.newVendor'|translate}}</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.name'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" ng-show="false" name="Id" required="" ng-model="vendor.Id" class="form-control" value="{{vendor.Id}}" />
+                                    <input type="text" name="name" required="" ng-model="vendor.name" class="form-control" value="{{vendor.name}}" />
+                                    <span ng-show="validateInput('name', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.managerId'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="managerId" ng-pattern="/^[0-9]+$/" required="" ng-model="vendor.managerId" class="form-control" />
+                                    <span ng-show="validateInput('managerId', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('managerId', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>             
+                       
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.siteUrl'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="siteUrl"  ng-model="vendor.siteUrl" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.vendorContactPersonId'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="vendorContactPersonId" ng-pattern="/^[0-9]+$/" required="" ng-model="vendor.vendorContactPersonId" class="form-control" />
+                                    <span ng-show="validateInput('vendorContactPersonId', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                    <span ng-show="validateInput('vendorContactPersonId', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>                           
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.shortDescription'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="shortDescription" ng-model="vendor.shortDescription" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.fullDescription'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="fullDescription" ng-model="vendor.fullDescription" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.adminComment'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="adminComment" ng-model="vendor.adminComment" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.city'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input name="city" ng-required="true" ng-model="city"
+                                           type="text" ng-valid-func="validator"
+                                           placeholder="{{'customForm.city'|translate}}"
+                                           typeahead="city as city.name for city in getCityByName($viewValue)"
+                                           typeahead-on-select="setCity($item.cityId) | filter:$viewValue"
+                                           typeahead-loading=" loadinglocations" class="form-control">   
+                                    <span ng-show="validateInput('city', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.neighbourhood'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input name="neighbourhood" ng-required="true" ng-model="neighbourhood"
+                                           type="text" ng-valid-func="validator"
+                                           placeholder="{{'customForm.neighbourhood'|translate}}"
+                                           typeahead="neighbourhood as neighbourhood.name for neighbourhood in getNeighbourhoodByName($viewValue)"
+                                           typeahead-on-select="setNeighbourhood($item.neighbourhoodId) | filter:$viewValue"
+                                           typeahead-loading=" loadinglocations" class="form-control">   
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.address1'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" required="" name="address1" ng-model="vendor.VendorAddressCrudModel[0].address1" class="form-control" />
+                                    <span ng-show="validateInput('address1', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.address2'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="address2" ng-model="vendor.VendorAddressCrudModel[0].address2" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>                 
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.zipPostalCode'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="zipPostalCode" ng-pattern="/^[0-9]+$/" ng-model="vendor.VendorAddressCrudModel[0].zipPostalCode" class="form-control" />
+                                    <span ng-show="validateInput('zipPostalCode', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.phoneNumber'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="phoneNumber" ng-pattern="/^[0-9]+$/" ng-model="vendor.VendorAddressCrudModel[0].phoneNumber" class="form-control" />                                   
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.mobileNumber'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="mobileNumber" ng-pattern="/^[0-9]+$/" ng-model="vendor.VendorAddressCrudModel[0].mobileNumber" class="form-control" />                                   
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.faxNumber'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="faxNumber" ng-pattern="/^[0-9]+$/" ng-model="vendor.VendorAddressCrudModel[0].faxNumber" class="form-control" />
+                                    <span ng-show="validateInput('faxNumber', 'pattern')" class="text-danger">{{'customForm.validationOnlyDigits'|translate}}</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.deleted'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="deleted" ng-model="vendor.VendorAddressCrudModel[0].deleted" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.active'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <select name="active" ng-model="vendor.VendorAddressCrudModel[0].active" class="form-control">
+                                        <option value="true">{{'customForm.yes'|translate}}</option>
+                                        <option value="false">{{'customForm.no'|translate}}</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">type='number'</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.longitude'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="longitude" ng-pattern="/^[0-9]+$/" ng-model="vendor.VendorAddressCrudModel[0].longitude" class="form-control" />                                   
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.latitude'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="latitude" ng-pattern="/^[0-9]+$/" ng-model="vendor.VendorAddressCrudModel[0].latitude" class="form-control" />                                    
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <div class="panel-footer text-center">
+                            <button type="submit" class="btn btn-info">{{'customForm.save'|translate}}</button>
+                        </div>
+                    </div>
+                    <!-- END panel-->
+            </form>
+        </div>
+    </div>
+    <!-- END row-->
+
+</div>

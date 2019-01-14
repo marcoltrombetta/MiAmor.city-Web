@@ -1,0 +1,84 @@
+﻿<div class="header-search slider-home">
+    <div class="header-search-bar">
+        <form id="searchForm" name="searchForm">
+
+            <div class="search-toggle">
+                <div class="container">
+                    <div class="distance-range">
+                        <p>
+                            <label for="amount-search">Distance:</label>
+                            <input type="text" id="amount-search" name="amountSearch">
+                        </p>
+
+                        <div id="slider-range-search"></div>
+                    </div>  <!-- end #distance-range -->
+
+                    <div class="distance-range">
+                        <p>
+                            <label for="amount-search">Days published:</label>
+                            <input type="text" id="amount-search-day" name="amountSearchDay">
+                        </p>
+
+                        <div id="slider-range-search-day"></div>
+                    </div>  <!-- end #distance-range -->
+
+
+                    <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+
+                </div>
+            </div>  <!-- END .search-toggle -->
+
+            <div class="container">
+                <button class="toggle-btn" type="button"><i class="fa fa-bars"></i></button>
+
+                <div class="search-value">
+                    <div class="keywords">
+                        <input type="text" id="searchText" name="searchText" class="" placeholder="Keywords">
+                    </div>
+
+                    <div class="select-location">
+                        <div class="uou-custom-select">
+                            @Html.Action("LocationSearchBar", "Home")
+                        </div>
+                    </div>
+
+                    <div class="category-search">
+                        <div class="uou-custom-select">
+                            @Html.Action("CategorySearchCombo", "Home")
+                        </div>
+                    </div>
+
+                    <button class="search-btn" type="button"><i class="fa fa-search"></i></button>
+                </div>
+            </div> <!-- END .CONTAINER -->
+        </form>
+    </div> <!-- END .header-search-bar -->
+    
+</div> 
+<script type="text/javascript">
+    var $search = $('.search-btn');
+    $search.on('click', function (event) {
+        var serializedFormSearch = $("#searchForm").serialize();
+        $.ajax({
+            url: '/Home/Search',
+            data: serializedFormSearch,
+            type: 'POST',
+            header: { "Content-Type": "application/json" },
+            success: function (result) {
+                $('#aSubmitRegister').attr('disabled', true);
+
+                saveToLocalStorage("userToken", result.data.Token);
+                saveToLocalStorage("userCustId", result.data.CustId);
+                saveToLocalStorage("userFirstName", result.data.FirstName);
+
+
+                userLogged(result.data.FirstName, result.data.CustId);
+            },
+            error: function (err) {
+                alert(data.message);
+            }
+        });
+        event.preventDefault();
+    });
+
+</script>

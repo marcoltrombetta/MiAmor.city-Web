@@ -1,0 +1,67 @@
+﻿@model IList<MiAmor.Core.City>
+
+<div class="location-details">
+    <form action="#">
+        <div class="select-country">
+            <label>City</label>
+
+            <div class="uou-custom-select">
+                <select class="" data-placeholder="-Select-" id="city">
+                </select><input class="value-holder" type="hidden" disabled="disabled" placeholder="-Select-"><span class="placeholder">-Select-</span><i class="fa fa-chevron-down"></i>
+                <ul class="select-clone">
+                    @{
+
+                        foreach (MiAmor.Core.City item in Model)
+                        {
+                            <text>
+                                <li data-value="@item.Id">@item.Name</li>
+                            </text>
+                        }
+
+                    }
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- end .select-country -->
+
+        <div class="select-state">
+            <label>Neighbourhood</label>
+
+            <div class="uou-custom-select">
+                <select class="" data-placeholder="-Select-">
+                  
+                </select><input class="value-holder" type="hidden" disabled="disabled" placeholder="-Select-"><span class="placeholder">-Select-</span><i class="fa fa-chevron-down"></i>
+                <ul class="select-clone" id="neighbourhood">
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- end .select-state -->
+    </form>
+
+</div> <!-- end .location-details -->
+<script type="text/javascript">
+
+    $("#city").change(function () {
+        
+        $.ajax({
+            url: '/Address/GetNeighbourhood',
+            data: JSON.stringify({ CityId: $("#city").val() }),
+            type: 'POST',
+            header: { "Content-Type": "application/json" },
+            success: function (result) {
+                $.each(result, function (i, field) {
+                    $("div").append(field + " ");
+                });
+            },
+            error: function (err) {
+                alert(data.message);
+            }
+        });
+
+    });
+
+</script>

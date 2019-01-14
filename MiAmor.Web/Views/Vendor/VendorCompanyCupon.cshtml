@@ -1,0 +1,42 @@
+﻿@model MiAmor.Web.Models.VendorCampaignListingModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutVendor.cshtml";
+}
+
+    <div class="tab-pane active" id="company-portfolio">
+
+        <div class="company-portfolio">
+            <h2 class="text-uppercase mb30">Cupons</h2>
+
+            <div class="sort-by">
+
+                <select class="" data-placeholder="-sort by-">
+                    <option value="option1">Name</option>
+                    <option value="option2">Tupe</option>
+                    <option value="option3">Name</option>
+                    <option value="option4">Type</option>
+                </select>
+
+            </div>
+
+            <div class="row">
+                @foreach (var item in Model.Campaigns) {
+        <text>
+            <div class="col-sm-4 col-xs-6">
+                <div class="single-product">
+                    <figure>
+                        <img src="@item.CampaignPictures.FirstOrDefault().Picture.BaseUrl" alt="">
+
+                    </figure>
+
+                    <h4><a href="#">@item.Name</a></h4>
+
+                    <h5><a href="#">Category</a></h5>
+                </div> <!-- end .single-product -->
+            </div> <!-- end .grid-layout -->
+        </text>
+            }
+            </div> <!-- end .row -->
+        </div> <!-- end .company-portfolio -->
+    </div> <!-- end .tab-pane -->

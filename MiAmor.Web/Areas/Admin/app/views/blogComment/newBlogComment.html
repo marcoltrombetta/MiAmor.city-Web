@@ -1,0 +1,102 @@
+﻿<h3>
+    Form Validation
+    <small>Native AngularJS input validation</small>
+</h3>
+<!-- START row-->
+<div ng-controller="newBlogComment" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formValidate" ng-submit="submitForm()" novalidate="" class="form-validate form-horizontal">
+                <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <fieldset class="b0">
+                            <legend>{{'customForm.newBlogComment'|translate}}</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <input type="text" ng-show="false" name="Id" required="" ng-model="blogComment.Id" class="form-control" value="{{blogPost.Id}}" />
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.customer'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input name="customer" ng-required="true" ng-model="customer"
+                                           type="text" ng-valid-func="validator"
+                                           placeholder="{{'customForm.customer'|translate}}"
+                                           typeahead="customer as customer.firstName for customer in getCustomerByName($viewValue)"
+                                           typeahead-on-select="setCustomer($item.customerId) | filter:$viewValue"
+                                           typeahead-loading=" loadinglocations" class="form-control">
+                                    <span ng-show="validateInput('customer', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.commentText'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="commentText" ng-model="blogComment.commentText" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.fieldNotRequired'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.blogPost'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <input name="blogPost" ng-required="true" ng-model="blogPost"
+                                           type="text" ng-valid-func="validator"
+                                           placeholder="{{'customForm.blogPost'|translate}}"
+                                           typeahead="blogPost as blogPost.title for blogPost in getBlogPostByName($viewValue)"
+                                           typeahead-on-select="setBlogPost($item.blogPostId) | filter:$viewValue"
+                                           typeahead-loading=" loadinglocations" class="form-control">
+                                    <span ng-show="validateInput('blogPost', 'required')" class="text-danger">{{'customForm.fieldRequired'|translate}}</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">{{'customForm.required'|translate}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div ng-controller="DatepickerDemoCtrl" class="form-group">
+                                <label class="col-sm-2 control-label">{{'customForm.createdOnUtc'|translate}}</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" name="createdOnUtc" datepicker-popup="{{format}}" ng-model="blogComment.createdOnUtc" is-open="opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" " close-text="Close" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" ng-click="open($event)" class="btn btn-default">
+                                                <em class="fa fa-calendar"></em>
+                                            </button>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <small class="text-muted">Value: {{blogComment.createdOnUtc}}</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <div class="panel-footer text-center">
+                            <button type="submit" class="btn btn-info">{{'customForm.save'|translate}}</button>
+                        </div>
+                    </div>
+                    <!-- END panel-->
+            </form>
+        </div>
+    </div>
+    <!-- END row-->
+
+</div>

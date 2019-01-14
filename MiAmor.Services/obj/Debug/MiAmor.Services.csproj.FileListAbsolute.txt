@@ -1,0 +1,341 @@
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Autofac.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Autofac.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\Autofac.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\Autofac.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor\MiAmor LessComplex\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\Autofac.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\Autofac.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+H:\PROJECTS\MiAmor2\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\Autofac.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\Autofac.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+H:\PROJECTS\MiAmor2\Nueva carpeta\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmor.git\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor.git\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\Autofac.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\Autofac.xml
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.xml
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\shai\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+C:\shai\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+C:\shai\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+C:\shai\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\Autofac.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\Autofac.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+D:\projects\Argentina\software\MiAmor Working\MiAmor\MiAmorB.git\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\Autofac.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\Autofac.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+C:\MiAmor\work\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+C:\MiAmor\work\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+C:\MiAmor\work\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
+C:\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll.config
+C:\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Services.pdb
+C:\work\MiAmor\MiAmor.Services\bin\Debug\Autofac.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.dll
+C:\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor._.Core.pdb
+C:\work\MiAmor\MiAmor.Services\bin\Debug\MiAmor.Data.pdb
+C:\work\MiAmor\MiAmor.Services\bin\Debug\Autofac.xml
+C:\work\MiAmor\MiAmor.Services\bin\Debug\Autofac.Integration.Mvc.xml
+C:\work\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.xml
+C:\work\MiAmor\MiAmor.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Helpers.xml
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Mvc.xml
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.Razor.xml
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.xml
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\work\MiAmor\MiAmor.Services\bin\Debug\System.Web.WebPages.Razor.xml
+C:\work\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.csprojResolveAssemblyReference.cache
+C:\work\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.dll
+C:\work\MiAmor\MiAmor.Services\obj\Debug\MiAmor.Services.pdb
